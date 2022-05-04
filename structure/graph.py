@@ -156,7 +156,6 @@ class KeyAttention(nn.Module):
         self._key_fc = nn.Linear(in_channel, hidden_channel)
         self._value_fc = nn.Linear(in_channel, hidden_channel)
         self._query_fc = nn.Linear(in_channel, hidden_channel)
-        self._mask = torch.triu(torch.ones(in_channel, in_channel))
         self._fc = nn.Linear(hidden_channel, out_channel)
 
     def forward(self, x: Tensor):
@@ -164,11 +163,13 @@ class KeyAttention(nn.Module):
         :param x: (B, max_length, in_channel)
         :return: (B, max_length, out_channel)
         """
+        b, m, c = x.size()
         key = self._key_fc(x)  # (B, max_length, in_channel)
         value = self._value_fc(x)  # (B, max_length, in_channel)
         query = self._query_fc(x)  # (B, max_length, in_channel)
         score = torch.matmul(key, query.permute(0, 2, 1))  # (B, max_length, max_length)
-        score = torch.softmax(score * self._mask, dim=-1)
+        mask = torch.triu(torch.ones(m, m))
+        score = torch.softmax(score * mask, dim=-1)
         encoded_text = score * value  # (B, max_length, hidden_channel)
         return self._fc(encoded_text)  # (B, max_length, out_channel)
 
