@@ -204,11 +204,8 @@ class BRegGraph(nn.Module):
 
     def _lstm_text_embedding(self, texts: Tensor, lengths: Tensor):
         text_embedding: Tensor = self._text_embedding(texts)  # (B, max_length, hidden_channel)
-        packed_sequence: PackedSequence = pack_padded_sequence(text_embedding,
-                                                               lengths.cpu(),
-                                                               True,
-                                                               False)
-        packed_sequence = self._attn(packed_sequence)
+        attn_text = self._attn(text_embedding)
+        packed_sequence: PackedSequence = pack_padded_sequence(attn_text, lengths.cpu(), True, False)
         output, (h_last, c_last) = self._lstm(packed_sequence)
         return F.normalize(h_last.mean(0))
 
