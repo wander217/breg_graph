@@ -168,7 +168,7 @@ class KeyAttention(nn.Module):
         value = self._value_fc(x)  # (B, max_length, in_channel)
         query = self._query_fc(x)  # (B, max_length, in_channel)
         score = torch.matmul(key, query.permute(0, 2, 1))  # (B, max_length, max_length)
-        mask = torch.triu(torch.ones(m, m))
+        mask = torch.triu(torch.ones(m, m)).to(x.device)
         score = torch.softmax(score * mask, dim=-1)
         encoded_text = score * value  # (B, max_length, hidden_channel)
         return self._fc(encoded_text)  # (B, max_length, out_channel)
