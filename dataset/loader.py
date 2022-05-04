@@ -16,11 +16,12 @@ def norm(element: np.ndarray, document_shape: np.ndarray) -> np.ndarray:
     :return: normed element
     """
     n: int = element.shape[0]
-    # mn = np.min(element, axis=0)
-    # mx = np.max(element, axis=0)
-    shape_matrix: np.ndarray = document_shape.astype(np.float32)
-    normed_element: np.ndarray = element.reshape((-1, 2)) / shape_matrix
-    # normed_element = (element - mn) / (mx - mn)
+    mn = np.min(element, axis=0)
+    mx = np.max(element, axis=0)
+    # shape_matrix: np.ndarray = document_shape.astype(np.float32)
+    # normed_element: np.ndarray = element.reshape((-1, 2)) / shape_matrix
+    element = element.reshape((-1, 2))
+    normed_element = (element - mn) / (mx - mn)
     normed_element = (normed_element - 0.5) / 0.5
     return normed_element.reshape(n, -1)
 
