@@ -96,16 +96,16 @@ class GraphDataset(Dataset):
             for i in range(node_size):
                 x_i = np.mean(bboxes[i][:8][0::2])
                 y_i = np.mean(bboxes[i][:8][1::2])
-                w_i = bboxes[i][9]
-                h_i = bboxes[i][8]
+                # w_i = bboxes[i][9]
+                # h_i = bboxes[i][8]
                 for j in range(node_size):
                     if i == j:
                         continue
 
                     x_j = np.mean(bboxes[j][:8][0::2])
                     y_j = np.mean(bboxes[j][:8][1::2])
-                    h_j = bboxes[j][9]
-                    w_j = bboxes[j][8]
+                    # h_j = bboxes[j][9]
+                    # w_j = bboxes[j][8]
                     x_dist = x_j - x_i
                     y_dist = y_j - y_i
 
