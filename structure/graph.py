@@ -68,7 +68,7 @@ def reduce(nodes) -> Dict:
     Av_i = nodes.data['Av']
     Bv_j = nodes.mailbox['Bv_j']
     score = nodes.mailbox['score']
-    h = Av_i + torch.sum(score * Bv_j, dim=1)
+    h = Av_i + torch.sum(score * Bv_j, dim=1) / (torch.sum(score, dim=1) + 1e-6)
     return {'h': h}
 
 
@@ -195,18 +195,19 @@ class BRegGraph(nn.Module):
             Dense(hidden_channel + i * hidden_channel, hidden_channel)
             for i in range(1, layer_num + 1)
         ])
-        self._attn = KeyAttention(hidden_channel, hidden_channel, hidden_channel)
+        # self._decoder: nn.Module = nn.TransformerEncoder(
+        #     nn.TransformerEncoderLayer(**encoder),
+        #     num_layers=encoder_num)
         self._lstm: nn.Module = nn.LSTM(input_size=hidden_channel,
                                         hidden_size=hidden_channel,
-                                        num_layers=1,
+                                        num_layers=2,
                                         batch_first=True,
                                         bidirectional=True)
         self._mlp: nn.Module = Readout(hidden_channel, class_num, 2)
 
     def _lstm_text_embedding(self, texts: Tensor, lengths: Tensor):
         text_embedding: Tensor = self._text_embedding(texts)  # (B, max_length, hidden_channel)
-        attn_text = self._attn(text_embedding)
-        packed_sequence: PackedSequence = pack_padded_sequence(attn_text, lengths.cpu(), True, False)
+        packed_sequence: PackedSequence = pack_padded_sequence(text_embedding, lengths.cpu(), True, False)
         output, (h_last, c_last) = self._lstm(packed_sequence)
         return F.normalize(h_last.mean(0))
 

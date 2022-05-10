@@ -9,19 +9,15 @@ from dataset.alphabet import GraphAlphabet, GraphLabel
 from utils import remove_space
 
 
-def norm(element: np.ndarray, document_shape: np.ndarray) -> np.ndarray:
+def norm(element: np.ndarray) -> np.ndarray:
     """
     :param element: bounding box coordinate: (n, 8) or (n, 2)
-    :param document_shape: size of entire document: (w, h)
     :return: normed element
     """
-    # n: int = element.shape[0]
     mn = np.min(element, axis=0)
     mx = np.max(element, axis=0)
-    # shape_matrix: np.ndarray = document_shape.astype(np.float32)
-    # normed_element: np.ndarray = element.reshape((-1, 2)) / shape_matrix
-    normed_element = (element - mn) / (mx - mn)
-    normed_element = (normed_element - 0.5) / 0.5
+    normed_point = (element - mn) / (mx - mn)
+    normed_element = (normed_point - 0.5) / 0.5
     return normed_element
 
 
@@ -110,16 +106,16 @@ class GraphDataset(Dataset):
                     x_dist = x_i - x_j
                     y_dist = y_i - y_j
 
-                    if np.abs(y_dist) > 3 * h_j:
-                        continue
-                    dists.append([x_dist, y_dist])
+                    # if np.abs(y_dist) > 3 * h_j:
+                    #     continue
+                    dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                     src.append(i)
                     dst.append(j)
             g = dgl.DGLGraph()
             g.add_nodes(node_size)
             g.add_edges(src, dst)
-            g.ndata['feat'] = torch.Tensor(norm(bboxes, shape)).float()
-            g.edata['feat'] = torch.Tensor(norm(np.array(dists), shape)).float()
+            g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
+            g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
 
             self._graphs.append(g)
             self._texts.append(texts)
