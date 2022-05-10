@@ -102,9 +102,9 @@ class GraphDataset(Dataset):
 
                     x_j = np.mean(bboxes[j][:8][0::2])
                     y_j = np.mean(bboxes[j][:8][1::2])
-                    h_j = bboxes[j][9]
-                    x_dist = x_i - x_j
-                    y_dist = y_i - y_j
+                    # h_j = bboxes[j][9]
+                    x_dist = x_j - x_i
+                    y_dist = y_j - y_i
 
                     # if np.abs(y_dist) > 3 * h_j:
                     #     continue

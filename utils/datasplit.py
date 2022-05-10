@@ -6,8 +6,8 @@ import numpy
 test_label = ["01M012214_ĐKKD.json", "41S8004926_GPKD_T_N-1.jpg.json"]
 test_data = []
 new_data = []
-gen_data = r'D:\python_project\dkkd_graph\data\gen'
-save_dir = r'D:\python_project\dkkd_graph\data\breg'
+gen_data = r'D:\python_project\breg_graph\data\gen'
+save_dir = r'D:\python_project\breg_graph\data\breg'
 count = 0
 for i, file in enumerate(os.listdir(gen_data)):
     with open(os.path.join(gen_data, file), 'r', encoding='utf-8') as f:

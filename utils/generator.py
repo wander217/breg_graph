@@ -265,6 +265,30 @@ def translate_coordinate(datas: List, shape):
     return datas
 
 
+def get_char_len(bbox: np.ndarray, text: str):
+    tmp = bbox.reshape((-1, 2))[:, 0]
+    x_min, x_max = np.min(tmp), np.max(tmp)
+    w = x_max - x_min
+    text_len = len(text)
+    char_len = w / text_len
+    return char_len
+
+
+def get_bbox(text: str, char_len: int, bbox: np.ndarray):
+    tmp = bbox.reshape((-1, 2))[:, 0]
+    x_min, x_max = np.min(tmp), np.max(tmp)
+    tmp = bbox.reshape((-1, 2))[:, 1]
+    y_min, y_max = np.min(tmp), np.max(tmp)
+    h = y_max - y_min
+    w = char_len * len(text)
+    return [
+        [x_min, y_min],
+        [x_min + w - 1, y_min],
+        [x_min + w - 1, y_min + h - 1],
+        [x_min, y_min + h - 1]
+    ]
+
+
 def process_1(original_data, addition_data, save_path):
     new_data = []
     data_id: int = 0
@@ -293,10 +317,16 @@ def process_1(original_data, addition_data, save_path):
         first, second = text_split(selected_data["COMPANY_ADDRESS"],
                                    len(copied_group["COMPANY_ADDRESS"][2]["text"]))
         targets.append(copied_group["COMPANY_ADDRESS"][0])
+        char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]),
+                                copied_group["COMPANY_ADDRESS"][2]["text"])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
+        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
+                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
+            copied_group["COMPANY_ADDRESS"][1]["bbox"] = get_bbox(second, char_len,
+                                                                  np.array(copied_group["COMPANY_ADDRESS"][1]["bbox"]))
             targets.append(copied_group["COMPANY_ADDRESS"][1])
         # Company phone
         copied_group["COMPANY_PHONE"][0]["text"] = "Điện thoại:" + selected_data["COMPANY_PHONE"]
@@ -345,20 +375,40 @@ def process_1(original_data, addition_data, save_path):
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"],
                                    len(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"]))
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]),
+                                copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(first, char_len,
+                                                                                 np.array(copied_group[
+                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                              1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group[
+                                                                                                  "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                                  2]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"],
                                    len(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"]))
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]),
+                                copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = first
+        copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(first, char_len,
+                                                                          np.array(copied_group[
+                                                                                       "REPRESENTATIVE_LIVING_PLACE"][
+                                                                                       1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group[
+                                                                                           "REPRESENTATIVE_LIVING_PLACE"][
+                                                                                           2]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][2])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -397,11 +447,17 @@ def process_2(original_data, addition_data, save_path):
         # Company address
         first, second = text_split(selected_data["COMPANY_ADDRESS"],
                                    len(copied_group["COMPANY_ADDRESS"][2]["text"]))
+        char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]),
+                                copied_group["COMPANY_ADDRESS"][2]["text"])
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
+        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
+                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
+            copied_group["COMPANY_ADDRESS"][1]["bbox"] = get_bbox(second, char_len,
+                                                                  np.array(copied_group["COMPANY_ADDRESS"][1]["bbox"]))
             targets.append(copied_group["COMPANY_ADDRESS"][1])
         # Company phone
         copied_group["COMPANY_PHONE"][0]["text"] = "Điện thoại:" + selected_data["COMPANY_PHONE"]
@@ -447,17 +503,39 @@ def process_2(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 53)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 53)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký HKTT:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký HKTT:" + first, char_len,
+                                                                                 np.array(copied_group[
+                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"
+                                                                                          ][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group[
+                                                                                                  "REPRESENTATIVE_PERMANENT_RESIDENCE"
+                                                                                              ][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 50)
+        char_len = get_char_len(np.array(copied_group[
+                                             "REPRESENTATIVE_PERMANENT_RESIDENCE"
+                                         ][0]["bbox"]),
+                                "-" * 50)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại: " + first
+        copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại: " + first, char_len,
+                                                                          np.array(copied_group[
+                                                                                       "REPRESENTATIVE_LIVING_PLACE"
+                                                                                   ][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group[
+                                                                                           "REPRESENTATIVE_LIVING_PLACE"
+                                                                                       ][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -496,11 +574,17 @@ def process_3(original_data, addition_data, save_path):
         # Company address
         first, second = text_split(selected_data["COMPANY_ADDRESS"],
                                    len(copied_group["COMPANY_ADDRESS"][2]["text"]))
+        char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]),
+                                copied_group["COMPANY_ADDRESS"][2]["text"])
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
+        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
+                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
+            copied_group["COMPANY_ADDRESS"][1]["bbox"] = get_bbox(second, char_len,
+                                                                  np.array(copied_group["COMPANY_ADDRESS"][1]["bbox"]))
             targets.append(copied_group["COMPANY_ADDRESS"][1])
         # Company phone
         copied_group["COMPANY_PHONE"][1]["text"] = selected_data["COMPANY_PHONE"]
@@ -514,11 +598,17 @@ def process_3(original_data, addition_data, save_path):
         # Business kind
         first, second = text_split(selected_data["BUSINESS_KIND"],
                                    len(copied_group["BUSINESS_KIND"][0]["text"]))
+        char_len = get_char_len(np.array(copied_group["BUSINESS_KIND"][0]["bbox"]),
+                                copied_group["BUSINESS_KIND"][0]["text"])
         copied_group["BUSINESS_KIND"][0]["text"] = first
+        copied_group["BUSINESS_KIND"][0]["bbox"] = get_bbox(first, char_len,
+                                                            np.array(copied_group["BUSINESS_KIND"][0]["bbox"]))
         copied_group["BUSINESS_KIND"][0]["label"] = "OTHER"
         targets.append(copied_group["BUSINESS_KIND"][0])
         if len(second) != 0:
             copied_group["BUSINESS_KIND"][1]["text"] = second
+            copied_group["BUSINESS_KIND"][1]["bbox"] = get_bbox(second, char_len,
+                                                                np.array(copied_group["BUSINESS_KIND"][1]["bbox"]))
             copied_group["BUSINESS_KIND"][1]["label"] = "OTHER"
             targets.append(copied_group["BUSINESS_KIND"][1])
         # Business capital
@@ -553,20 +643,32 @@ def process_3(original_data, addition_data, save_path):
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"],
                                    len(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"]))
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]),
+                                copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"],
                                    len(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"]))
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]),
+                                copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = first
+        copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(first, char_len,
+                                                                          np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][2])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -604,10 +706,16 @@ def process_4(original_data, addition_data, save_path):
         targets.extend(copied_group["COMPANY_NAME"])
         # Company address
         first, second = text_split(selected_data["COMPANY_ADDRESS"], 55)
+        char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]),
+                                copied_group["COMPANY_ADDRESS"][0]["text"])
         copied_group["COMPANY_ADDRESS"][0]["text"] = "2.Địa điểm kinh doanh:" + first
+        copied_group["COMPANY_ADDRESS"][0]["bbox"] = get_bbox("2.Địa điểm kinh doanh:" + first, char_len,
+                                                              np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
+            copied_group["COMPANY_ADDRESS"][1]["bbox"] = get_bbox(second, char_len,
+                                                                  np.array(copied_group["COMPANY_ADDRESS"][1]["bbox"]))
             targets.append(copied_group["COMPANY_ADDRESS"][1])
         # Company phone
         copied_group["COMPANY_PHONE"][0]["text"] = "Số điện thoại:" + selected_data["COMPANY_PHONE"]
@@ -653,10 +761,16 @@ def process_4(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 50)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 50)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú: " + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú: " + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
@@ -787,10 +901,16 @@ def process_6(original_data, addition_data, save_path):
         # Company address
         first, second = text_split(selected_data["COMPANY_ADDRESS"],
                                    len(copied_group["COMPANY_ADDRESS"][0]["text"]))
+        char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]),
+                                copied_group["COMPANY_ADDRESS"][0]["text"])
         copied_group["COMPANY_ADDRESS"][0]["text"] = "2. Địa điểm kinh doanh: " + first
+        copied_group["COMPANY_ADDRESS"][0]["bbox"] = get_bbox("2. Địa điểm kinh doanh: " + first, char_len,
+                                                              np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
+            copied_group["COMPANY_ADDRESS"][1]["bbox"] = get_bbox(second, char_len,
+                                                                  np.array(copied_group["COMPANY_ADDRESS"][1]["bbox"]))
             targets.append(copied_group["COMPANY_ADDRESS"][1])
         # Company phone
         copied_group["COMPANY_PHONE"][0]["text"] = "Điện thoại:" + selected_data["COMPANY_PHONE"]
@@ -838,10 +958,16 @@ def process_6(original_data, addition_data, save_path):
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"],
                                    len(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"]))
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú: " + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú: " + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + selected_data[
@@ -1001,9 +1127,9 @@ def process_8(original_data, addition_data, save_path):
         copied_group["REPRESENTATIVE_MAJORITY"][0]["text"] = "Dân tộc:" + selected_data["REPRESENTATIVE_MAJORITY"]
         targets.extend(copied_group["REPRESENTATIVE_MAJORITY"])
         # Representative idcard number
-        icard_type = ["Căn cước công dân", "Chứng minh thư nhân dân"]
+        idcard_type = ["Căn cước công dân", "Chứng minh thư nhân dân"]
         copied_group["REPRESENTATIVE_IDCARD_NUMBER"][0]["text"] = "Loại giấy chứng thực cá nhân: {}".format(
-            random.choice(icard_type))
+            random.choice(idcard_type))
         copied_group["REPRESENTATIVE_IDCARD_NUMBER"][2]["text"] = selected_data["REPRESENTATIVE_IDCARD_NUMBER"]
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_NUMBER"])
         # Representative idcard date
@@ -1257,10 +1383,16 @@ def process_12(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 45)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 45)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 40)
@@ -1428,17 +1560,29 @@ def process_13(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 50)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
+        copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
+                                                                          np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -1519,17 +1663,29 @@ def process_14(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
+                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -1619,10 +1775,20 @@ def process_15(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
+                                                                                 np.array(copied_group[
+                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                              0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group[
+                                                                                           "REPRESENTATIVE_LIVING_PLACE"][
+                                                                                           1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -1703,17 +1869,36 @@ def process_16(original_data, addition_data, save_path):
         targets.extend(copied_group["REPRESENTATIVE_IDCARD_PLACE"])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox(
+            "Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
+            np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group[
+                                                                                                  "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                                  1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         first, second = text_split(selected_data["REPRESENTATIVE_LIVING_PLACE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
+                                                                                 np.array(copied_group[
+                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                              0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                              np.array(copied_group[
+                                                                                           "REPRESENTATIVE_LIVING_PLACE"][
+                                                                                           1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         targets = sorted(targets, key=lambda x: x['bbox'][0][1])
         save_data['target'] = translate_coordinate(targets, shape)
@@ -1972,10 +2157,19 @@ def process_19(original_data, addition_data, save_path):
         targets.append(copied_group["REPRESENTATIVE_IDCARD_PLACE"][0])
         # Representative permanent resistance
         first, second = text_split(selected_data["REPRESENTATIVE_PERMANENT_RESIDENCE"], 40)
+        char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
+                                "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký HKTT:" + first
+        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox(
+            "Nơi đăng ký HKTT:" + first, char_len,
+            np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
+            copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(second, char_len,
+                                                                                     np.array(copied_group[
+                                                                                                  "REPRESENTATIVE_PERMANENT_RESIDENCE"][
+                                                                                                  1]["bbox"]))
             targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         # Representative living palace
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại: " + selected_data[
@@ -2159,37 +2353,37 @@ def generate_data(original_path: str, addition_path: str, save_path: str):
     with open(addition_path, 'r', encoding='utf-8') as f:
         addition_data: List = json.loads(f.readline())
     # Processing sample 1
-    process_1(original_data, addition_data, save_path)
+    # process_1(original_data, addition_data, save_path)
     # Processing sample 2
-    process_2(original_data, addition_data, save_path)
+    # process_2(original_data, addition_data, save_path)
     # Processing sample 3
-    process_3(original_data, addition_data, save_path)
+    # process_3(original_data, addition_data, save_path)
     # Processing sample 4
-    process_4(original_data, addition_data, save_path)
+    # process_4(original_data, addition_data, save_path)
     # Processing sample 5
-    process_5(original_data, addition_data, save_path)
+    # process_5(original_data, addition_data, save_path)
     # Processing sample 6
-    process_6(original_data, addition_data, save_path)
+    # process_6(original_data, addition_data, save_path)
     # Processing sample 7
-    process_7(original_data, addition_data, save_path)
+    # process_7(original_data, addition_data, save_path)
     # Processing sample 8
-    process_8(original_data, addition_data, save_path)
+    # process_8(original_data, addition_data, save_path)
     # Processing sample 9
-    process_9(original_data, addition_data, save_path)
+    # process_9(original_data, addition_data, save_path)
     # Processing sample 10
-    process_10(original_data, addition_data, save_path)
+    # process_10(original_data, addition_data, save_path)
     # Processing sample 11
-    process_11(original_data, addition_data, save_path)
+    # process_11(original_data, addition_data, save_path)
     # Processing sample 12
-    process_12(original_data, addition_data, save_path)
+    # process_12(original_data, addition_data, save_path)
     # Processing sample 13
-    process_13(original_data, addition_data, save_path)
+    # process_13(original_data, addition_data, save_path)
     # Processing sample 14
-    process_14(original_data, addition_data, save_path)
+    # process_14(original_data, addition_data, save_path)
     # Processing sample 15
-    process_15(original_data, addition_data, save_path)
+    # process_15(original_data, addition_data, save_path)
     # Processing sample 16
-    process_16(original_data, addition_data, save_path)
+    # process_16(original_data, addition_data, save_path)
     # Processing sample 17
     process_17(original_data, addition_data, save_path)
     # Processing sample 18
@@ -2223,15 +2417,15 @@ if __name__ == '__main__':
     #     "REPRESENTATIVE_PERMANENT_RESIDENCE",
     #     "REPRESENTATIVE_LIVING_PLACE"
     # ], r'D:\python_project\dkkd_graph\asset\breg\label.json')
-    convert(r"D:\python_project\dkkd_graph\data\data.json",
-            r"D:\python_project\dkkd_graph\data\total.json")
-    check(r"D:\python_project\dkkd_graph\data\total.json",
-          r"D:\python_project\dkkd_graph\data\checked.json")
+    # convert(r"D:\python_project\dkkd_graph\data\data.json",
+    #         r"D:\python_project\dkkd_graph\data\total.json")
+    # check(r"D:\python_project\dkkd_graph\data\total.json",
+    #       r"D:\python_project\dkkd_graph\data\checked.json")
     # convert_excel(r"D:\python_project\dkkd_graph\data\hokd2.xls",
     #               "2300 CTY MOI THANH LAP HN 2010",
     #               r"D:\python_project\dkkd_graph\data\company_info.json",
     #               r"D:\python_project\dkkd_graph\data\hokd1.xls")
     # check_company(r"D:\python_project\dkkd_graph\data\company_info.json")
-    generate_data(r"D:\python_project\dkkd_graph\data\checked.json",
-                  r"D:\python_project\dkkd_graph\data\info\new_data.json",
-                  r"D:\python_project\dkkd_graph\data\gen")
+    generate_data(r"D:\python_project\breg_graph\data\checked.json",
+                  r"D:\python_project\breg_graph\data\info\new_data.json",
+                  r"D:\python_project\breg_graph\data\gen")
