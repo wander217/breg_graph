@@ -111,11 +111,7 @@ class GraphDataset(Dataset):
 
                     # if np.abs(y_dist) > 3 * h_j:
                     #     continue
-                    dists.append([x_dist,
-                                  y_dist,
-                                  w_j / w_i,
-                                  h_j / h_i,
-                                  lengths[j] / lengths[i]])
+                    dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                     src.append(i)
                     dst.append(j)
             g = dgl.DGLGraph()

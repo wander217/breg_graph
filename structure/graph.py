@@ -46,7 +46,7 @@ class Dense(nn.Module):
         super().__init__()
         self._fc: nn.Module = nn.Sequential(
             nn.LayerNorm(in_channel),
-            nn.ReLU(),
+            nn.ReLU(inplace=True),
             nn.Linear(in_channel, out_channel, bias=True))
 
     def forward(self, x: Tensor) -> Tensor:
@@ -148,30 +148,6 @@ class Readout(nn.Module):
             output = F.relu(self._fcs[i](output))
         output = self._fcs[self._layer_num](output)
         return output
-
-
-class KeyAttention(nn.Module):
-    def __init__(self, in_channel: int, hidden_channel: int, out_channel: int):
-        super().__init__()
-        self._key_fc = nn.Linear(in_channel, hidden_channel)
-        self._value_fc = nn.Linear(in_channel, hidden_channel)
-        self._query_fc = nn.Linear(in_channel, hidden_channel)
-        self._fc = nn.Linear(hidden_channel, out_channel)
-
-    def forward(self, x: Tensor):
-        """
-        :param x: (B, max_length, in_channel)
-        :return: (B, max_length, out_channel)
-        """
-        b, m, c = x.size()
-        key = self._key_fc(x)  # (B, max_length, hidden_channel)
-        value = self._value_fc(x)  # (B, max_length, hidden_channel)
-        query = self._query_fc(x)  # (B, max_length, hidden_channel)
-        score = torch.matmul(key, query.permute(0, 2, 1))  # (B, max_length, max_length)
-        mask = torch.triu(torch.ones(m, m)).to(x.device)  # (B, max_length, max_length)
-        score = torch.softmax(score * mask, dim=-1)  # (B, max_length, max_length)
-        encoded_text = torch.matmul(score, value)  # (B, max_length, hidden_channel)
-        return self._fc(encoded_text)  # (B, max_length, out_channel)
 
 
 class BRegGraph(nn.Module):
