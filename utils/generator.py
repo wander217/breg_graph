@@ -320,8 +320,6 @@ def process_1(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]),
                                 copied_group["COMPANY_ADDRESS"][2]["text"])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
-        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
-                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
@@ -379,10 +377,6 @@ def process_1(original_data, addition_data, save_path):
                                 copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(first, char_len,
-                                                                                 np.array(copied_group[
-                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
-                                                                                              1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["text"] = second
@@ -398,10 +392,6 @@ def process_1(original_data, addition_data, save_path):
                                 copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = first
-        copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(first, char_len,
-                                                                          np.array(copied_group[
-                                                                                       "REPRESENTATIVE_LIVING_PLACE"][
-                                                                                       1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["text"] = second
@@ -451,8 +441,6 @@ def process_2(original_data, addition_data, save_path):
                                 copied_group["COMPANY_ADDRESS"][2]["text"])
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
-        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
-                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
@@ -506,10 +494,6 @@ def process_2(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 53)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký HKTT:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký HKTT:" + first, char_len,
-                                                                                 np.array(copied_group[
-                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"
-                                                                                          ][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -525,10 +509,6 @@ def process_2(original_data, addition_data, save_path):
                                          ][0]["bbox"]),
                                 "-" * 50)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại: " + first
-        copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại: " + first, char_len,
-                                                                          np.array(copied_group[
-                                                                                       "REPRESENTATIVE_LIVING_PLACE"
-                                                                                   ][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
@@ -578,8 +558,6 @@ def process_3(original_data, addition_data, save_path):
                                 copied_group["COMPANY_ADDRESS"][2]["text"])
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         copied_group["COMPANY_ADDRESS"][2]["text"] = first
-        copied_group["COMPANY_ADDRESS"][2]["bbox"] = get_bbox(first, char_len,
-                                                              np.array(copied_group["COMPANY_ADDRESS"][2]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][2])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
@@ -601,8 +579,6 @@ def process_3(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["BUSINESS_KIND"][0]["bbox"]),
                                 copied_group["BUSINESS_KIND"][0]["text"])
         copied_group["BUSINESS_KIND"][0]["text"] = first
-        copied_group["BUSINESS_KIND"][0]["bbox"] = get_bbox(first, char_len,
-                                                            np.array(copied_group["BUSINESS_KIND"][0]["bbox"]))
         copied_group["BUSINESS_KIND"][0]["label"] = "OTHER"
         targets.append(copied_group["BUSINESS_KIND"][0])
         if len(second) != 0:
@@ -647,8 +623,6 @@ def process_3(original_data, addition_data, save_path):
                                 copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"] = get_bbox(first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][2]["text"] = second
@@ -662,8 +636,6 @@ def process_3(original_data, addition_data, save_path):
                                 copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"])
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = first
-        copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"] = get_bbox(first, char_len,
-                                                                          np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][1])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][2]["text"] = second
@@ -709,8 +681,6 @@ def process_4(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]),
                                 copied_group["COMPANY_ADDRESS"][0]["text"])
         copied_group["COMPANY_ADDRESS"][0]["text"] = "2.Địa điểm kinh doanh:" + first
-        copied_group["COMPANY_ADDRESS"][0]["bbox"] = get_bbox("2.Địa điểm kinh doanh:" + first, char_len,
-                                                              np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
@@ -764,8 +734,6 @@ def process_4(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 50)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú: " + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú: " + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -904,8 +872,6 @@ def process_6(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]),
                                 copied_group["COMPANY_ADDRESS"][0]["text"])
         copied_group["COMPANY_ADDRESS"][0]["text"] = "2. Địa điểm kinh doanh: " + first
-        copied_group["COMPANY_ADDRESS"][0]["bbox"] = get_bbox("2. Địa điểm kinh doanh: " + first, char_len,
-                                                              np.array(copied_group["COMPANY_ADDRESS"][0]["bbox"]))
         targets.append(copied_group["COMPANY_ADDRESS"][0])
         if len(second) != 0:
             copied_group["COMPANY_ADDRESS"][1]["text"] = second
@@ -961,8 +927,6 @@ def process_6(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"])
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú: " + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú: " + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -1386,8 +1350,6 @@ def process_12(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 45)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -1563,8 +1525,6 @@ def process_13(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 50)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -1576,8 +1536,6 @@ def process_13(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
-        copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
-                                                                          np.array(copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
@@ -1666,8 +1624,6 @@ def process_14(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -1679,8 +1635,6 @@ def process_14(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
-                                                                                 np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
@@ -1778,10 +1732,6 @@ def process_15(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
-                                                                                 np.array(copied_group[
-                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
-                                                                                              0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
@@ -1872,9 +1822,6 @@ def process_16(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký hộ khẩu thường trú:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox(
-            "Nơi đăng ký hộ khẩu thường trú:" + first, char_len,
-            np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -1888,10 +1835,6 @@ def process_16(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_LIVING_PLACE"][0]["text"] = "Chỗ ở hiện tại:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox("Chỗ ở hiện tại:" + first, char_len,
-                                                                                 np.array(copied_group[
-                                                                                              "REPRESENTATIVE_PERMANENT_RESIDENCE"][
-                                                                                              0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_LIVING_PLACE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_LIVING_PLACE"][1]["text"] = second
@@ -2160,9 +2103,6 @@ def process_19(original_data, addition_data, save_path):
         char_len = get_char_len(np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]),
                                 "-" * 40)
         copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["text"] = "Nơi đăng ký HKTT:" + first
-        copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"] = get_bbox(
-            "Nơi đăng ký HKTT:" + first, char_len,
-            np.array(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0]["bbox"]))
         targets.append(copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][0])
         if len(second) != 0:
             copied_group["REPRESENTATIVE_PERMANENT_RESIDENCE"][1]["text"] = second
@@ -2353,37 +2293,37 @@ def generate_data(original_path: str, addition_path: str, save_path: str):
     with open(addition_path, 'r', encoding='utf-8') as f:
         addition_data: List = json.loads(f.readline())
     # Processing sample 1
-    # process_1(original_data, addition_data, save_path)
+    process_1(original_data, addition_data, save_path)
     # Processing sample 2
-    # process_2(original_data, addition_data, save_path)
+    process_2(original_data, addition_data, save_path)
     # Processing sample 3
-    # process_3(original_data, addition_data, save_path)
+    process_3(original_data, addition_data, save_path)
     # Processing sample 4
-    # process_4(original_data, addition_data, save_path)
+    process_4(original_data, addition_data, save_path)
     # Processing sample 5
-    # process_5(original_data, addition_data, save_path)
+    process_5(original_data, addition_data, save_path)
     # Processing sample 6
-    # process_6(original_data, addition_data, save_path)
+    process_6(original_data, addition_data, save_path)
     # Processing sample 7
-    # process_7(original_data, addition_data, save_path)
+    process_7(original_data, addition_data, save_path)
     # Processing sample 8
-    # process_8(original_data, addition_data, save_path)
+    process_8(original_data, addition_data, save_path)
     # Processing sample 9
-    # process_9(original_data, addition_data, save_path)
+    process_9(original_data, addition_data, save_path)
     # Processing sample 10
-    # process_10(original_data, addition_data, save_path)
+    process_10(original_data, addition_data, save_path)
     # Processing sample 11
-    # process_11(original_data, addition_data, save_path)
+    process_11(original_data, addition_data, save_path)
     # Processing sample 12
-    # process_12(original_data, addition_data, save_path)
+    process_12(original_data, addition_data, save_path)
     # Processing sample 13
-    # process_13(original_data, addition_data, save_path)
+    process_13(original_data, addition_data, save_path)
     # Processing sample 14
-    # process_14(original_data, addition_data, save_path)
+    process_14(original_data, addition_data, save_path)
     # Processing sample 15
-    # process_15(original_data, addition_data, save_path)
+    process_15(original_data, addition_data, save_path)
     # Processing sample 16
-    # process_16(original_data, addition_data, save_path)
+    process_16(original_data, addition_data, save_path)
     # Processing sample 17
     process_17(original_data, addition_data, save_path)
     # Processing sample 18
