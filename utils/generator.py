@@ -2366,6 +2366,6 @@ if __name__ == '__main__':
     #               r"D:\python_project\dkkd_graph\data\company_info.json",
     #               r"D:\python_project\dkkd_graph\data\hokd1.xls")
     # check_company(r"D:\python_project\dkkd_graph\data\company_info.json")
-    generate_data(r"D:\python_project\breg_graph\data\checked.json",
+    generate_data(r"/data/data1/checked.json",
                   r"D:\python_project\breg_graph\data\info\new_data.json",
                   r"D:\python_project\breg_graph\data\gen")
