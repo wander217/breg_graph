@@ -69,7 +69,7 @@ def reduce(nodes) -> Dict:
     Bv_j = nodes.mailbox['Bv_j']
     score = nodes.mailbox['score']
     h = Av_i + torch.sum(score * Bv_j, dim=1) / (torch.sum(score, dim=1) + 1e-6)
-    return {'h': h}
+    return {'v': h}
 
 
 class GatedGCN(nn.Module):

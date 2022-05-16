@@ -15,7 +15,7 @@
 
 import json
 
-target_path = r'D:\\data1.json'
+target_path = r'D:\python_project\breg_graph\data\data123.json'
 new_data = []
 with open(target_path, 'r', encoding='utf-8') as f:
     datas = json.loads(f.readline())
