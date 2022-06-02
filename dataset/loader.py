@@ -67,8 +67,7 @@ def process(sample: Dict,
     return (np.array(bboxes),
             np.array(labels),
             np.array(texts),
-            np.array(lengths),
-            np.array(sample[SHAPE_KEY]))
+            np.array(lengths))
 
 
 class GraphDataset(Dataset):
@@ -88,7 +87,7 @@ class GraphDataset(Dataset):
         with open(target_path, 'r', encoding='utf-8') as f:
             samples: List = json.loads(remove_space(f.readline()))
         for sample in samples:
-            bboxes, labels, texts, lengths, shape = process(sample, self._ldict, self._adict)
+            bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
             node_size = labels.shape[0]
             src: List = []
             dst: List = []
