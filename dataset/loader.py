@@ -86,6 +86,7 @@ class GraphDataset(Dataset):
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
             samples: List = json.loads(remove_space(f.readline()))
+        print(len(samples))
         for sample in samples:
             bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
             node_size = labels.shape[0]
