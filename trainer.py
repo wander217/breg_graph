@@ -46,9 +46,6 @@ class Trainer:
         self._valid: GraphDataset = GraphLoader(**valid,
                                                 label=self._label,
                                                 alphabet=self._alphabet).build()
-        self._test: GraphDataset = GraphLoader(**test,
-                                               label=self._label,
-                                               alphabet=self._alphabet).build()
         self._checkpoint: Checkpoint = Checkpoint(**checkpoint)
         self._accurate: Accurate = Accurate()
         self._logger: Logger = Logger(**logger)
@@ -91,15 +88,14 @@ class Trainer:
             self._optimizer.step()
             train_loss.update(loss.item(), 1)
             self._step += 1
-            if self._step % 30 == 0:
+            if self._step % 100 == 0:
                 self._logger.report_delimiter()
                 self._logger.report_time("Step {}:".format(self._step))
                 self._logger.report_delimiter()
                 valid_rs = self.valid_step()
-                test_rs = self.test_step()
                 self.save({
                     "loss": train_loss.calc()
-                }, valid_rs, test_rs, epoch)
+                }, valid_rs, epoch)
                 train_loss.clear()
                 self._model.train()
         # return {"loss": train_loss.calc()}
@@ -127,31 +123,6 @@ class Trainer:
             metric, avg_f1 = self._gather(all_score, all_label)
         return {
             "loss": valid_loss.calc(),
-            "avg_f1": avg_f1.calc(),
-            "metric": metric
-        }
-
-    def test_step(self):
-        self._model.eval()
-        all_score: List = []
-        all_label: List = []
-        with torch.no_grad():
-            for batch, (graphs, labels, texts, lengths,
-                        node_factors, edge_factors,
-                        node_sizes, edge_sizes) in enumerate(self._test):
-                score = self._model(graphs,
-                                    labels,
-                                    texts,
-                                    lengths,
-                                    node_factors,
-                                    edge_factors,
-                                    node_sizes,
-                                    edge_sizes,
-                                    training=False)
-                all_score.append(score)
-                all_label.append(labels)
-            metric, avg_f1 = self._gather(all_score, all_label)
-        return {
             "avg_f1": avg_f1.calc(),
             "metric": metric
         }
@@ -184,26 +155,22 @@ class Trainer:
             self._optimizer.load_state_dict(state_dict['optimizer'])
             self._start_epoch = state_dict['epoch'] + 1
 
-    def save(self, train_rs: Dict, valid_rs: Dict, test_rs: Dict, epoch: int):
+    def save(self, train_rs: Dict, valid_rs: Dict, epoch: int):
         self._logger.report_metric("training", train_rs)
         self._logger.report_metric("validation", {
             "loss": valid_rs['loss'],
             "avg_f1": valid_rs['avg_f1']
         })
-        self._logger.report_metric("testing", {
-            "avg_f1": test_rs['avg_f1'],
-        })
         self._logger.write({
             'training': train_rs,
-            'validation': valid_rs,
-            'testing': test_rs
+            'validation': valid_rs
         })
         self._checkpoint.save_last(epoch, self._model, self._optimizer)
-        if test_rs['avg_f1'] > self._best:
-            self._best = test_rs['avg_f1']
+        if valid_rs['avg_f1'] > self._best:
+            self._best = valid_rs['avg_f1']
             self._checkpoint.save_model(self._model, epoch)
         self._logger.report_metric("best", {
-            "avg_f1": self._best,
+            "avg_f1": self._best
         })
 
 
