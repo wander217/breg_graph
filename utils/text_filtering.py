@@ -1,7 +1,7 @@
 import json
 import os
 
-target_file = r'C:\Users\thinhtq\Downloads\drive-download-20220526T024823Z-001\test.txt'
+target_file = r'D:\python_project\breg_graph\test.txt'
 texts = {}
 with open(target_file, 'r', encoding='utf-8') as f:
     lines = f.readlines()

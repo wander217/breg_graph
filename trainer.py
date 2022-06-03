@@ -227,7 +227,7 @@ if __name__ == "__main__":
         data['checkpoint']['resume'] = args.resume.strip()
     if args.root_path.strip():
         tmp: str = args.root_path.strip()
-        for item in ['train', 'valid', 'test']:
+        for item in ['train', 'valid']:
             data[item]['dataset']['path'] = os.path.join(tmp, "{}.json".format(item))
     trainer = Trainer(**data)
     trainer.train()
