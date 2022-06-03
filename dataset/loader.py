@@ -125,6 +125,8 @@ class GraphDataset(Dataset):
             self._lengths.append(lengths)
             self._labels.append(labels)
 
+            print("end")
+
     def __getitem__(self, index: int):
         graph: dgl.DGLGraph = self._graphs[index]
         text: np.ndarray = self._texts[index]
