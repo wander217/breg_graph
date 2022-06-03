@@ -52,9 +52,9 @@ test:
     path: 'test.json'
 
 checkpoint:
-  workspace: './workspace'
+  workspace: 'checkpoint'
   resume: ''
 
 logger:
-  workspace: './workspace'
+  workspace: 'logger'
   level: 'INFO'
