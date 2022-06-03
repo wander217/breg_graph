@@ -116,7 +116,7 @@ class Trainer:
                                           edge_factors,
                                           node_sizes,
                                           edge_sizes)
-                valid_loss.update(loss.item(), graphs.size(0))
+                valid_loss.update(loss.item(), labels.size(0))
                 all_score.append(score)
                 all_label.append(labels)
             metric, avg_f1 = self._gather(all_score, all_label)
