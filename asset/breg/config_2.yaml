@@ -25,8 +25,8 @@ optimizer:
     lr: 0.001
 
 train:
-  batch_size: 16
-  num_workers: 2
+  batch_size: 64
+  num_workers: 4
   drop_last: True
   shuffle: True
   pin_memory: False
@@ -34,8 +34,8 @@ train:
     path: 'train.json'
 
 valid:
-  batch_size: 4
-  num_workers: 2
+  batch_size: 16
+  num_workers: 4
   drop_last: True
   shuffle: False
   pin_memory: False
