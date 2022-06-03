@@ -13,7 +13,7 @@ class Accurate:
         pred = torch.softmax(pred, dim=1)
         pred_matrix: np.ndarray = np.argmax(pred.cpu().detach().numpy(), axis=1)
         cm: np.ndarray = confusion_matrix(target_matrix, pred_matrix).astype(np.float32)
-        print(target_matrix, pred_matrix)
+        print(len(target_matrix), len(pred_matrix))
         recall: np.ndarray = np.zeros(label_num, dtype=np.float32)
         precision: np.ndarray = np.zeros(label_num, dtype=np.float32)
         h_mean: np.ndarray = np.zeros(label_num, dtype=np.float32)
