@@ -39,15 +39,15 @@ class Trainer:
         cls = getattr(optim, optimizer['name'])
         self._optimizer: optim.Optimizer = cls(self._model.parameters(),
                                                **optimizer['params'])
+        self._checkpoint: Checkpoint = Checkpoint(**checkpoint)
+        self._accurate: Accurate = Accurate()
+        self._logger: Logger = Logger(**logger)
         self._train: GraphDataset = GraphLoader(**train,
                                                 label=self._label,
                                                 alphabet=self._alphabet).build()
         self._valid: GraphDataset = GraphLoader(**valid,
                                                 label=self._label,
                                                 alphabet=self._alphabet).build()
-        self._checkpoint: Checkpoint = Checkpoint(**checkpoint)
-        self._accurate: Accurate = Accurate()
-        self._logger: Logger = Logger(**logger)
         self._step: int = 0
         self._best: float = 0.0
 
