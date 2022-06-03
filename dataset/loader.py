@@ -86,7 +86,7 @@ class GraphDataset(Dataset):
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
             samples: List = json.loads(remove_space(f.readline()))
-        print(len(samples))
+
         for sample in samples:
             bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
             node_size = labels.shape[0]
@@ -125,8 +125,6 @@ class GraphDataset(Dataset):
             self._lengths.append(lengths)
             self._labels.append(labels)
 
-            print("end")
-
     def __getitem__(self, index: int):
         graph: dgl.DGLGraph = self._graphs[index]
         text: np.ndarray = self._texts[index]
@@ -163,6 +161,7 @@ def graph_collate(batch: Tuple, pad_encode: int = 0):
     edge_factor: Tensor = get_factor(edge_sizes)
     batched_graph = dgl.batch(graphs)
 
+    print("okie lắm bạn ơi")
     return (batched_graph,
             torch.from_numpy(labels),
             torch.from_numpy(texts),
