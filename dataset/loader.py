@@ -59,7 +59,7 @@ def process(sample: Dict,
     labels = []
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
-        if text.shape[0] > 0:
+        if text.shape[0] == 0:
             continue
         texts.append(text)
         lengths.append(text.shape[0])
@@ -121,7 +121,7 @@ class GraphDataset(Dataset):
         g.add_edges(src, dst)
         g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
         g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
-        return g, texts, lengths, labels
+        return g, labels, texts, lengths
 
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
