@@ -22,7 +22,6 @@ class Trainer:
                  optimizer: Dict,
                  train: Dict,
                  valid: Dict,
-                 test: Dict,
                  checkpoint: Dict,
                  logger: Dict,
                  **kwargs):
