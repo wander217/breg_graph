@@ -116,14 +116,14 @@ class Trainer:
                                           edge_factors,
                                           node_sizes,
                                           edge_sizes)
-                valid_loss.update(loss.item(), 1)
-                all_score.append(score)
-                all_label.append(labels)
-            metric, avg_f1 = self._gather(all_score, all_label)
+                valid_loss.update(loss.item(), graphs.size(0))
+                # all_score.append(score)
+                # all_label.append(labels)
+            # metric, avg_f1 = self._gather(all_score, all_label)
         return {
             "loss": valid_loss.calc(),
-            "avg_f1": avg_f1.calc(),
-            "metric": metric
+            # "avg_f1": avg_f1.calc(),
+            # "metric": metric
         }
 
     def _gather(self, score: List, label: List):
