@@ -42,19 +42,11 @@ valid:
   dataset:
     path: 'valid.json'
 
-test:
-  batch_size: 21
-  num_workers: 2
-  drop_last: True
-  shuffle: False
-  pin_memory: False
-  dataset:
-    path: 'test.json'
 
 checkpoint:
-  workspace: 'checkpoint'
+  workspace: 'workspace'
   resume: ''
 
 logger:
-  workspace: 'logger'
+  workspace: 'workspace'
   level: 'INFO'
