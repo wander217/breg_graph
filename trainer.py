@@ -87,7 +87,7 @@ class Trainer:
             self._optimizer.step()
             train_loss.update(loss.item(), 1)
             self._step += 1
-            if self._step % 100 == 0:
+            if self._step % 500 == 0:
                 self._logger.report_delimiter()
                 self._logger.report_time("Step {}:".format(self._step))
                 self._logger.report_delimiter()
@@ -167,7 +167,7 @@ class Trainer:
         self._checkpoint.save_last(epoch, self._model, self._optimizer)
         if valid_rs['avg_f1'] > self._best:
             self._best = valid_rs['avg_f1']
-            self._checkpoint.save_model(self._model, epoch)
+            self._checkpoint.save_model(self._model, self._step)
         self._logger.report_metric("best", {
             "avg_f1": self._best
         })
