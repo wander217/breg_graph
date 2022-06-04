@@ -105,6 +105,7 @@ class GraphDataset(Dataset):
                 x_j = np.mean(bboxes[j][:8][0::2])
                 y_j = np.mean(bboxes[j][:8][1::2])
                 h_j = bboxes[j][9]
+                w_j = bboxes[j][8]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 

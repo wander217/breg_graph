@@ -26,7 +26,7 @@ class LossModel(nn.Module):
                 edge_sizes: List,
                 training: bool = True):
         # send data to device
-        # graphs = graphs.to(self._device)
+        graphs = graphs.to(self._device)
         nodes = graphs.ndata['feat'].to(self._device)
         edges = graphs.edata['feat'].to(self._device)
         texts = texts.to(self._device)
