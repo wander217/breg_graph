@@ -8,7 +8,7 @@ import torch.optim as optim
 from loss_model import LossModel
 from dataset import GraphLoader, GraphDataset, GraphLabel, GraphAlphabet
 from utils import Checkpoint, Averager, Logger
-from typing import Dict, List
+from typing import Dict, List, Tuple
 import warnings
 
 
@@ -148,11 +148,11 @@ class Trainer:
         return metric, avg_f1
 
     def load(self):
-        state_dict: Dict = self._checkpoint.load()
+        state_dict: Tuple = self._checkpoint.load()
         if state_dict is not None:
-            self._model.load_state_dict(state_dict['model'])
-            self._optimizer.load_state_dict(state_dict['optimizer'])
-            self._start_epoch = state_dict['epoch'] + 1
+            self._model.load_state_dict(state_dict[0])
+            self._optimizer.load_state_dict(state_dict[1])
+            self._start_epoch = state_dict[2] + 1
 
     def save(self, train_rs: Dict, valid_rs: Dict, epoch: int):
         self._logger.report_metric("training", train_rs)
