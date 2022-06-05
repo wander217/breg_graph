@@ -26,7 +26,7 @@ optimizer:
 
 train:
   batch_size: 8
-  num_workers: 4
+  num_workers: 2
   drop_last: True
   shuffle: True
   pin_memory: False
