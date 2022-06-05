@@ -5,7 +5,7 @@ pip install -r requirements.txt
 ```
 Link pretrained model:
 ```
-"16 layer": https://drive.google.com/file/d/1wpkfGbgUFeTD9lKD3l5GFEYrRgwM3hd9/view?usp=sharing 
+"2 layer": https://drive.google.com/file/d/1tG4-yznwO4AXrkxoWh5QttGrRsScpa1D/view?usp=sharing 
 ```
 # Class BREGPredictor trong predictor.py
 Dữ liệu khởi tạo bao gồm:
