@@ -32,3 +32,4 @@ for key, value in split_data.items():
     synth_data.append(item)
 with open(r'D:\python_project\breg_graph\abc.json', 'w', encoding='utf-8') as f:
     f.write(json.dumps(synth_data))
+
