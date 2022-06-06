@@ -62,7 +62,7 @@ class BREGPredictor:
                 h = boxes[i, 8]
                 if np.abs(y_dist) > 3 * h:
                     continue
-                edges.append([x_dist, y_dist])
+                edges.append([x_dist, y_dist,  lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
         # print("-"*55)
