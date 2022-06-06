@@ -10,3 +10,4 @@ for dirname in os.listdir(data_path):
                 data = json.loads("".join(f.readlines()))
             with open(os.path.join(r'D:\python_project\breg_graph\graph_data', dirname, item), 'w', encoding='utf-8') as f:
                 f.write(json.dumps(data))
+
