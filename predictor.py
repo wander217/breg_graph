@@ -45,10 +45,10 @@ class BREGPredictor:
             h = np.max(y) - np.min(y)
             bbox = np.concatenate([bbox, [h, w]], axis=-1)
             bboxes.append(bbox)
-        return np.array(texts), np.array(lengths), np.array(bboxes), np.array(ocr_result['shape'])
+        return np.array(texts), np.array(lengths), np.array(bboxes)
 
     def _preprocess(self, ocr_result: Dict):
-        texts, lengths, boxes, shape = self._process_ocr(ocr_result)
+        texts, lengths, boxes = self._process_ocr(ocr_result)
         node_nums = texts.shape[0]
         src = []
         dst = []
@@ -77,8 +77,8 @@ class BREGPredictor:
         graphs.add_nodes(node_nums)
         graphs.add_edges(src, dst)
 
-        boxes = norm(boxes, shape)
-        edges = norm(edges, shape)
+        boxes = norm(boxes)
+        edges = norm(edges)
         boxes = torch.from_numpy(boxes).float()
         edges = torch.from_numpy(edges).float()
         graphs.edata['feat'] = edges
