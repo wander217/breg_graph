@@ -43,7 +43,7 @@ class BREGPredictor:
             w = np.max(x) - np.min(x)
             y = bbox[1::2]
             h = np.max(y) - np.min(y)
-            bbox = np.concatenate([bbox, [h, w]], axis=-1)
+            bbox = np.concatenate([bbox, [w, h]], axis=-1)
             bboxes.append(bbox)
         return np.array(texts), np.array(lengths), np.array(bboxes)
 
@@ -59,9 +59,9 @@ class BREGPredictor:
                     continue
                 y_dist = np.mean(boxes[i][:8][1::2]) - np.mean(boxes[j][:8][1::2])
                 x_dist = np.mean(boxes[i][:8][0::2]) - np.mean(boxes[j][:8][0::2])
-                h = boxes[i, 8]
-                if np.abs(y_dist) > 3 * h:
-                    continue
+                # h = boxes[i, 9]
+                # if np.abs(y_dist) > 3 * h:
+                #     continue
                 edges.append([x_dist, y_dist,  lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
