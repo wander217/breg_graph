@@ -68,10 +68,13 @@ def process(sample: Dict,
         bbox = np.array(target[BBOX_KEY]).astype(np.int32).flatten().tolist()
         bbox = convert24point(bbox)
         x = bbox[0::2]
-        w = np.max(x) - np.min(x)
+        x_max, x_min = np.max(x), np.min(x)
         y = bbox[1::2]
-        h = np.max(y) - np.min(y)
-        bbox = np.concatenate([bbox, [w, h]], axis=-1).flatten()
+        y_max, y_min = np.max(y), np.min(y)
+        bbox = np.array([(x_min + x_max) / 2,
+                         (y_min + y_max) / 2,
+                         (x_max - x_min),
+                         (y_max - y_min)], dtype=np.float32)
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
@@ -96,21 +99,18 @@ class GraphDataset(Dataset):
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i = np.mean(bboxes[i][:8][0::2])
-            y_i = np.mean(bboxes[i][:8][1::2])
+            x_i, y_i, w_i, h_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j = np.mean(bboxes[j][:8][0::2])
-                y_j = np.mean(bboxes[j][:8][1::2])
+                x_j, y_j, w_j, h_j = bboxes[j]
                 # h_j = bboxes[j][9]
-                # w_j = bboxes[j][8]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                # if np.abs(y_dist) > 3 * h_j:
-                #     continue
+                if np.abs(y_dist) > 3 * h_j:
+                    continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)

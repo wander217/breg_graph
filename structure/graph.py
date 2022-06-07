@@ -128,17 +128,27 @@ class GatedGCN(nn.Module):
         edge_feature_i1: Tensor = graph.edata['e']
 
         # norm, residual and dropout
-        node_feature_i1 = self._do_norm(node_feature_i1 * node_factor, node_feature_i, node_num, 0)
-        edge_feature_i1 = self._do_norm(edge_feature_i1 * edge_factor, edge_feature_i, edge_num, 1)
+        node_feature_i1 = self._do_norm(node_feature_i1 * node_factor,
+                                        node_feature_i,
+                                        node_num,
+                                        0)
+        edge_feature_i1 = self._do_norm(edge_feature_i1 * edge_factor,
+                                        edge_feature_i,
+                                        edge_num,
+                                        1)
         return node_feature_i1, edge_feature_i1
 
 
 class Readout(nn.Module):
     def __init__(self, in_channel: int, out_channel: int, layer_num: int):
         super().__init__()
-        fcs: List = [nn.Linear(in_channel // 2 ** i, in_channel // 2 ** (i + 1), bias=True)
+        fcs: List = [nn.Linear(in_channel // 2 ** i,
+                               in_channel // 2 ** (i + 1),
+                               bias=True)
                      for i in range(layer_num)]
-        fcs.append(nn.Linear(in_channel // 2 ** layer_num, out_channel, bias=True))
+        fcs.append(nn.Linear(in_channel // 2 ** layer_num,
+                             out_channel,
+                             bias=True))
         self._fcs = nn.ModuleList(fcs)
         self._layer_num: int = layer_num
 
