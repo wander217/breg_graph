@@ -34,22 +34,13 @@ train:
     path: 'train.json'
 
 valid:
-  batch_size: 4
-  num_workers: 2
+  batch_size: 8
+  num_workers: 1
   drop_last: True
   shuffle: False
   pin_memory: False
   dataset:
     path: 'valid.json'
-
-test:
-  batch_size: 21
-  num_workers: 2
-  drop_last: True
-  shuffle: False
-  pin_memory: False
-  dataset:
-    path: 'test.json'
 
 checkpoint:
   workspace: './workspace'

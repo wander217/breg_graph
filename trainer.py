@@ -2,7 +2,6 @@ import os.path
 import yaml
 import argparse
 import torch
-from torch import Tensor
 from measure import Accurate
 import torch.optim as optim
 from loss_model import LossModel
