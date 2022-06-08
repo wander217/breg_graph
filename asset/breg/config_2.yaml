@@ -1,4 +1,4 @@
-total_epoch: 200
+total_epoch: 100
 start_epoch: 1
 
 alphabet:
@@ -35,18 +35,17 @@ train:
 
 valid:
   batch_size: 8
-  num_workers: 4
+  num_workers: 2
   drop_last: True
   shuffle: False
   pin_memory: False
   dataset:
     path: 'valid.json'
 
-
 checkpoint:
-  workspace: 'workspace'
+  workspace: './workspace'
   resume: ''
 
 logger:
-  workspace: 'workspace'
+  workspace: './workspace'
   level: 'INFO'
