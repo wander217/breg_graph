@@ -59,10 +59,10 @@ class Trainer:
             self._logger.report_delimiter()
             self._logger.report_time("Epoch {}:".format(epoch))
             self._logger.report_delimiter()
-            self.train_step(epoch)
-            # valid_rs = self.valid_step()
+            train_rs = self.train_step(epoch)
+            valid_rs = self.valid_step()
             # test_rs = self.test_step()
-            # self.save(train_rs, valid_rs, test_rs, epoch)
+            self.save(train_rs, valid_rs, epoch)
         self._logger.report_delimiter()
         self._logger.report_time("Finish:")
         self._logger.report_delimiter()
@@ -86,17 +86,17 @@ class Trainer:
             self._optimizer.step()
             train_loss.update(loss.item(), 1)
             self._step += 1
-            if self._step % 150 == 0:
-                self._logger.report_delimiter()
-                self._logger.report_time("Step {}:".format(self._step))
-                self._logger.report_delimiter()
-                valid_rs = self.valid_step()
-                self.save({
-                    "loss": train_loss.calc()
-                }, valid_rs, epoch)
-                train_loss.clear()
-                self._model.train()
-        # return {"loss": train_loss.calc()}
+            # if self._step % 150 == 0:
+            #     self._logger.report_delimiter()
+            #     self._logger.report_time("Step {}:".format(self._step))
+            #     self._logger.report_delimiter()
+            #     valid_rs = self.valid_step()
+            #     self.save({
+            #         "loss": train_loss.calc()
+            #     }, valid_rs, epoch)
+            #     train_loss.clear()
+            #     self._model.train()
+        return {"loss": train_loss.calc()}
 
     def valid_step(self):
         self._model.eval()
@@ -166,7 +166,7 @@ class Trainer:
         self._checkpoint.save_last(epoch, self._model, self._optimizer)
         if valid_rs['avg_f1'] > self._best:
             self._best = valid_rs['avg_f1']
-            self._checkpoint.save_model(self._model, self._step)
+            self._checkpoint.save_model(self._model, epoch)
         self._logger.report_metric("best", {
             "avg_f1": self._best
         })
