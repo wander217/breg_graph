@@ -61,7 +61,6 @@ class Trainer:
             self._logger.report_delimiter()
             train_rs = self.train_step()
             valid_rs = self.valid_step()
-            # test_rs = self.test_step()
             self.save(train_rs, valid_rs, epoch)
         self._logger.report_delimiter()
         self._logger.report_time("Finish:")
