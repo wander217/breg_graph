@@ -59,7 +59,7 @@ class Trainer:
             self._logger.report_delimiter()
             self._logger.report_time("Epoch {}:".format(epoch))
             self._logger.report_delimiter()
-            train_rs = self.train_step(epoch)
+            train_rs = self.train_step()
             valid_rs = self.valid_step()
             # test_rs = self.test_step()
             self.save(train_rs, valid_rs, epoch)
@@ -67,12 +67,17 @@ class Trainer:
         self._logger.report_time("Finish:")
         self._logger.report_delimiter()
 
-    def train_step(self, epoch: int):
+    def train_step(self):
         self._model.train()
         train_loss: Averager = Averager()
-        for batch, (graphs, labels, texts, lengths,
-                    node_factors, edge_factors,
-                    node_sizes, edge_sizes) in enumerate(self._train):
+        for batch, (graphs,
+                    labels,
+                    texts,
+                    lengths,
+                    node_factors,
+                    edge_factors,
+                    node_sizes,
+                    edge_sizes) in enumerate(self._train):
             self._optimizer.zero_grad()
             score, loss = self._model(graphs,
                                       labels,
@@ -84,7 +89,7 @@ class Trainer:
                                       edge_sizes)
             loss.backward()
             self._optimizer.step()
-            train_loss.update(loss.item(), 1)
+            train_loss.update(loss.item() * labels.size(0), labels.size(0))
             self._step += 1
             # if self._step % 150 == 0:
             #     self._logger.report_delimiter()
