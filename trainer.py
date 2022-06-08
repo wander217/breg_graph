@@ -88,6 +88,7 @@ class Trainer:
                                       node_sizes,
                                       edge_sizes)
             loss.backward()
+            print(loss)
             self._optimizer.step()
             train_loss.update(loss.item() * labels.size(0), labels.size(0))
             self._step += 1
