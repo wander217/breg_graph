@@ -45,7 +45,7 @@ class GraphLabel:
 
     def encode(self, label: str):
         # convert label to number
-        return self._character.get(label, self.encoded_other)
+        return self._character.get(label.upper(), self.encoded_other)
 
     def decode(self, num: int):
         # convert number to label
