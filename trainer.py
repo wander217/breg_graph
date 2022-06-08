@@ -86,7 +86,7 @@ class Trainer:
             self._optimizer.step()
             train_loss.update(loss.item(), 1)
             self._step += 1
-            if self._step % 300 == 0:
+            if self._step % 150 == 0:
                 self._logger.report_delimiter()
                 self._logger.report_time("Step {}:".format(self._step))
                 self._logger.report_delimiter()
