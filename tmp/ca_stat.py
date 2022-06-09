@@ -1,4 +1,29 @@
 import json
+import imgaug.augmenters as iaa
+from imgaug.augmentables import Keypoint, KeypointsOnImage
+
+
+def augment_data(file):
+    aug = iaa.Affine(rotate=-file['rotate'])
+    w, h = file['shape']
+    if file['rotate'] == 90 or file['rotate'] == -90:
+        file['shape'] = [h, w]
+    new_target = []
+    for target in file['target']:
+        keypoint = KeypointsOnImage([
+            Keypoint(x=point[0], y=point[1])
+            for point in target['bbox']],
+            shape=tuple(file['shape']))
+        aug = aug.to_deterministic()
+        new_keypoint = aug.augment_keypoints(keypoint).keypoints
+        new_target.append({
+            **target,
+            'bbox': [(int(point.x), int(point.y))
+                     for point in new_keypoint]
+        })
+    file['target'] = new_target
+    return file
+
 
 data_path = r'D:\python_project\breg_graph\tmp\category.json'
 with open(data_path, 'r', encoding='utf-8') as f:
@@ -21,6 +46,9 @@ with open(rotate_data, 'r', encoding='utf-8') as f:
             if item['file_name'] in item1:
                 item['rotate'] = item1[item['file_name']]
                 break
+
+for data in data1:
+    data = augment_data(data)
 
 stat = {}
 for folder, item in data['file'].items():
