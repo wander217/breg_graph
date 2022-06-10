@@ -5,12 +5,11 @@ contract_type = [
     "Doanh nghiệp tư nhân",  # 0
     "Công ty trách nghiệm hữu hạn một thành viên",  # 1
     "Văn phòng đại diện",  # 2
-    "Doanh nghiệp tư nhân",  # 3
-    "Chi nhánh",  # 4
-    "Công ty trách nghiệm hữu hạn hai thành viên trở lên",  # 5
-    "Hộ kinh doanh",  # 6
-    "Công ty hợp danh",  # 7
-    "Công ty cổ phần",  # 8
+    "Chi nhánh",  # 3
+    "Công ty trách nghiệm hữu hạn hai thành viên trở lên",  # 4
+    "Hộ kinh doanh",  # 5
+    "Công ty hợp danh",  # 6
+    "Công ty cổ phần",  # 7
 ]
 
 category = {}
