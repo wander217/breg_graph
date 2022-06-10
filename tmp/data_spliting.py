@@ -3,28 +3,19 @@ import os
 
 data_path = r'D:\python_project\breg_graph\tmp\valid_data.json'
 with open(data_path, 'r', encoding='utf-8') as f:
-    data = json.loads(f.readline())
-
-length = [
-    [40, 5, 5],
-    [20, 3, 3],
-    [41, 5, 5],
-    [27, 3, 3],
-    [15, 2, 2],
-    [44, 6, 6],
-    [26, 3, 3],
-    [2, 1, 1],
-    [49, 6, 6],
-]
+    data = json.loads("".join(f.readlines()))
 
 train, valid, test = [], [], []
 count = 0
 for key, value in data.items():
     if key == '-1':
         continue
-    train.extend(value[:length[count][0]])
-    valid.extend(value[length[count][0]:length[count][0] + length[count][1]])
-    test.extend(value[length[count][0] + length[count][1]:])
+    tmp = len(value)
+    train_len = int(0.8 * tmp)
+    valid_len = int(0.1 * tmp)
+    train.extend(value[:train_len])
+    valid.extend(value[train_len:train_len + valid_len])
+    test.extend(value[train_len + valid_len:])
     count += 1
 
 dataset_path = r'D:\python_project\breg_graph\tmp\dataset'

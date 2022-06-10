@@ -2,12 +2,14 @@ import json
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
+t = "test"
+
 
 def augment_data(file):
-    aug = iaa.Affine(scale=(0.5, 2),
+    aug = iaa.Affine(scale=(0.5, 3),
                      translate_percent=(-0.05, 0.05),
-                     rotate=(-30, 30),
-                     shear=(-10, 10),
+                     rotate=(-45, 45),
+                     shear=(-20, 20),
                      fit_output=True)
     new_target = []
     for target in file['target']:
@@ -26,8 +28,8 @@ def augment_data(file):
     return file
 
 
-train_data = r'D:\python_project\breg_graph\tmp\dataset\train.json'
-save_data = r'D:\python_project\breg_graph\tmp\dataset3\train.json'
+train_data = r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t)
+save_data = r'D:\python_project\breg_graph\tmp\dataset3\{}.json'.format(t)
 
 with open(train_data, 'r', encoding='utf-8') as f:
     data = json.loads("".join(f.readline()))
@@ -38,4 +40,3 @@ for item in data:
 
 with open(save_data, 'w', encoding='utf-8') as f:
     f.write(json.dumps(data))
-
