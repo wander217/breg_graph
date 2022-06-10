@@ -76,12 +76,12 @@ for item in data1:
             break
 
 del stat[-1]
-for key, value in stat.items():
-    print(len(value))
-    # item = value[20]
-    # for file in item['file']:
-    #     print(file)
-    # break
+# for key, value in stat.items():
+#     print(len(value))
+# item = value[20]
+# for file in item['file']:
+#     print(file)
+# break
 
-# with open("valid_data.json", 'w', encoding='utf-8') as f:
-#     f.write(json.dumps(stat))
+with open("valid_data.json", 'w', encoding='utf-8') as f:
+    f.write(json.dumps(stat, indent=4))
