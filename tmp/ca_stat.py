@@ -31,7 +31,7 @@ with open(data_path, 'r', encoding='utf-8') as f:
 
 convert_data = r'D:\python_project\breg_graph\convert_data.json'
 with open(convert_data, 'r', encoding='utf-8') as f:
-    data1 = json.loads(f.readline())
+    data1 = json.loads("".join(f.readlines()))
     for item in data1:
         tmp = data['file'][item['folder']][item['file_name'].split("_")[0]]
         item['type'] = tmp
@@ -47,8 +47,8 @@ with open(convert_data, 'r', encoding='utf-8') as f:
 #                 item['rotate'] = item1[item['file_name']]
 #                 break
 
-for data in data1:
-    data = augment_data(data)
+# for data in data1:
+#     data = augment_data(data)
 
 stat = {}
 for folder, item in data['file'].items():
@@ -75,11 +75,13 @@ for item in data1:
             item1['file'].append(item)
             break
 
+del stat[-1]
 for key, value in stat.items():
-    item = value[20]
-    for file in item['file']:
-        print(file)
-    break
+    print(len(value))
+    # item = value[20]
+    # for file in item['file']:
+    #     print(file)
+    # break
 
 # with open("valid_data.json", 'w', encoding='utf-8') as f:
 #     f.write(json.dumps(stat))
