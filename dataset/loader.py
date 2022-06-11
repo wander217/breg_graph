@@ -1,3 +1,5 @@
+import random
+
 import dgl
 import torch
 import json
@@ -94,6 +96,7 @@ class GraphDataset(Dataset):
 
     def convert_data(self, sample):
         bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
+        print(bboxes.shape)
         node_size = labels.shape[0]
         src: List = []
         dst: List = []
@@ -127,7 +130,11 @@ class GraphDataset(Dataset):
         self._samples.extend(samples)
 
     def __getitem__(self, index: int):
-        return self.convert_data(self._samples[index])
+        try:
+            result = self.convert_data(self._samples[index])
+            return result
+        except Exception as e:
+            return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
         return len(self._samples)
