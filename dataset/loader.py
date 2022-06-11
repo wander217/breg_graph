@@ -14,7 +14,7 @@ def norm(element: np.ndarray) -> np.ndarray:
     :param element: bounding box coordinate: (n, 8) or (n, 2)
     :return: normed element
     """
-    b, _ = element.shape
+    # b, _ = element.shape
     mn = np.min(element, axis=0)
     mx = np.max(element, axis=0)
     normed_point = (element - mn) / (mx - mn)
