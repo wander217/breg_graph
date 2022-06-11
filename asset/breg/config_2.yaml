@@ -1,4 +1,4 @@
-total_epoch: 100
+total_epoch: 1000
 start_epoch: 1
 
 alphabet:
