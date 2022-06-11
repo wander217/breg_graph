@@ -21,6 +21,7 @@ class Trainer:
                  optimizer: Dict,
                  train: Dict,
                  valid: Dict,
+                 test: Dict,
                  checkpoint: Dict,
                  logger: Dict,
                  **kwargs):
@@ -47,6 +48,9 @@ class Trainer:
         self._valid: GraphDataset = GraphLoader(**valid,
                                                 label=self._label,
                                                 alphabet=self._alphabet).build()
+        self._test: GraphDataset = GraphLoader(**test,
+                                               label=self._label,
+                                               alphabet=self._alphabet).build()
         self._step: int = 0
         self._best: float = 0.0
 
@@ -61,7 +65,8 @@ class Trainer:
             self._logger.report_delimiter()
             train_rs = self.train_step()
             valid_rs = self.valid_step()
-            self.save(train_rs, valid_rs, epoch)
+            test_rs = self.test_step()
+            self.save(train_rs, valid_rs, test_rs, epoch)
         self._logger.report_delimiter()
         self._logger.report_time("Finish:")
         self._logger.report_delimiter()
@@ -129,6 +134,31 @@ class Trainer:
             "metric": metric
         }
 
+    def test_step(self):
+        self._model.eval()
+        all_score: List = []
+        all_label: List = []
+        with torch.no_grad():
+            for batch, (graphs, labels, texts, lengths,
+                        node_factors, edge_factors,
+                        node_sizes, edge_sizes) in enumerate(self._valid):
+                score = self._model(graphs,
+                                    labels,
+                                    texts,
+                                    lengths,
+                                    node_factors,
+                                    edge_factors,
+                                    node_sizes,
+                                    edge_sizes,
+                                    training=False)
+                all_score.append(score)
+                all_label.append(labels)
+            metric, avg_f1 = self._gather(all_score, all_label)
+        return {
+            "avg_f1": avg_f1.calc(),
+            "metric": metric
+        }
+
     def _gather(self, score: List, label: List):
         avg_f1: Averager = Averager()
         recall, precision, f1_score = self._accurate(
@@ -157,18 +187,22 @@ class Trainer:
             self._optimizer.load_state_dict(state_dict[1])
             self._start_epoch = state_dict[2] + 1
 
-    def save(self, train_rs: Dict, valid_rs: Dict, epoch: int):
+    def save(self, train_rs: Dict, valid_rs: Dict, test_rs: Dict, epoch: int):
         self._logger.report_metric("training", train_rs)
         self._logger.report_metric("validation", {
             "loss": valid_rs['loss'],
             "avg_f1": valid_rs['avg_f1']
         })
+        self._logger.report_metric("testing", {
+            "avg_f1": test_rs['avg_f1']
+        })
         self._logger.write({
             'training': train_rs,
-            'validation': valid_rs
+            'validation': valid_rs,
+            'testing': test_rs
         })
         self._checkpoint.save_last(epoch, self._model, self._optimizer)
-        if valid_rs['avg_f1'] > self._best:
+        if test_rs['avg_f1'] > self._best:
             self._best = valid_rs['avg_f1']
             self._checkpoint.save_model(self._model, epoch)
         self._logger.report_metric("best", {
@@ -196,7 +230,7 @@ if __name__ == "__main__":
         data['checkpoint']['resume'] = args.resume.strip()
     if args.root_path.strip():
         tmp: str = args.root_path.strip()
-        for item in ['train', 'valid']:
+        for item in ['train', 'valid', 'test']:
             data[item]['dataset']['path'] = os.path.join(tmp, "{}.json".format(item))
     trainer = Trainer(**data)
     trainer.train()
