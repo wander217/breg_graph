@@ -4,7 +4,7 @@ import cv2 as cv
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
-rotate_path = r'D:\python_project\breg_graph\tmp\rotate.json'
+rotate_path = r'D:\workspace\project\breg_graph\tmp\rotate.json'
 with open(rotate_path, 'r', encoding='utf-8') as f:
     rotate = json.loads("".join(f.readlines()))
 

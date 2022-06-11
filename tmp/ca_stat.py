@@ -5,9 +5,9 @@ from imgaug.augmentables import Keypoint, KeypointsOnImage
 
 def augment_data(file):
     aug = iaa.Affine(rotate=-file['rotate'])
-    w, h = file['shape']
-    if file['rotate'] == 90 or file['rotate'] == -90:
-        file['shape'] = [h, w]
+    # w, h = file['shape']
+    # if file['rotate'] == 90 or file['rotate'] == -90:
+    #     file['shape'] = [h, w]
     new_target = []
     for target in file['target']:
         keypoint = KeypointsOnImage([
