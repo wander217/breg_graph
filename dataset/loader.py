@@ -70,6 +70,7 @@ def process(sample: Dict,
         labels.append(label)
         bbox = np.array(cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))).flatten()
         print(bbox)
+
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
         # x_max, x_min = np.max(x), np.min(x)
