@@ -111,8 +111,8 @@ class GraphDataset(Dataset):
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                # if np.abs(y_dist) > 3 * h_j:
-                #     continue
+                if np.abs(y_dist) > 3 * h_j:
+                    continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
@@ -133,7 +133,6 @@ class GraphDataset(Dataset):
             result = self.convert_data(self._samples[index])
             return result
         except Exception as e:
-            print(e)
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
