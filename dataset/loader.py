@@ -134,6 +134,7 @@ class GraphDataset(Dataset):
             result = self.convert_data(self._samples[index])
             return result
         except Exception as e:
+            print(e)
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
