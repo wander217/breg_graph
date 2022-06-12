@@ -9,6 +9,7 @@ from typing import List, Dict, Tuple
 from torch.utils.data import Dataset, DataLoader
 from dataset.alphabet import GraphAlphabet, GraphLabel
 from utils import remove_space
+import cv2 as cv
 
 
 def norm(element: np.ndarray) -> np.ndarray:
@@ -67,16 +68,16 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        bbox = np.array(target[BBOX_KEY]).astype(np.int32).flatten().tolist()
-        # bbox = convert24point(bbox)
-        x = bbox[0::2]
-        x_max, x_min = np.max(x), np.min(x)
-        y = bbox[1::2]
-        y_max, y_min = np.max(y), np.min(y)
-        bbox = np.array([(x_min + x_max) / 2,
-                         (y_min + y_max) / 2,
-                         (x_max - x_min),
-                         (y_max - y_min)], dtype=np.float32)
+        bbox = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32)).flatten().tolist()
+        # # bbox = convert24point(bbox)
+        # x = bbox[0::2]
+        # x_max, x_min = np.max(x), np.min(x)
+        # y = bbox[1::2]
+        # y_max, y_min = np.max(y), np.min(y)
+        # bbox = np.array([(x_min + x_max) / 2,
+        #                  (y_min + y_max) / 2,
+        #                  (x_max - x_min),
+        #                  (y_max - y_min)], dtype=np.float32)
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
@@ -111,8 +112,8 @@ class GraphDataset(Dataset):
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if np.abs(y_dist) > 3 * h_j:
-                    continue
+                # if np.abs(y_dist) > 3 * h_j:
+                #     continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)

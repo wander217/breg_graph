@@ -31,64 +31,73 @@ class BREGPredictor:
         self.model.load_state_dict(state_dict['model'])
 
     def _process_ocr(self, ocr_result: Dict):
-        texts = []
+        TARGET_KEY = "target"
+        TEXT_KEY = "text"
+        LABEL_KEY = "label"
+        BBOX_KEY = "bbox"
+        SHAPE_KEY = "shape"
+
         lengths = []
+        texts = []
         bboxes = []
-        for item in ocr_result['target']:
-            encoded_label: np.ndarray = self.alphabet.encode(item["text"])
-            texts.append(encoded_label)
-            lengths.append(encoded_label.shape[0])
-            bbox = np.array(item["bbox"]).astype(np.int32).flatten().tolist()
+        labels = []
+        for target in ocr_result['target']:
+            text = self.alphabet.encode(target[TEXT_KEY])
+            if text.shape[0] == 0:
+                continue
+            texts.append(text)
+            lengths.append(text.shape[0])
+            label: int = self.label.encode(target[LABEL_KEY])
+            labels.append(label)
+            bbox = np.array(target[BBOX_KEY]).astype(np.int32).flatten().tolist()
+            # bbox = convert24point(bbox)
             x = bbox[0::2]
-            w = np.max(x) - np.min(x)
+            x_max, x_min = np.max(x), np.min(x)
             y = bbox[1::2]
-            h = np.max(y) - np.min(y)
-            bbox = np.concatenate([bbox, [w, h]], axis=-1)
+            y_max, y_min = np.max(y), np.min(y)
+            bbox = np.array([(x_min + x_max) / 2,
+                             (y_min + y_max) / 2,
+                             (x_max - x_min),
+                             (y_max - y_min)], dtype=np.float32)
             bboxes.append(bbox)
-        return np.array(texts), np.array(lengths), np.array(bboxes)
+        return (np.array(bboxes),
+                np.array(labels),
+                np.array(texts),
+                np.array(lengths))
 
     def _preprocess(self, ocr_result: Dict):
-        texts, lengths, boxes = self._process_ocr(ocr_result)
-        node_nums = texts.shape[0]
-        src = []
-        dst = []
-        edges = []
-        for i in range(node_nums):
-            for j in range(node_nums):
+        bboxes, labels, texts, lengths = self._process_ocr(ocr_result)
+        node_size = labels.shape[0]
+        src: List = []
+        dst: List = []
+        dists: List = []
+        for i in range(node_size):
+            x_i, y_i, w_i, h_i = bboxes[i]
+            for j in range(node_size):
                 if i == j:
                     continue
-                y_dist = np.mean(boxes[i][:8][1::2]) - np.mean(boxes[j][:8][1::2])
-                x_dist = np.mean(boxes[i][:8][0::2]) - np.mean(boxes[j][:8][0::2])
-                # h = boxes[i, 9]
-                # if np.abs(y_dist) > 3 * h:
+
+                x_j, y_j, w_j, h_j = bboxes[j]
+                # h_j = bboxes[j][9]
+                x_dist = x_j - x_i
+                y_dist = y_j - y_i
+
+                # if np.abs(y_dist) > 3 * h_j:
                 #     continue
-                edges.append([x_dist, y_dist,  lengths[j] / lengths[i]])
+                dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
-        # print("-"*55)
-        # for a, b in zip(src, dst):
-        #     print("+"*55)
-        #     print(a, ocr_result["target"][a]["label"], ocr_result["target"][a]["text"])
-        #     print(b, ocr_result["target"][b]["label"], ocr_result["target"][b]["text"])
-        #     print("+" * 55)
-        # print("-" * 55)
-        edges = np.array(edges)
-        graphs = dgl.DGLGraph()
-        graphs.add_nodes(node_nums)
-        graphs.add_edges(src, dst)
+        g = dgl.DGLGraph()
+        g.add_nodes(node_size)
+        g.add_edges(src, dst)
+        g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
+        g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
 
-        boxes = norm(boxes)
-        edges = norm(edges)
-        boxes = torch.from_numpy(boxes).float()
-        edges = torch.from_numpy(edges).float()
-        graphs.edata['feat'] = edges
-        graphs.ndata['feat'] = boxes
-
-        node_nums = graphs.number_of_nodes()
+        node_nums = g.number_of_nodes()
         node_factor = torch.FloatTensor(node_nums, 1).fill_(1. / float(node_nums))
         node_factor = node_factor.sqrt()
 
-        edge_nums = graphs.number_of_edges()
+        edge_nums = g.number_of_edges()
         edge_factor = torch.FloatTensor(edge_nums, 1).fill_(1. / float(edge_nums))
         edge_factor = edge_factor.sqrt()
 
@@ -100,7 +109,7 @@ class BREGPredictor:
         texts = torch.from_numpy(np.array(texts)).long()
         lengths = torch.from_numpy(np.array(lengths)).long()
 
-        return (graphs,
+        return (g,
                 texts,
                 lengths,
                 node_factor,
