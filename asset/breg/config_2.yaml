@@ -9,8 +9,8 @@ label:
 
 loss_model:
   model:
-    node_channel: 4
-    edge_channel: 5
+    node_channel: 5
+    edge_channel: 3
     hidden_channel: 512
     dropout: 0
     layer_num: 2
