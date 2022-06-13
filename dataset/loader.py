@@ -44,7 +44,7 @@ def check_type(text):
     }
     for key, value in type_dict.items():
         if key.upper() in text:
-            return value
+            return value / len(type_dict)
     return 0
 
 
@@ -91,7 +91,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([x, y, w, h, a, contract_type])
+        bbox = np.array([x, y, w, h, a])
 
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
@@ -106,7 +106,8 @@ def process(sample: Dict,
     return (np.array(bboxes),
             np.array(labels),
             np.array(texts),
-            np.array(lengths))
+            np.array(lengths),
+            contract_type)
 
 
 class GraphDataset(Dataset):
@@ -120,18 +121,18 @@ class GraphDataset(Dataset):
         self._load(path)
 
     def convert_data(self, sample):
-        bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
+        bboxes, labels, texts, lengths, contract_type = process(sample, self._ldict, self._adict)
         node_size = labels.shape[0]
         src: List = []
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_i, t_i = bboxes[i]
+            x_i, y_i, w_i, h_i, r_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j, r_j, t_j = bboxes[j]
+                x_j, y_j, w_j, h_j, r_j = bboxes[j]
                 # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
@@ -144,7 +145,9 @@ class GraphDataset(Dataset):
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
-        g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
+        norm_boxes = norm(bboxes)
+        category_boxes = [[*item, contract_type] for item in norm_boxes]
+        g.ndata['feat'] = torch.FloatTensor(np.array(category_boxes))
         g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
         return g, labels, texts, lengths
 
