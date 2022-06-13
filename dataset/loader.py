@@ -33,18 +33,19 @@ def convert24point(bbox):
 
 def check_type(text):
     type_dict = {
-        "Doanh nghiệp tư nhân": 0,
-        "hữu hạn một thành viên": 1,
-        "Văn phòng đại diện": 2,
-        "Chi nhánh": 3,
-        "hữu hạn hai thành viên trở lên": 4,
-        "Hộ kinh doanh": 5,
-        "Công ty hợp danh": 6,
-        "Công ty cổ phần": 7
+        "Doanh nghiệp tư nhân": 1,
+        "hữu hạn một thành viên": 2,
+        "Văn phòng đại diện": 3,
+        "Chi nhánh": 4,
+        "hữu hạn hai thành viên trở lên": 5,
+        "Hộ kinh doanh": 6,
+        "Công ty hợp danh": 7,
+        "Công ty cổ phần": 8
     }
     for key, value in type_dict.items():
         if key.upper() in text:
             return value
+    return 0
 
 
 def process(sample: Dict,
