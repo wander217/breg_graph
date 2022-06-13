@@ -126,12 +126,12 @@ class GraphDataset(Dataset):
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_j = bboxes[i]
+            x_i, y_i, w_i, h_i, r_i, t_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j, r_j = bboxes[j]
+                x_j, y_j, w_j, h_j, r_j, t_j = bboxes[j]
                 # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
