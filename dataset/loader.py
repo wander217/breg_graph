@@ -89,6 +89,7 @@ def process(sample: Dict,
         texts.append(text)
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
+        print(label)
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
         bbox = np.array([x, y, w, h, a])

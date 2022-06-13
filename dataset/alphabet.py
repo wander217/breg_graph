@@ -58,8 +58,8 @@ class GraphLabel:
     def decode(self, num: int):
         # convert number to label
         tmp = self._number.get(num, self.decoded_other)
-        return "OTHER" if tmp not in self._select_label else tmp
+        return self.decoded_other if tmp not in self._select_label else tmp
 
     def size(self):
-        return len(self._number)
+        return len(self._select_label) + 1
 
