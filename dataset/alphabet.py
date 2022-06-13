@@ -42,10 +42,18 @@ class GraphLabel:
         self._character[self.decoded_other] = self.encoded_other
         self._number: Dict = {i + 1: label for i, label in enumerate(labels)}
         self._number[self.encoded_other] = self.decoded_other
+        self._select_label = [
+            "CONTRACT_TYPE",
+            "COMPANY_CODE",
+            "REGISTER_DATE"
+        ]
 
     def encode(self, label: str):
         # convert label to number
-        return self._character.get(label.upper(), self.encoded_other)
+        return self._character.get(label.upper()
+                                   if label.upper() in self._select_label
+                                   else self.decoded_other,
+                                   self.encoded_other)
 
     def decode(self, num: int):
         # convert number to label

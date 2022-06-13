@@ -145,9 +145,7 @@ class GraphDataset(Dataset):
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
-        norm_boxes = norm(bboxes)
-        category_boxes = [[*item, contract_type] for item in norm_boxes]
-        g.ndata['feat'] = torch.FloatTensor(np.array(category_boxes))
+        g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
         g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
         return g, labels, texts, lengths
 
@@ -161,7 +159,6 @@ class GraphDataset(Dataset):
             result = self.convert_data(self._samples[index])
             return result
         except Exception as e:
-            print(e)
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
