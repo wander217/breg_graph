@@ -57,5 +57,5 @@ class GraphLabel:
         return self._number.get(num, self.decoded_other)
 
     def size(self):
-        return len(self._select_label) + 1
+        return len(self._character)
 
