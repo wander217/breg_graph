@@ -12,6 +12,7 @@ from torch import Tensor
 import warnings
 import argparse
 import time
+import cv2 as cv
 
 
 class BREGPredictor:
@@ -41,7 +42,7 @@ class BREGPredictor:
         texts = []
         bboxes = []
         labels = []
-        for target in ocr_result['target']:
+        for target in ocr_result[TARGET_KEY]:
             text = self.alphabet.encode(target[TEXT_KEY])
             if text.shape[0] == 0:
                 continue
@@ -49,16 +50,8 @@ class BREGPredictor:
             lengths.append(text.shape[0])
             label: int = self.label.encode(target[LABEL_KEY])
             labels.append(label)
-            bbox = np.array(target[BBOX_KEY]).astype(np.int32).flatten().tolist()
-            # bbox = convert24point(bbox)
-            x = bbox[0::2]
-            x_max, x_min = np.max(x), np.min(x)
-            y = bbox[1::2]
-            y_max, y_min = np.max(y), np.min(y)
-            bbox = np.array([(x_min + x_max) / 2,
-                             (y_min + y_max) / 2,
-                             (x_max - x_min),
-                             (y_max - y_min)], dtype=np.float32)
+            (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
+            bbox = np.array([x, y, w, h, a])
             bboxes.append(bbox)
         return (np.array(bboxes),
                 np.array(labels),
@@ -72,12 +65,12 @@ class BREGPredictor:
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i = bboxes[i]
+            x_i, y_i, w_i, h_i, r_j = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j = bboxes[j]
+                x_j, y_j, w_j, h_j, r_j = bboxes[j]
                 # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i

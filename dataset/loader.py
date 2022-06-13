@@ -31,6 +31,22 @@ def convert24point(bbox):
                      [x2, y2], [x1, y2]]).flatten()
 
 
+def check_type(text):
+    type_dict = {
+        "Doanh nghiệp tư nhân": 0,
+        "hữu hạn một thành viên": 1,
+        "Văn phòng đại diện": 2,
+        "Chi nhánh": 3,
+        "hữu hạn hai thành viên trở lên": 4,
+        "Hộ kinh doanh": 5,
+        "Công ty hợp danh": 6,
+        "Công ty cổ phần": 7
+    }
+    for key, value in type_dict.items():
+        if key.upper() in text:
+            return value
+
+
 def process(sample: Dict,
             label_dict: GraphLabel,
             alphabet_dict: GraphAlphabet):
@@ -60,6 +76,11 @@ def process(sample: Dict,
     texts = []
     bboxes = []
     labels = []
+    original_text = []
+    for target in sample[TARGET_KEY]:
+        text = target[TEXT_KEY]
+        original_text.append(text)
+    contract_type = check_type(" ".join(original_text))
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
@@ -69,7 +90,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([x, y, w, h, a])
+        bbox = np.array([x, y, w, h, a, contract_type])
 
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
