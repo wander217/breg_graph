@@ -71,12 +71,12 @@ class BREGPredictor:
                     continue
 
                 x_j, y_j, w_j, h_j, r_j = bboxes[j]
-                # h_j = bboxes[j][9]
+                h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                # if np.abs(y_dist) > 3 * h_j:
-                #     continue
+                if np.abs(y_dist) > 3 * h_j:
+                    continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
