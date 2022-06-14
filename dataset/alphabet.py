@@ -52,9 +52,11 @@ class GraphLabel:
             "OWNER_RESIDENCE_PERMANENT",
             "OWNER_LIVING_PLACE",
         ]
-        self._character: Dict = {label: i + 1 for i, label in enumerate(self._select_label)}
+        # self._character: Dict = {label: i + 1 for i, label in enumerate(self._select_label)}
+        self._character: Dict = {label: i + 1 for i, label in enumerate(labels)}
         self._character[self.decoded_other] = self.encoded_other
-        self._number: Dict = {i + 1: label for i, label in enumerate(self._select_label)}
+        # self._number: Dict = {i + 1: label for i, label in enumerate(self._select_label)}
+        self._number: Dict = {i + 1: label for i, label in enumerate(labels)}
         self._number[self.encoded_other] = self.decoded_other
 
     def encode(self, label: str):
