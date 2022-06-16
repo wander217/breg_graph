@@ -38,20 +38,20 @@ class GraphLabel:
         self.decoded_other = "OTHER"
         with open(label_path, 'r', encoding='utf-8') as f:
             labels: List = json.loads(remove_space(f.readline()))
-        self._select_label = [
-            "LABEL_OWNER",
-            "OWNER_NAME",
-            "OWNER_SEX",
-            "OWNER_BIRTHDAY",
-            "OWNER_ETHNICITY",
-            "OWNER_NATION",
-            "OWNER_IDCARD_TYPE",
-            "OWNER_IDCARD_NUMBER",
-            "OWNER_IDCARD_DATE",
-            "OWNER_IDCARD_PLACE",
-            "OWNER_RESIDENCE_PERMANENT",
-            "OWNER_LIVING_PLACE",
-        ]
+        # self._select_label = [
+        #     "LABEL_OWNER",
+        #     "OWNER_NAME",
+        #     "OWNER_SEX",
+        #     "OWNER_BIRTHDAY",
+        #     "OWNER_ETHNICITY",
+        #     "OWNER_NATION",
+        #     "OWNER_IDCARD_TYPE",
+        #     "OWNER_IDCARD_NUMBER",
+        #     "OWNER_IDCARD_DATE",
+        #     "OWNER_IDCARD_PLACE",
+        #     "OWNER_RESIDENCE_PERMANENT",
+        #     "OWNER_LIVING_PLACE",
+        # ]
         # self._character: Dict = {label: i + 1 for i, label in enumerate(self._select_label)}
         self._character: Dict = {label: i + 1 for i, label in enumerate(labels)}
         self._character[self.decoded_other] = self.encoded_other

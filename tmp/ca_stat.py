@@ -1,4 +1,6 @@
 import json
+import os.path
+
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
@@ -76,8 +78,19 @@ for item in data1:
             break
 
 del stat[-1]
+save_path = r'D:\python_project\breg_graph\tmp\ category'
 for key, value in stat.items():
     print(len(value))
+    label = {}
+    with open(os.path.join(save_path, "{}.json".format(key)), 'w', encoding='utf-8') as f:
+        f.write(json.dumps(value))
+    for file in value:
+        for target in file['file']:
+            for bbox in target['target']:
+                label[bbox['label']] = 1
+    del label['other']
+    with open(os.path.join(save_path, "label_{}.json".format(key)), 'w', encoding='utf-8') as f:
+        f.write(json.dumps(list(label.keys())))
     # item = value[20]
     # for file in item['file']:
     #     print(file)

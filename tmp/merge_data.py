@@ -4,10 +4,10 @@ import os
 import numpy as np
 
 data_path = [
-    r'D:\python_project\breg_graph\tmp\dataset\valid.json',
-    r'D:\python_project\breg_graph\tmp\dataset1\valid.json',
-    r'D:\python_project\breg_graph\tmp\dataset2\valid.json',
-    r'D:\python_project\breg_graph\tmp\dataset3\valid.json',
+    r'D:\python_project\breg_graph\tmp\dataset\train_0.json',
+    r'D:\python_project\breg_graph\tmp\dataset1\train_0.json',
+    r'D:\python_project\breg_graph\tmp\dataset2\train_0.json',
+    r'D:\python_project\breg_graph\tmp\dataset3\train_0.json',
 ]
 
 new_data = []
@@ -37,7 +37,8 @@ for item in new_data:
     train_data.append(item_data)
 
 save_path = r'D:\python_project\breg_graph\tmp\synthesize_dataset'
-with open(os.path.join(save_path, "valid.json"), 'w', encoding='utf-8') as f:
+with open(os.path.join(save_path, "test_0.json"), 'w', encoding='utf-8') as f:
+    print(len(train_data))
     f.write(json.dumps(train_data))
 
 

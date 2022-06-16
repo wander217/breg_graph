@@ -65,18 +65,18 @@ class BREGPredictor:
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_j = bboxes[i]
+            x_i, y_i, w_i, h_i, r_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
                 x_j, y_j, w_j, h_j, r_j = bboxes[j]
-                h_j = bboxes[j][9]
+
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if np.abs(y_dist) > 3 * h_j:
-                    continue
+                # if np.abs(y_dist) > 3 * h_j:
+                #     continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)

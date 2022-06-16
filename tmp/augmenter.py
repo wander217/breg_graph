@@ -2,13 +2,13 @@ import json
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
-t = "test"
+t = "test_0"
 
 
 def augment_data(file):
     aug = iaa.Affine(scale=(0.5, 3),
                      translate_percent=(-0.05, 0.05),
-                     rotate=(-45, 45),
+                     rotate=(-10, 10),
                      shear=(-20, 20),
                      fit_output=True)
     new_target = []
