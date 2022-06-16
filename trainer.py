@@ -231,6 +231,6 @@ if __name__ == "__main__":
     if args.root_path.strip():
         tmp: str = args.root_path.strip()
         for item in ['train', 'valid', 'test']:
-            data[item]['dataset']['path'] = os.path.join(tmp, "{}.json".format(item))
+            data[item]['dataset']['path'] = os.path.join(tmp, "{}_0.json".format(item))
     trainer = Trainer(**data)
     trainer.train()
