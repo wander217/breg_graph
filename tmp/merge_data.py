@@ -1,13 +1,20 @@
 import json
 import os
-
 import numpy as np
 
+t = "valid"
+
 data_path = [
-    r'D:\python_project\breg_graph\tmp\dataset\train_0.json',
-    r'D:\python_project\breg_graph\tmp\dataset1\train_0.json',
-    r'D:\python_project\breg_graph\tmp\dataset2\train_0.json',
-    r'D:\python_project\breg_graph\tmp\dataset3\train_0.json',
+    r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset1\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset2\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset3\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset4\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset5\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset6\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset7\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset8\{}.json'.format(t),
+    r'D:\python_project\breg_graph\tmp\dataset9\{}.json'.format(t),
 ]
 
 new_data = []
@@ -37,7 +44,7 @@ for item in new_data:
     train_data.append(item_data)
 
 save_path = r'D:\python_project\breg_graph\tmp\synthesize_dataset'
-with open(os.path.join(save_path, "test_0.json"), 'w', encoding='utf-8') as f:
+with open(os.path.join(save_path, "{}.json".format(t)), 'w', encoding='utf-8') as f:
     print(len(train_data))
     f.write(json.dumps(train_data))
 

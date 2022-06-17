@@ -2,7 +2,7 @@ import json
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
-t = "test_0"
+t = "test"
 
 
 def augment_data(file):
@@ -29,7 +29,7 @@ def augment_data(file):
 
 
 train_data = r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t)
-save_data = r'D:\python_project\breg_graph\tmp\dataset3\{}.json'.format(t)
+save_data = r'D:\python_project\breg_graph\tmp\dataset1\{}.json'.format(t)
 
 with open(train_data, 'r', encoding='utf-8') as f:
     data = json.loads("".join(f.readline()))

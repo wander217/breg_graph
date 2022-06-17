@@ -184,6 +184,9 @@ class BRegGraph(nn.Module):
         # self._decoder: nn.Module = nn.TransformerEncoder(
         #     nn.TransformerEncoderLayer(**encoder),
         #     num_layers=encoder_num)
+        # self._fc = nn.Sequential(
+        #     nn.Linear(hidden_channel * 2, hidden_channel),
+        #     nn.ReLU(inplace=True))
         self._lstm: nn.Module = nn.LSTM(input_size=hidden_channel,
                                         hidden_size=hidden_channel,
                                         num_layers=2,
@@ -217,6 +220,7 @@ class BRegGraph(nn.Module):
         text_embedding = self._lstm_text_embedding(texts, lengths)
 
         nodes: Tensor = node_embedding + text_embedding
+        # nodes = self._fc(nodes)
         edges: Tensor = edge_embedding
         all_node: List = [nodes]
         for i, conv in enumerate(self._layers):
