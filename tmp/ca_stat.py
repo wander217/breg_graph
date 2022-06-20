@@ -25,11 +25,11 @@ def augment_data(file):
     return file
 
 
-data_path = r'D:\python_project\breg_graph\tmp\category1.json'
+data_path = r'D:\workspace\project\breg_graph\tmp\category1.json'
 with open(data_path, 'r', encoding='utf-8') as f:
     data = json.loads("".join(f.readlines()))
 
-convert_data = r'D:\python_project\breg_graph\convert_data.json'
+convert_data = r'D:\workspace\project\breg_graph\convert_data.json'
 with open(convert_data, 'r', encoding='utf-8') as f:
     data1 = json.loads("".join(f.readlines()))
     for item in data1:
@@ -76,12 +76,14 @@ for item in data1:
             break
 
 del stat[-1]
+count = 0
 for key, value in stat.items():
+    count += len(value)
     print(len(value))
     # item = value[20]
     # for file in item['file']:
     #     print(file)
     # break
-
+print(count)
 # with open("valid_data.json", 'w', encoding='utf-8') as f:
 #     f.write(json.dumps(stat, indent=4))
