@@ -38,9 +38,11 @@ class GraphLabel:
         self.decoded_other = "OTHER"
         with open(label_path, 'r', encoding='utf-8') as f:
             labels: List = json.loads(remove_space(f.readline()))
-        self._character: Dict = {label: i + 1 for i, label in enumerate(labels)}
+        # self._character: Dict = {label: i + 1 for i, label in enumerate(self._select_label)}
+        self._character: Dict = {label.upper(): i + 1 for i, label in enumerate(labels)}
         self._character[self.decoded_other] = self.encoded_other
-        self._number: Dict = {i + 1: label for i, label in enumerate(labels)}
+        # self._number: Dict = {i + 1: label for i, label in enumerate(self._select_label)}
+        self._number: Dict = {i + 1: label.upper() for i, label in enumerate(labels)}
         self._number[self.encoded_other] = self.decoded_other
 
     def encode(self, label: str):
@@ -52,5 +54,4 @@ class GraphLabel:
         return self._number.get(num, self.decoded_other)
 
     def size(self):
-        return len(self._number)
-
+        return len(self._character)

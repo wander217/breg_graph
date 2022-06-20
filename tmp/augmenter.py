@@ -8,7 +8,7 @@ t = "test"
 def augment_data(file):
     aug = iaa.Affine(scale=(0.5, 3),
                      translate_percent=(-0.05, 0.05),
-                     rotate=(-45, 45),
+                     rotate=(-10, 10),
                      shear=(-20, 20),
                      fit_output=True)
     new_target = []
@@ -29,7 +29,7 @@ def augment_data(file):
 
 
 train_data = r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t)
-save_data = r'D:\python_project\breg_graph\tmp\dataset3\{}.json'.format(t)
+save_data = r'D:\python_project\breg_graph\tmp\dataset1\{}.json'.format(t)
 
 with open(train_data, 'r', encoding='utf-8') as f:
     data = json.loads("".join(f.readline()))

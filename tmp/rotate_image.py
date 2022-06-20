@@ -11,6 +11,7 @@ with open(rotate_path, 'r', encoding='utf-8') as f:
 data_path = r'D:\labelme_dn'
 save_path = r'D:\python_project\breg_graph\tmp\convert_data'
 
+
 def augment_data(file, aug, rotate):
     new_target = []
     for target in file['shapes']:
@@ -23,7 +24,7 @@ def augment_data(file, aug, rotate):
         new_target.append({
             **target,
             'points': [(int(point.x), int(point.y))
-                     for point in new_keypoint]
+                       for point in new_keypoint]
         })
     file['shapes'] = new_target
     if rotate == 90 or rotate == -90:
