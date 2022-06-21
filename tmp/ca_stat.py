@@ -5,6 +5,36 @@ import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
 
+def convert_label(old_label):
+    old_labels: dict = {
+        "LABEL_OWNER": "label_representative",
+        "OWNER_NAME": "representative_name",
+        "OWNER_SEX": "representative_sex",
+        "OWNER_BIRTHDAY": "representative_birthday",
+        "OWNER_ETHNICITY": "representative_ethnicity",
+        "OWNER_NATION": "representative_nation",
+        "OWNER_IDCARD_TYPE": "representative_type",
+        "OWNER_IDCARD_NUMBER": "representative_idcard_number",
+        "OWNER_IDCARD_DATE": "representative_idcard_date",
+        "OWNER_IDCARD_PLACE": "representative_idcard_place",
+        "OWNER_RESIDENCE_PERMANENT": "representative_residence_permanent",
+        "OWNER_LIVING_PLACE": "representative_living_place",
+        "LABEL_REPRESENTATIVE_OFFICE": "label_business_place",
+        "REPRESENTATIVE_COMPANY_NAME": "business_place_name",
+        "REPRESENTATIVE_COMPANY_ADDRESS": "business_place_address",
+        "REPRESENTATIVE_COMPANY_CODE": "business_place_code",
+        "LABEL_BRANCH": "label_business_place",
+        "BRANCH_COMPANY_NAME": "business_place_name",
+        "BRANCH_COMPANY_ADDRESS": "business_place_address",
+        "BRANCH_COMPANY_CODE": "business_place_code",
+        "AUTHORITY_COMPANY_NAME": "business_place_name",
+        "AUTHORITY_COMPANY_CODE": "business_place_code",
+        "AUTHORITY_COMPANY_ADDRESS": "business_place_address",
+        "LABEL_SHAREHOLDER": "other"
+    }
+    return old_labels.get(old_label, old_label)
+
+
 def augment_data(file):
     aug = iaa.Affine(rotate=-file['rotate'])
     # w, h = file['shape']
@@ -20,6 +50,7 @@ def augment_data(file):
         new_keypoint = aug.augment_keypoints(keypoint).keypoints
         new_target.append({
             **target,
+            'label': convert_label(target['label']),
             'bbox': [(int(point.x), int(point.y))
                      for point in new_keypoint]
         })

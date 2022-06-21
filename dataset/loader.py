@@ -91,7 +91,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([x, y, w, h, a])
+        bbox = np.array([x, y, w, h])
 
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
@@ -127,12 +127,12 @@ class GraphDataset(Dataset):
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_i = bboxes[i]
+            x_i, y_i, w_i, h_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j, r_j = bboxes[j]
+                x_j, y_j, w_j, h_j = bboxes[j]
                 # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
