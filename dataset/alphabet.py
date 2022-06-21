@@ -37,7 +37,7 @@ class GraphLabel:
         self.encoded_other = 0
         self.decoded_other = "OTHER"
         with open(label_path, 'r', encoding='utf-8') as f:
-            labels: List = json.loads(remove_space(f.readline()))
+            labels: List = json.loads(remove_space("".join(f.readlines())))
         # self._character: Dict = {label: i + 1 for i, label in enumerate(self._select_label)}
         self._character: Dict = {label.upper(): i + 1 for i, label in enumerate(labels)}
         self._character[self.decoded_other] = self.encoded_other
