@@ -41,7 +41,7 @@ for dirname in os.listdir(object_path):
             x_max = np.max(document[:, 0])
             y_min = np.min(document[:, 1])
             y_max = np.max(document[:, 1])
-            item_data['shape'] = [int(x_max - x_min), int(y_max - y_min)]
+            item_data['shape'] = [int(x_max - x_min + 1), int(y_max - y_min + 1)]
             for i, item in enumerate(data['shapes']):
                 if item['label'] == 'document':
                     continue
