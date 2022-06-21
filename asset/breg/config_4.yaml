@@ -13,7 +13,7 @@ loss_model:
     edge_channel: 3
     hidden_channel: 512
     dropout: 0
-    layer_num: 2
+    layer_num: 4
 
   criterion:
     factor: 3
