@@ -31,23 +31,6 @@ def convert24point(bbox):
                      [x2, y2], [x1, y2]]).flatten()
 
 
-def check_type(text):
-    type_dict = {
-        "Doanh nghiệp tư nhân": 1,
-        "hữu hạn một thành viên": 2,
-        "Văn phòng đại diện": 3,
-        "Chi nhánh": 4,
-        "hữu hạn hai thành viên trở lên": 5,
-        "Hộ kinh doanh": 6,
-        "Công ty hợp danh": 7,
-        "Công ty cổ phần": 8
-    }
-    for key, value in type_dict.items():
-        if key.upper() in text:
-            return value / len(type_dict)
-    return 0
-
-
 def process(sample: Dict,
             label_dict: GraphLabel,
             alphabet_dict: GraphAlphabet):
@@ -81,7 +64,6 @@ def process(sample: Dict,
     for target in sample[TARGET_KEY]:
         text = target[TEXT_KEY]
         original_text.append(text)
-    contract_type = check_type(" ".join(original_text))
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
@@ -106,8 +88,7 @@ def process(sample: Dict,
     return (np.array(bboxes),
             np.array(labels),
             np.array(texts),
-            np.array(lengths),
-            contract_type)
+            np.array(lengths))
 
 
 class GraphDataset(Dataset):
@@ -121,7 +102,7 @@ class GraphDataset(Dataset):
         self._load(path)
 
     def convert_data(self, sample):
-        bboxes, labels, texts, lengths, contract_type = process(sample, self._ldict, self._adict)
+        bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
         node_size = labels.shape[0]
         src: List = []
         dst: List = []
