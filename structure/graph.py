@@ -60,7 +60,7 @@ def message(edge) -> Dict:
     # Aggregate feature through all adjacent nodes
     e_ij = edge.src['Dv'] + edge.data['Ce'] + edge.dst['Ev']
     score = torch.sigmoid(e_ij)
-    edge.data['e'] = e_ij
+    # edge.data['e'] = e_ij
     return {'Bv_j': Bv_j, 'score': score}
 
 
