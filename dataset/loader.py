@@ -74,8 +74,7 @@ def process(sample: Dict,
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
         bbox = cv.boxPoints(((x, y), (w, h), a)).tolist()
-        bbox.extend([w, h])
-        bbox = np.array(bbox).flatten()
+        bbox = np.array(bbox + [w, h])
 
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
