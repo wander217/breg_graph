@@ -183,7 +183,7 @@ class BRegGraph(nn.Module):
         ])
         self._lstm: nn.Module = nn.LSTM(input_size=hidden_channel,
                                         hidden_size=hidden_channel,
-                                        num_layers=1,
+                                        num_layers=2,
                                         batch_first=True,
                                         bidirectional=True)
         self._mlp: nn.Module = Readout(hidden_channel, class_num, 2)
