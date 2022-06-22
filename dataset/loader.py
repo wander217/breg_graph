@@ -72,15 +72,14 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        tmp = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = cv.boxPoints(tmp).tolist()
-        bbox = np.array(bbox + tmp[1])
-
-        # # bbox = convert24point(bbox)
-        # x = bbox[0::2]
-        # x_max, x_min = np.max(x), np.min(x)
-        # y = bbox[1::2]
-        # y_max, y_min = np.max(y), np.min(y)
+        tmp = np.array(target[BBOX_KEY])
+        x = tmp[0::2]
+        x_max, x_min = np.max(x), np.min(x)
+        y = tmp[1::2]
+        y_max, y_min = np.max(y), np.min(y)
+        bbox = np.array([x_min, x_max,
+                         y_min, y_max,
+                         x_max-x_min, y_max-y_min])
         # bbox = np.array([(x_min + x_max) / 2,
         #                  (y_min + y_max) / 2,
         #                  (x_max - x_min),
