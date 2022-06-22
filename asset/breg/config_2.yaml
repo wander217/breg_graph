@@ -9,7 +9,7 @@ label:
 
 loss_model:
   model:
-    node_channel: 4
+    node_channel: 10
     edge_channel: 2
     hidden_channel: 512
     dropout: 0

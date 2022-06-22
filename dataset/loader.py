@@ -73,7 +73,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([x, y, w, h])
+        bbox = np.array(cv.boxPoints(((x, y), (w, h), a)).extend([w, h])).flatten()
 
         # # bbox = convert24point(bbox)
         # x = bbox[0::2]
@@ -108,19 +108,21 @@ class GraphDataset(Dataset):
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i = bboxes[i]
+            x_i = np.mean(bboxes[i][:8][0::2])
+            y_i = np.mean(bboxes[i][:8][1::2])
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j = bboxes[j]
+                x_j = np.mean(bboxes[j][:8][0::2])
+                y_j = np.mean(bboxes[j][:8][1::2])
                 # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if abs(y_dist) > h_j:
-                    continue
-                dists.append([x_dist, y_dist])
+                # if abs(y_dist) > h_j:
+                #     continue
+                dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
         g = dgl.DGLGraph()
