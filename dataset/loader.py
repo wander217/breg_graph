@@ -72,14 +72,14 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        tmp = np.array(target[BBOX_KEY])
-        x = tmp[0::2]
-        x_max, x_min = np.max(x), np.min(x)
-        y = tmp[1::2]
-        y_max, y_min = np.max(y), np.min(y)
-        bbox = np.array([x_min, x_max,
-                         y_min, y_max,
-                         x_max-x_min, y_max-y_min])
+        _, (w, h), _ = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
+        bbox = np.array([*target[BBOX_KEY], w, h])
+
+        # # bbox = convert24point(bbox)
+        # x = bbox[0::2]
+        # x_max, x_min = np.max(x), np.min(x)
+        # y = bbox[1::2]
+        # y_max, y_min = np.max(y), np.min(y)
         # bbox = np.array([(x_min + x_max) / 2,
         #                  (y_min + y_max) / 2,
         #                  (x_max - x_min),
@@ -142,7 +142,7 @@ class GraphDataset(Dataset):
             result = self.convert_data(self._samples[index])
             return result
         except Exception as e:
-            # print(e)
+            print(e)
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
