@@ -118,7 +118,7 @@ class GraphDataset(Dataset):
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if y_dist > 0:
+                if abs(y_dist) > h_j:
                     continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)

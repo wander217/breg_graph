@@ -60,7 +60,7 @@ def message(edge) -> Dict:
     # Aggregate feature through all adjacent nodes
     e_ij = edge.src['Dv'] + edge.data['Ce'] + edge.dst['Ev']
     score = torch.sigmoid(e_ij)
-    # edge.data['e'] = e_ij
+    edge.data['e'] = e_ij
     return {'Bv_j': Bv_j, 'score': score}
 
 
@@ -181,15 +181,9 @@ class BRegGraph(nn.Module):
             Dense(hidden_channel + i * hidden_channel, hidden_channel)
             for i in range(1, layer_num + 1)
         ])
-        # self._decoder: nn.Module = nn.TransformerEncoder(
-        #     nn.TransformerEncoderLayer(**encoder),
-        #     num_layers=encoder_num)
-        # self._fc = nn.Sequential(
-        #     nn.Linear(hidden_channel * 2, hidden_channel),
-        #     nn.ReLU(inplace=True))
         self._lstm: nn.Module = nn.LSTM(input_size=hidden_channel,
                                         hidden_size=hidden_channel,
-                                        num_layers=2,
+                                        num_layers=1,
                                         batch_first=True,
                                         bidirectional=True)
         self._mlp: nn.Module = Readout(hidden_channel, class_num, 2)
