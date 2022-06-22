@@ -120,7 +120,7 @@ class GraphDataset(Dataset):
 
                 if abs(y_dist) > h_j:
                     continue
-                dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
+                dists.append([x_dist, y_dist])
                 src.append(i)
                 dst.append(j)
         g = dgl.DGLGraph()
