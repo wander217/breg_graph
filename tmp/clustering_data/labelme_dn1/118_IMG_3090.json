@@ -1,0 +1,1279 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1365,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn1/118_IMG_3090.png",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "CONTRACT_DETAIL",
+            "points": [
+                [
+                    825,
+                    247
+                ],
+                [
+                    823,
+                    272
+                ],
+                [
+                    156,
+                    274
+                ],
+                [
+                    158,
+                    247
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "CONTRACT_DETAIL",
+            "points": [
+                [
+                    638,
+                    287
+                ],
+                [
+                    637,
+                    311
+                ],
+                [
+                    342,
+                    312
+                ],
+                [
+                    345,
+                    286
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "CONTRACT_DETAIL",
+            "points": [
+                [
+                    676,
+                    326
+                ],
+                [
+                    674,
+                    351
+                ],
+                [
+                    305,
+                    352
+                ],
+                [
+                    305,
+                    327
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "CONTRACT_DETAIL",
+            "points": [
+                [
+                    724,
+                    364
+                ],
+                [
+                    721,
+                    388
+                ],
+                [
+                    259,
+                    392
+                ],
+                [
+                    262,
+                    366
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    475,
+                    177
+                ],
+                [
+                    473,
+                    199
+                ],
+                [
+                    140,
+                    200
+                ],
+                [
+                    141,
+                    178
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    825,
+                    179
+                ],
+                [
+                    822,
+                    202
+                ],
+                [
+                    495,
+                    202
+                ],
+                [
+                    496,
+                    180
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    757,
+                    215
+                ],
+                [
+                    759,
+                    237
+                ],
+                [
+                    561,
+                    238
+                ],
+                [
+                    562,
+                    213
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    433,
+                    212
+                ],
+                [
+                    433,
+                    233
+                ],
+                [
+                    184,
+                    238
+                ],
+                [
+                    184,
+                    212
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BUSINESS_CAPITAL",
+            "points": [
+                [
+                    430,
+                    717
+                ],
+                [
+                    430,
+                    744
+                ],
+                [
+                    130,
+                    743
+                ],
+                [
+                    131,
+                    717
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BUSINESS_CAPITAL",
+            "points": [
+                [
+                    846,
+                    757
+                ],
+                [
+                    846,
+                    783
+                ],
+                [
+                    233,
+                    784
+                ],
+                [
+                    236,
+                    758
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BUSINESS_CAPITAL",
+            "points": [
+                [
+                    284,
+                    786
+                ],
+                [
+                    282,
+                    811
+                ],
+                [
+                    130,
+                    812
+                ],
+                [
+                    131,
+                    785
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    430,
+                    827
+                ],
+                [
+                    427,
+                    851
+                ],
+                [
+                    132,
+                    851
+                ],
+                [
+                    133,
+                    828
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    171,
+                    869
+                ],
+                [
+                    170,
+                    891
+                ],
+                [
+                    130,
+                    891
+                ],
+                [
+                    131,
+                    868
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    310,
+                    867
+                ],
+                [
+                    307,
+                    890
+                ],
+                [
+                    181,
+                    891
+                ],
+                [
+                    182,
+                    868
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    262,
+                    891
+                ],
+                [
+                    259,
+                    917
+                ],
+                [
+                    182,
+                    918
+                ],
+                [
+                    182,
+                    892
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    381,
+                    868
+                ],
+                [
+                    379,
+                    890
+                ],
+                [
+                    330,
+                    892
+                ],
+                [
+                    330,
+                    867
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    367,
+                    891
+                ],
+                [
+                    367,
+                    916
+                ],
+                [
+                    329,
+                    917
+                ],
+                [
+                    327,
+                    895
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    552,
+                    868
+                ],
+                [
+                    549,
+                    892
+                ],
+                [
+                    423,
+                    895
+                ],
+                [
+                    423,
+                    868
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    664,
+                    866
+                ],
+                [
+                    663,
+                    890
+                ],
+                [
+                    580,
+                    890
+                ],
+                [
+                    581,
+                    868
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    671,
+                    889
+                ],
+                [
+                    674,
+                    914
+                ],
+                [
+                    581,
+                    918
+                ],
+                [
+                    585,
+                    891
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    660,
+                    916
+                ],
+                [
+                    659,
+                    942
+                ],
+                [
+                    583,
+                    937
+                ],
+                [
+                    583,
+                    920
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    636,
+                    942
+                ],
+                [
+                    634,
+                    963
+                ],
+                [
+                    581,
+                    962
+                ],
+                [
+                    584,
+                    939
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    678,
+                    963
+                ],
+                [
+                    679,
+                    985
+                ],
+                [
+                    581,
+                    984
+                ],
+                [
+                    583,
+                    963
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    673,
+                    986
+                ],
+                [
+                    673,
+                    1008
+                ],
+                [
+                    582,
+                    1008
+                ],
+                [
+                    583,
+                    987
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    678,
+                    1007
+                ],
+                [
+                    681,
+                    1032
+                ],
+                [
+                    581,
+                    1031
+                ],
+                [
+                    582,
+                    1009
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    648,
+                    1032
+                ],
+                [
+                    649,
+                    1052
+                ],
+                [
+                    580,
+                    1053
+                ],
+                [
+                    584,
+                    1032
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    678,
+                    1056
+                ],
+                [
+                    676,
+                    1077
+                ],
+                [
+                    584,
+                    1077
+                ],
+                [
+                    583,
+                    1055
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    723,
+                    1054
+                ],
+                [
+                    725,
+                    1077
+                ],
+                [
+                    697,
+                    1074
+                ],
+                [
+                    700,
+                    1055
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    828,
+                    1054
+                ],
+                [
+                    831,
+                    1078
+                ],
+                [
+                    740,
+                    1082
+                ],
+                [
+                    743,
+                    1055
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    834,
+                    869
+                ],
+                [
+                    835,
+                    890
+                ],
+                [
+                    746,
+                    893
+                ],
+                [
+                    745,
+                    867
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    840,
+                    891
+                ],
+                [
+                    841,
+                    916
+                ],
+                [
+                    743,
+                    919
+                ],
+                [
+                    743,
+                    896
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    812,
+                    918
+                ],
+                [
+                    812,
+                    937
+                ],
+                [
+                    745,
+                    941
+                ],
+                [
+                    746,
+                    921
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    726,
+                    871
+                ],
+                [
+                    724,
+                    895
+                ],
+                [
+                    697,
+                    891
+                ],
+                [
+                    698,
+                    869
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    719,
+                    895
+                ],
+                [
+                    721,
+                    916
+                ],
+                [
+                    698,
+                    916
+                ],
+                [
+                    698,
+                    894
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    734,
+                    916
+                ],
+                [
+                    731,
+                    941
+                ],
+                [
+                    699,
+                    942
+                ],
+                [
+                    698,
+                    919
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    407,
+                    1055
+                ],
+                [
+                    408,
+                    1076
+                ],
+                [
+                    329,
+                    1079
+                ],
+                [
+                    329,
+                    1054
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    536,
+                    1054
+                ],
+                [
+                    535,
+                    1076
+                ],
+                [
+                    424,
+                    1077
+                ],
+                [
+                    426,
+                    1055
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    549,
+                    1078
+                ],
+                [
+                    547,
+                    1102
+                ],
+                [
+                    424,
+                    1099
+                ],
+                [
+                    422,
+                    1080
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    566,
+                    1100
+                ],
+                [
+                    568,
+                    1121
+                ],
+                [
+                    425,
+                    1123
+                ],
+                [
+                    424,
+                    1101
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    318,
+                    1052
+                ],
+                [
+                    319,
+                    1074
+                ],
+                [
+                    181,
+                    1075
+                ],
+                [
+                    184,
+                    1051
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    303,
+                    1074
+                ],
+                [
+                    304,
+                    1098
+                ],
+                [
+                    182,
+                    1098
+                ],
+                [
+                    184,
+                    1077
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "SHAREHOLDER",
+            "points": [
+                [
+                    152,
+                    1051
+                ],
+                [
+                    150,
+                    1072
+                ],
+                [
+                    135,
+                    1074
+                ],
+                [
+                    135,
+                    1051
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    941,
+                    76
+                ],
+                [
+                    934,
+                    1309
+                ],
+                [
+                    66,
+                    1302
+                ],
+                [
+                    54,
+                    66
+                ],
+                [
+                    162,
+                    78
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    138,
+                    420
+                ],
+                [
+                    262,
+                    422
+                ],
+                [
+                    261,
+                    443
+                ],
+                [
+                    137,
+                    443
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    135,
+                    445
+                ],
+                [
+                    588,
+                    445
+                ],
+                [
+                    581,
+                    470
+                ],
+                [
+                    133,
+                    469
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    135,
+                    470
+                ],
+                [
+                    517,
+                    471
+                ],
+                [
+                    516,
+                    495
+                ],
+                [
+                    133,
+                    496
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    133,
+                    511
+                ],
+                [
+                    526,
+                    511
+                ],
+                [
+                    526,
+                    535
+                ],
+                [
+                    131,
+                    534
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    134,
+                    534
+                ],
+                [
+                    371,
+                    534
+                ],
+                [
+                    367,
+                    559
+                ],
+                [
+                    133,
+                    557
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    133,
+                    570
+                ],
+                [
+                    332,
+                    573
+                ],
+                [
+                    330,
+                    596
+                ],
+                [
+                    133,
+                    595
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    134,
+                    595
+                ],
+                [
+                    675,
+                    596
+                ],
+                [
+                    672,
+                    623
+                ],
+                [
+                    131,
+                    622
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    132,
+                    638
+                ],
+                [
+                    224,
+                    639
+                ],
+                [
+                    225,
+                    661
+                ],
+                [
+                    133,
+                    661
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    488,
+                    639
+                ],
+                [
+                    525,
+                    641
+                ],
+                [
+                    526,
+                    661
+                ],
+                [
+                    487,
+                    660
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    133,
+                    678
+                ],
+                [
+                    356,
+                    680
+                ],
+                [
+                    355,
+                    701
+                ],
+                [
+                    132,
+                    704
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_DETAIL",
+            "points": [
+                [
+                    488,
+                    679
+                ],
+                [
+                    712,
+                    679
+                ],
+                [
+                    713,
+                    705
+                ],
+                [
+                    489,
+                    703
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "COMPANY_NAME",
+            "points": [
+                [
+                    794,
+                    440
+                ],
+                [
+                    794,
+                    471
+                ],
+                [
+                    599,
+                    472
+                ],
+                [
+                    601,
+                    444
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}

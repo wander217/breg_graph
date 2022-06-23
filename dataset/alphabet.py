@@ -2,6 +2,7 @@ from typing import List, Dict
 import json
 import numpy as np
 from utils import remove_space
+import yaml
 
 
 class GraphAlphabet:

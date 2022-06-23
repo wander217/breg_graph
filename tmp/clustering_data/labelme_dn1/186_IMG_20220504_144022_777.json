@@ -1,0 +1,45 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1361,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn1/186_IMG_20220504_144022_777.jpg",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    823,
+                    333
+                ],
+                [
+                    765,
+                    1129
+                ],
+                [
+                    143,
+                    1036
+                ],
+                [
+                    297,
+                    261
+                ],
+                [
+                    649,
+                    298
+                ],
+                [
+                    737,
+                    319
+                ],
+                [
+                    783,
+                    326
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}

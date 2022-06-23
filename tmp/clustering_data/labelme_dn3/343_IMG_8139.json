@@ -1,0 +1,401 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1365,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn3/343_IMG_8139.png",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    225,
+                    300
+                ],
+                [
+                    377,
+                    278
+                ],
+                [
+                    378,
+                    301
+                ],
+                [
+                    222,
+                    325
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    595,
+                    248
+                ],
+                [
+                    711,
+                    231
+                ],
+                [
+                    716,
+                    254
+                ],
+                [
+                    593,
+                    272
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    220,
+                    328
+                ],
+                [
+                    360,
+                    310
+                ],
+                [
+                    361,
+                    331
+                ],
+                [
+                    222,
+                    351
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    392,
+                    304
+                ],
+                [
+                    486,
+                    292
+                ],
+                [
+                    483,
+                    317
+                ],
+                [
+                    389,
+                    326
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    595,
+                    278
+                ],
+                [
+                    745,
+                    259
+                ],
+                [
+                    747,
+                    279
+                ],
+                [
+                    594,
+                    304
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    219,
+                    354
+                ],
+                [
+                    487,
+                    318
+                ],
+                [
+                    489,
+                    344
+                ],
+                [
+                    220,
+                    375
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    219,
+                    373
+                ],
+                [
+                    469,
+                    342
+                ],
+                [
+                    468,
+                    366
+                ],
+                [
+                    220,
+                    398
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    212,
+                    401
+                ],
+                [
+                    355,
+                    385
+                ],
+                [
+                    357,
+                    410
+                ],
+                [
+                    212,
+                    425
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    485,
+                    369
+                ],
+                [
+                    766,
+                    331
+                ],
+                [
+                    769,
+                    358
+                ],
+                [
+                    486,
+                    391
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    485,
+                    391
+                ],
+                [
+                    608,
+                    373
+                ],
+                [
+                    610,
+                    399
+                ],
+                [
+                    488,
+                    414
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    204,
+                    466
+                ],
+                [
+                    336,
+                    452
+                ],
+                [
+                    336,
+                    478
+                ],
+                [
+                    204,
+                    490
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    269,
+                    530
+                ],
+                [
+                    715,
+                    491
+                ],
+                [
+                    717,
+                    517
+                ],
+                [
+                    274,
+                    555
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    213,
+                    494
+                ],
+                [
+                    796,
+                    433
+                ],
+                [
+                    797,
+                    461
+                ],
+                [
+                    212,
+                    520
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    456,
+                    497
+                ],
+                [
+                    513,
+                    490
+                ],
+                [
+                    515,
+                    508
+                ],
+                [
+                    456,
+                    513
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    187,
+                    195
+                ],
+                [
+                    856,
+                    89
+                ],
+                [
+                    971,
+                    1238
+                ],
+                [
+                    47,
+                    1191
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    634,
+                    594
+                ],
+                [
+                    634,
+                    613
+                ],
+                [
+                    482,
+                    626
+                ],
+                [
+                    481,
+                    605
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    693,
+                    612
+                ],
+                [
+                    692,
+                    635
+                ],
+                [
+                    479,
+                    651
+                ],
+                [
+                    480,
+                    629
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}

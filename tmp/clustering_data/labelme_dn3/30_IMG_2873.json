@@ -1,0 +1,87 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1365,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn3/30_IMG_2873.png",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    884,
+                    66
+                ],
+                [
+                    973,
+                    1231
+                ],
+                [
+                    128,
+                    1286
+                ],
+                [
+                    88,
+                    557
+                ],
+                [
+                    95,
+                    320
+                ],
+                [
+                    135,
+                    74
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    640,
+                    167
+                ],
+                [
+                    640,
+                    193
+                ],
+                [
+                    476,
+                    198
+                ],
+                [
+                    475,
+                    174
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    698,
+                    195
+                ],
+                [
+                    696,
+                    221
+                ],
+                [
+                    477,
+                    229
+                ],
+                [
+                    477,
+                    202
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}

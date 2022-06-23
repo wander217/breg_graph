@@ -1,0 +1,413 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1361,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn1/186_IMG_20220504_144014_860.jpg",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    585,
+                    620
+                ],
+                [
+                    585,
+                    639
+                ],
+                [
+                    458,
+                    656
+                ],
+                [
+                    456,
+                    636
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    634,
+                    635
+                ],
+                [
+                    634,
+                    657
+                ],
+                [
+                    460,
+                    679
+                ],
+                [
+                    458,
+                    657
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    149,
+                    335
+                ],
+                [
+                    521,
+                    313
+                ],
+                [
+                    526,
+                    337
+                ],
+                [
+                    150,
+                    357
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    154,
+                    358
+                ],
+                [
+                    275,
+                    354
+                ],
+                [
+                    275,
+                    369
+                ],
+                [
+                    153,
+                    375
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    154,
+                    389
+                ],
+                [
+                    297,
+                    381
+                ],
+                [
+                    299,
+                    401
+                ],
+                [
+                    156,
+                    412
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    429,
+                    370
+                ],
+                [
+                    667,
+                    352
+                ],
+                [
+                    666,
+                    371
+                ],
+                [
+                    431,
+                    391
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    538,
+                    384
+                ],
+                [
+                    539,
+                    401
+                ],
+                [
+                    433,
+                    410
+                ],
+                [
+                    432,
+                    393
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    159,
+                    440
+                ],
+                [
+                    689,
+                    398
+                ],
+                [
+                    689,
+                    418
+                ],
+                [
+                    164,
+                    462
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    163,
+                    463
+                ],
+                [
+                    689,
+                    419
+                ],
+                [
+                    694,
+                    436
+                ],
+                [
+                    166,
+                    484
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    166,
+                    493
+                ],
+                [
+                    337,
+                    480
+                ],
+                [
+                    340,
+                    497
+                ],
+                [
+                    170,
+                    512
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    166,
+                    516
+                ],
+                [
+                    488,
+                    485
+                ],
+                [
+                    488,
+                    507
+                ],
+                [
+                    168,
+                    531
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    175,
+                    574
+                ],
+                [
+                    285,
+                    567
+                ],
+                [
+                    286,
+                    584
+                ],
+                [
+                    176,
+                    590
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    304,
+                    563
+                ],
+                [
+                    402,
+                    553
+                ],
+                [
+                    403,
+                    572
+                ],
+                [
+                    306,
+                    580
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    312,
+                    524
+                ],
+                [
+                    710,
+                    482
+                ],
+                [
+                    712,
+                    503
+                ],
+                [
+                    316,
+                    541
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    170,
+                    554
+                ],
+                [
+                    209,
+                    553
+                ],
+                [
+                    210,
+                    567
+                ],
+                [
+                    171,
+                    571
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "BRANCH_DETAIL",
+            "points": [
+                [
+                    168,
+                    534
+                ],
+                [
+                    288,
+                    527
+                ],
+                [
+                    288,
+                    544
+                ],
+                [
+                    171,
+                    551
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    169,
+                    252
+                ],
+                [
+                    746,
+                    226
+                ],
+                [
+                    883,
+                    1172
+                ],
+                [
+                    164,
+                    1251
+                ],
+                [
+                    116,
+                    644
+                ],
+                [
+                    92,
+                    431
+                ],
+                [
+                    126,
+                    342
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}

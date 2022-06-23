@@ -1,0 +1,133 @@
+{
+    "flags": {},
+    "imageData": null,
+    "imageHeight": 1365,
+    "imagePath": "/home/ancv/Work/OCR/DATASET/doanh_nghiep_final/labelme_dn0/66_IMG_3015.png",
+    "imageWidth": 1024,
+    "shapes": [
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    199,
+                    234
+                ],
+                [
+                    828,
+                    220
+                ],
+                [
+                    828,
+                    252
+                ],
+                [
+                    206,
+                    265
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "REPRESENTATIVE/OWNER",
+            "points": [
+                [
+                    781,
+                    253
+                ],
+                [
+                    782,
+                    286
+                ],
+                [
+                    248,
+                    290
+                ],
+                [
+                    244,
+                    263
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "DOCUMENT",
+            "points": [
+                [
+                    117,
+                    96
+                ],
+                [
+                    902,
+                    71
+                ],
+                [
+                    921,
+                    81
+                ],
+                [
+                    927,
+                    112
+                ],
+                [
+                    959,
+                    1289
+                ],
+                [
+                    60,
+                    1270
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    671,
+                    361
+                ],
+                [
+                    671,
+                    384
+                ],
+                [
+                    507,
+                    387
+                ],
+                [
+                    506,
+                    362
+                ]
+            ],
+            "shape_type": "polygon"
+        },
+        {
+            "flags": {},
+            "label": "OTHER",
+            "points": [
+                [
+                    732,
+                    386
+                ],
+                [
+                    731,
+                    412
+                ],
+                [
+                    506,
+                    417
+                ],
+                [
+                    506,
+                    391
+                ]
+            ],
+            "shape_type": "polygon"
+        }
+    ],
+    "version": "5.0.1"
+}
