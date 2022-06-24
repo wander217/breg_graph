@@ -54,7 +54,7 @@ def process(sample: Dict,
     TEXT_KEY = "text"
     LABEL_KEY = "label"
     BBOX_KEY = "bbox"
-    SHAPE_KEY = "shape"
+    # SHAPE_KEY = "shape"
 
     lengths = []
     texts = []
@@ -124,7 +124,7 @@ class GraphDataset(Dataset):
 
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
-            samples: List = json.loads(remove_space(f.readline()))
+            samples: List = json.loads(f.readline())
         self._samples.extend(samples)
 
     def __getitem__(self, index: int):
