@@ -65,7 +65,7 @@ def process(sample: Dict,
         text = target[TEXT_KEY]
         original_text.append(text)
     for target in sample[TARGET_KEY]:
-        text, pre_label = alphabet_dict.encode(target[TEXT_KEY])
+        text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
             continue
         texts.append(text)
