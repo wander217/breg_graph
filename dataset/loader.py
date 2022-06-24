@@ -124,7 +124,7 @@ class GraphDataset(Dataset):
 
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
-            samples: List = json.loads(f.readline())
+            samples: List = json.loads(f.read())
         self._samples.extend(samples)
 
     def __getitem__(self, index: int):
