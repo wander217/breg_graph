@@ -73,7 +73,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([*cv.boxPoints(((x, y), (w, h), a)).flatten().tolist(), w, h])
+        bbox = np.array([x, y, w, h])
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
@@ -98,20 +98,15 @@ class GraphDataset(Dataset):
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i = np.mean(bboxes[i][:8][0::2])
-            y_i = np.mean(bboxes[i][:8][1::2])
+            x_i, y_i, w_i, h_i = node_size[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j = np.mean(bboxes[j][:8][0::2])
-                y_j = np.mean(bboxes[j][:8][1::2])
+                x_j, y_j, w_j, h_j = node_size[i]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
-                h_j = bboxes[j][9]
 
-                # if abs(y_dist) > 3 * h_j:
-                #     continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
