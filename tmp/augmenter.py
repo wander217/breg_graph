@@ -1,13 +1,13 @@
+import copy
 import json
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 
 
 def augment_data(file):
-    aug = iaa.Affine(scale=(0.5, 3),
-                     translate_percent=(-0.05, 0.05),
-                     rotate=(-20, 20),
-                     shear=(-20, 20),
+    aug = iaa.Affine(scale=(0.5, 1),
+                     rotate=(-30, 30),
+                     shear=(-30, 30),
                      fit_output=True)
     new_target = []
     for target in file['target']:
@@ -28,14 +28,19 @@ def augment_data(file):
 
 for t in ["train", "valid", "test"]:
     train_data = r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t)
-    save_data = r'D:\python_project\breg_graph\tmp\dataset7\{}.json'.format(t)
+    save_data = r'D:\python_project\breg_graph\tmp\aug_data\{}.json'.format(t)
 
     with open(train_data, 'r', encoding='utf-8') as f:
-        data = json.loads("".join(f.readline()))
+        data = json.loads(f.read())
 
-    for item in data:
-        for i in range(len(item['file'])):
-            item['file'][i] = augment_data(item['file'][i])
+    aug_data = copy.deepcopy(data)
+    for i in range(32):
+        new_data = copy.deepcopy(data)
+        for item in new_data:
+            for j in range(len(item['file'])):
+                item['file'][j] = augment_data(item['file'][j])
+        aug_data.extend(new_data)
 
     with open(save_data, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(data))
+        print(len(aug_data))
+        f.write(json.dumps(aug_data))

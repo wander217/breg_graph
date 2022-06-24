@@ -74,16 +74,6 @@ def process(sample: Dict,
         labels.append(label)
         _, (w, h), _ = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
         bbox = np.array([*np.array(target[BBOX_KEY]).flatten().tolist(), w, h])
-
-        # # bbox = convert24point(bbox)
-        # x = bbox[0::2]
-        # x_max, x_min = np.max(x), np.min(x)
-        # y = bbox[1::2]
-        # y_max, y_min = np.max(y), np.min(y)
-        # bbox = np.array([(x_min + x_max) / 2,
-        #                  (y_min + y_max) / 2,
-        #                  (x_max - x_min),
-        #                  (y_max - y_min)], dtype=np.float32)
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
@@ -116,12 +106,12 @@ class GraphDataset(Dataset):
 
                 x_j = np.mean(bboxes[j][:8][0::2])
                 y_j = np.mean(bboxes[j][:8][1::2])
-                # h_j = bboxes[j][9]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
+                h_j = bboxes[j][9]
 
-                # if abs(y_dist) > h_j:
-                #     continue
+                if abs(y_dist) > 3 * h_j:
+                    continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
@@ -142,7 +132,6 @@ class GraphDataset(Dataset):
             result = self.convert_data(self._samples[index])
             return result
         except Exception as e:
-            print(e)
             return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):

@@ -63,7 +63,7 @@ def message(edge) -> Dict:
     # Aggregate feature through all adjacent nodes
     e_ij = edge.src['Dv'] + edge.data['Ce'] + edge.dst['Ev']
     score = torch.sigmoid(e_ij)
-    edge.data['e'] = e_ij
+    # edge.data['e'] = e_ij
     return {'Bv_j': Bv_j, 'score': score}
 
 
@@ -203,14 +203,6 @@ class BRegGraph(nn.Module):
                                         num_layers=2,
                                         batch_first=True,
                                         bidirectional=True)
-        self._keyword: nn.Module = nn.LSTM(input_size=hidden_channel,
-                                           hidden_size=hidden_channel,
-                                           num_layers=2,
-                                           batch_first=True,
-                                           bidirectional=True)
-        self._fc: nn.Module = nn.Sequential(
-            nn.Linear(2 * hidden_channel, 1),
-            nn.Sigmoid())
         self._mlp: nn.Module = Readout(hidden_channel, class_num, 2)
 
     def _lstm_text_embedding(self,
@@ -223,18 +215,6 @@ class BRegGraph(nn.Module):
                                                                False)
         output, (h_last, c_last) = self._lstm(packed_sequence)
         return F.normalize(h_last.mean(0))
-
-    # def keyword_extraction(self, texts: Tensor, lengths: Tensor):
-    #     keyword: Tensor = self._keyword_embedding(texts)
-    #     packed_sequence: PackedSequence = pack_padded_sequence(keyword,
-    #                                                            lengths.cpu(),
-    #                                                            True,
-    #                                                            False)
-    #     output, _ = self._keyword(packed_sequence,
-    #                               lengths.cpu(),
-    #                               True,
-    #                               False)
-    #     return self._fc(output)
 
     def _concat(self, nodes: List, i: int) -> Tensor:
         concat_node: Tensor = torch.cat(nodes, dim=1)
@@ -253,10 +233,9 @@ class BRegGraph(nn.Module):
                 edge_sizes: List) -> Tensor:
         node_embedding: Tensor = self._node_embedding(nodes)
         edge_embedding: Tensor = self._edge_embedding(edges)
-        # keyword = self._keyword_embedding(texts, lengths)
+
         text_embedding = self._lstm_text_embedding(texts, lengths)
         nodes: Tensor = node_embedding + text_embedding
-        # nodes = self._fc(nodes)
         edges: Tensor = edge_embedding
         all_node: List = [nodes]
         for i, conv in enumerate(self._layers):

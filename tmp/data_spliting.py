@@ -4,7 +4,7 @@ import os
 data_path = r'D:\python_project\breg_graph\tmp\valid_data.json'
 # data_path = r'D:\python_project\breg_graph\tmp\ category\0.json'
 with open(data_path, 'r', encoding='utf-8') as f:
-    data = json.loads("".join(f.readlines()))
+    data = json.loads(f.read())
 
 train, valid, test = [], [], []
 count = 0
@@ -23,12 +23,12 @@ dataset_path = r'D:\python_project\breg_graph\tmp\dataset'
 
 with open(os.path.join(dataset_path, 'train.json'), 'w', encoding='utf-8') as f:
     print(len(train))
-    f.write(json.dumps(train))
+    f.write(json.dumps(train, indent=4))
 
 with open(os.path.join(dataset_path, 'valid.json'), 'w', encoding='utf-8') as f:
     print(len(valid))
-    f.write(json.dumps(valid))
+    f.write(json.dumps(valid, indent=4))
 
 with open(os.path.join(dataset_path, 'test.json'), 'w', encoding='utf-8') as f:
     print(len(test))
-    f.write(json.dumps(test))
+    f.write(json.dumps(test, indent=4))
