@@ -128,12 +128,12 @@ class GraphDataset(Dataset):
         self._samples.extend(samples)
 
     def __getitem__(self, index: int):
-        try:
-            result = self.convert_data(self._samples[index])
-            return result
-        except Exception as e:
-            print(e)
-            return self.__getitem__(random.randint(0, self.__len__() - 1))
+        # try:
+        result = self.convert_data(self._samples[index])
+        return result
+        # except Exception as e:
+        #     print(e)
+        #     return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
         return len(self._samples)
