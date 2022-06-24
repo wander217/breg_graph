@@ -59,32 +59,32 @@ def change_label(label):
         "owner_living_place": "REPRESENTATIVE/OWNER",
         # OWNER_TYPE
         "owner_type": "OWNER_TYPE",
-        # BRANCH_DETAIL
-        "label_branch": "BRANCH_DETAIL",
-        "branch_company_name": "BRANCH_DETAIL",
-        "branch_company_code": "BRANCH_DETAIL",
-        "branch_company_address": "BRANCH_DETAIL",
-        # OFFICE_DETAIL
-        "label_representative_office": "OFFICE_DETAIL",
-        "representative_company_name": "OFFICE_DETAIL",
-        "representative_company_code": "OFFICE_DETAIL",
-        "representative_company_address": "OFFICE_DETAIL",
-        # BUSINESS_DETAIL
-        "label_business_place": "BUSINESS_DETAIL",
-        "business_place_name": "BUSINESS_DETAIL",
-        "business_place_code": "BUSINESS_DETAIL",
-        "business_place_address": "BUSINESS_DETAIL",
+        # AUTHORITY
+        "label_branch": "AUTHORITY",
+        "branch_company_name": "AUTHORITY",
+        "branch_company_code": "AUTHORITY",
+        "branch_company_address": "AUTHORITY",
+
+        "label_representative_office": "AUTHORITY",
+        "representative_company_name": "AUTHORITY",
+        "representative_company_code": "AUTHORITY",
+        "representative_company_address": "AUTHORITY",
+
+        "label_business_place": "AUTHORITY",
+        "business_place_name": "AUTHORITY",
+        "business_place_code": "AUTHORITY",
+        "business_place_address": "AUTHORITY",
+
+        "label_authority": "AUTHORITY",
+        "authority_company_name": "AUTHORITY",
+        "authority_company_code": "AUTHORITY",
+        "authority_company_address": "AUTHORITY",
         # BUSINESS_CAPITAL
         "label_business_capital": "BUSINESS_CAPITAL",
         "business_capital": "BUSINESS_CAPITAL",
         "business_par_value_share": "BUSINESS_CAPITAL",
         "business_total_share": "BUSINESS_CAPITAL",
         "number_of_saled_share": "BUSINESS_CAPITAL",
-        # AUTHORITY
-        "label_authority": "AUTHORITY",
-        "authority_company_name": "AUTHORITY",
-        "authority_company_code": "AUTHORITY",
-        "authority_company_address": "AUTHORITY",
         # LEGAL_CAPITAL
         "legal_capital": "LEGAL_CAPITAL"
     }

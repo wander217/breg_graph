@@ -110,8 +110,8 @@ class GraphDataset(Dataset):
                 y_dist = y_j - y_i
                 h_j = bboxes[j][9]
 
-                if abs(y_dist) > 3 * h_j:
-                    continue
+                # if abs(y_dist) > 3 * h_j:
+                #     continue
                 dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
