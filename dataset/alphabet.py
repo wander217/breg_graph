@@ -2,7 +2,6 @@ from typing import List, Dict
 import json
 import numpy as np
 from utils import remove_space
-import yaml
 
 
 class GraphAlphabet:
@@ -19,7 +18,8 @@ class GraphAlphabet:
 
     def encode(self, txt: str) -> np.ndarray:
         # convert character to number
-        encoded_txt: List = [self._character.get(char, self.encoded_pad) for char in txt]
+        encoded_txt: List = [self._character.get(char, self.encoded_pad)
+                             for char in txt.lower()]
         return np.array(encoded_txt, dtype=np.int32)
 
     def decode(self, encoded_txt: np.ndarray) -> str:
