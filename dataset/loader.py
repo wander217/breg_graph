@@ -72,8 +72,8 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        _, (w, h), _ = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([*np.array(target[BBOX_KEY]).flatten().tolist(), w, h])
+        (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
+        bbox = np.array([*cv.boxPoints(((x, y), (w, h), a)).flatten().tolist(), w, h])
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
