@@ -185,8 +185,7 @@ class BRegGraph(nn.Module):
         self._text_embedding: nn.Module = nn.Embedding(vocab, hidden_channel)
         self._keyword_embedding: nn.Module = nn.Embedding(vocab, hidden_channel)
         # self._node_embedding: nn.Module = nn.Linear(node_channel, hidden_channel)
-        self._edge_embedding: nn.Module = nn.Linear(edge_channel,
-                                                    hidden_channel)
+        self._edge_embedding: nn.Module = nn.Linear(edge_channel, hidden_channel)
         self._layers: nn.ModuleList = nn.ModuleList([
             GatedGCN(hidden_channel,
                      hidden_channel,
