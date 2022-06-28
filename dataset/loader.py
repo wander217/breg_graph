@@ -103,7 +103,7 @@ class GraphDataset(Dataset):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j = node_size[i]
+                x_j, y_j, w_j, h_j = node_size[j]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
