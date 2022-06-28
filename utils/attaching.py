@@ -20,8 +20,8 @@ with open(remove_empty_path, 'r', encoding='utf-8') as f:
 
 count = 0
 save_data = []
-# object_path = r'D:\python_project\breg_graph\tmp\convert_data'
-object_path = r'D:\python_project\breg_graph\tmp\clustering_data'
+object_path = r'D:\python_project\breg_graph\tmp\convert_data'
+# object_path = r'D:\python_project\breg_graph\tmp\clustering_data'
 for dirname in os.listdir(object_path):
     for file in os.listdir(os.path.join(object_path, dirname)):
         tmp = os.path.join(object_path, dirname, file)
