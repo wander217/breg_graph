@@ -21,6 +21,7 @@ for key, value in data.items():
 
 dataset_path = r'D:\python_project\breg_graph\tmp\dataset'
 
+
 with open(os.path.join(dataset_path, 'train.json'), 'w', encoding='utf-8') as f:
     print(len(train))
     f.write(json.dumps(train, indent=4))
