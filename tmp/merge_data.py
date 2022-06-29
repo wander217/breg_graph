@@ -1,7 +1,7 @@
 import json
 import numpy as np
 
-data_path = r'D:\python_project\breg_graph\tmp\aug_data\valid.json'
+data_path = r'D:\python_project\breg_graph\tmp\aug_data\test.json'
 
 with open(data_path, 'r', encoding='utf-8') as f:
     data = json.loads(f.read())
@@ -29,6 +29,6 @@ for item in data:
         continue
     new_data.append(item_data)
 
-save_path = r'D:\python_project\breg_graph\tmp\synthetic_aug_data\valid.json'
+save_path = r'D:\python_project\breg_graph\tmp\synthetic_data\test.json'
 with open(save_path, 'w', encoding='utf-8') as f:
     f.write(json.dumps(new_data))

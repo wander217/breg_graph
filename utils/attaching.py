@@ -3,9 +3,14 @@ import os
 import numpy as np
 import cv2 as cv
 
-data_path = r'D:\python_project\breg_graph\save_text.json'
+# data_path = r'D:\python_project\breg_graph\save_text.json'
+data_path = r'D:\python_project\breg_graph\utils\label_for_test.txt'
+new_data = {}
 with open(data_path, 'r', encoding='utf-8') as f:
-    new_data = json.loads(f.readline())
+    lines = f.readlines()
+    for line in lines:
+        key, value = line.strip().split("\t")
+        new_data[key.split(".")[0]] = value
 
 remove_empty_path = r'C:\Users\thinhtq\Downloads\test_result_data_empty.txt'
 with open(remove_empty_path, 'r', encoding='utf-8') as f:

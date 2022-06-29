@@ -141,7 +141,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u1ed9c l\u1eadp - T\u1ef1 do - H\u1ea1nh ph\u00fac"
                     },
                     {
                         "bbox": [
@@ -163,7 +163,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "D\u00e2n t\u1ed9c: Hoa"
+                        "text": "###"
                     },
                     {
                         "bbox": [
@@ -185,7 +185,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG TA\u0300I CHI\u0301NH - K\u00ca\u0301 HOA\u0323CH"
+                        "text": "PH\u00d2NG T\u00c0I CH\u00cdNH - K\u1ebe HO\u1ea0CH"
                     },
                     {
                         "bbox": [
@@ -361,7 +361,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "23 Ha\u0309i Pho\u0300ng, qu\u00e2\u0323n Ha\u0309i Ch\u00e2u, tha\u0300nh ph\u00f4\u0301 \u0110a\u0300 N\u0103\u0303ng "
+                        "text": "23 H\u1ea3i Ph\u00f2ng, qu\u1eadn H\u1ea3i Ch\u00e2u, th\u00e0nh ph\u1ed1 \u0110\u00e0 N\u1eb5ng"
                     },
                     {
                         "bbox": [
@@ -449,7 +449,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "www.dongphuongdesipn.com.vn"
+                        "text": "www.dongphuongdesign.com.vn"
                     },
                     {
                         "bbox": [
@@ -603,7 +603,7 @@
                             ]
                         ],
                         "label": "owner_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Trung Qu\u00f4\u0301c "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Trung Qu\u00f4\u0301c"
                     },
                     {
                         "bbox": [
@@ -691,7 +691,7 @@
                             ]
                         ],
                         "label": "owner_residence_permanent",
-                        "text": "\u0110i\u0323a chi\u0309 th\u01b0\u01a1\u0300ng tru\u0301: 2 Ph\u00f4\u0301 Ki\u00eau Ky\u0323, xa\u0303 D\u01b0\u01a1ng Xa\u0301, huy\u00ea\u0323n Gia L\u00e2m, tha\u0300nh ph\u00f4\u0301 Ha\u0300 N\u00f4\u0323i "
+                        "text": "\u0110i\u0323a chi\u0309 th\u01b0\u01a1\u0300ng tru\u0301: 2 Ph\u00f4\u0301 Ki\u00eau Ky\u0323, xa\u0303 D\u01b0\u01a1ng Xa\u0301, huy\u00ea\u0323n Gia L\u00e2m, tha\u0300nh ph\u00f4\u0301 Ha\u0300 N\u00f4\u0323i"
                     },
                     {
                         "bbox": [
@@ -828,7 +828,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "vi\u00ean "
+                        "text": "vi\u00ean"
                     },
                     {
                         "bbox": [
@@ -872,7 +872,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u1ecba ch\u1ec9:"
+                        "text": "\u0110\u1ecba ch\u1ec9"
                     },
                     {
                         "bbox": [
@@ -938,7 +938,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "th\u01b0\u01a1\u0300ng "
+                        "text": "th\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -1026,7 +1026,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "nh\u00e2n "
+                        "text": "nh\u00e2n"
                     },
                     {
                         "bbox": [
@@ -1048,7 +1048,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ghi chu\u0301 "
+                        "text": "Ghi chu\u0301"
                     },
                     {
                         "bbox": [
@@ -1180,7 +1180,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "so\u1ea1n,"
+                        "text": "So\u1ea1n,"
                     },
                     {
                         "bbox": [
@@ -1312,7 +1312,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "H\u00f4\u0300 Chi\u0301 "
+                        "text": "H\u00f4\u0300 Chi\u0301"
                     },
                     {
                         "bbox": [
@@ -1400,7 +1400,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bi\u0300nh "
+                        "text": "B\u00ecnh"
                     },
                     {
                         "bbox": [
@@ -1422,7 +1422,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ki\u00ea\u0301m,"
+                        "text": "Khi\u00eam,"
                     },
                     {
                         "bbox": [
@@ -1686,7 +1686,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "3"
+                        "text": "2"
                     },
                     {
                         "bbox": [
@@ -1796,7 +1796,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u01b0\u0309a G1"
+                        "text": "Th\u1eeba G1"
                     },
                     {
                         "bbox": [
@@ -1862,7 +1862,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "X\u00e3 T\u00e2n"
+                        "text": "x\u00e3 T\u00e2n"
                     },
                     {
                         "bbox": [
@@ -1884,7 +1884,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tri\u00ea\u0300u,"
+                        "text": "Tri\u1ec1u,"
                     },
                     {
                         "bbox": [
@@ -1906,7 +1906,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "huy\u00ea\u0323n "
+                        "text": "huy\u00ea\u0323n"
                     },
                     {
                         "bbox": [
@@ -1950,7 +1950,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tri, tha\u0300nh "
+                        "text": "Tri, th\u00e0nh"
                     },
                     {
                         "bbox": [
@@ -2016,7 +2016,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "87 Ly\u0301 "
+                        "text": "87 Ly\u0301"
                     },
                     {
                         "bbox": [
@@ -2082,7 +2082,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng 1, "
+                        "text": "ph\u01b0\u1eddng 1,"
                     },
                     {
                         "bbox": [
@@ -2280,7 +2280,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "50 Tr\u00e2\u0300n "
+                        "text": "50 Tr\u00e2\u0300n"
                     },
                     {
                         "bbox": [
@@ -2368,7 +2368,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "B\u00e0 Trung."
+                        "text": "B\u00e0 Tr\u01b0ng,"
                     },
                     {
                         "bbox": [
@@ -2478,7 +2478,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tr\u00ed"
+                        "text": "Tri"
                     },
                     {
                         "bbox": [
@@ -2566,7 +2566,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Sao, "
+                        "text": "Sao,"
                     },
                     {
                         "bbox": [
@@ -2588,7 +2588,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng 5, "
+                        "text": "ph\u01b0\u01a1\u0300ng 5,"
                     },
                     {
                         "bbox": [
@@ -2632,7 +2632,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 "
+                        "text": "tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -2654,7 +2654,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "H\u00f4\u0300 Chi\u0301 "
+                        "text": "H\u00f4\u0300 Chi\u0301"
                     },
                     {
                         "bbox": [
@@ -2786,7 +2786,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hoa Ki"
+                        "text": "Hoa K\u00ec"
                     },
                     {
                         "bbox": [
@@ -2830,7 +2830,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "QUANG"
+                        "text": "QU\u00c2N"
                     },
                     {
                         "bbox": [
@@ -2852,7 +2852,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NGUY\u00ca\u0303N "
+                        "text": "NGUY\u00ca\u0303N"
                     },
                     {
                         "bbox": [
@@ -2896,7 +2896,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u0102NG "
+                        "text": "\u0110\u0102NG"
                     },
                     {
                         "bbox": [
@@ -3099,7 +3099,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 "
+                        "text": "tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -3209,7 +3209,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 "
+                        "text": "tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -3336,7 +3336,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "U\u0309Y BAN NH\u00c2N D\u00c2N TI\u0309NH NAM \u0110I\u0323NH "
+                        "text": "U\u0309Y BAN NH\u00c2N D\u00c2N TI\u0309NH NAM \u0110I\u0323NH"
                     },
                     {
                         "bbox": [
@@ -3402,7 +3402,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG TA\u0300I CHI\u0301NH - K\u00ca\u0301 HOA\u0323CH "
+                        "text": "PHO\u0300NG TA\u0300I CHI\u0301NH - K\u00ca\u0301 HOA\u0323CH"
                     },
                     {
                         "bbox": [
@@ -3556,7 +3556,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Ma\u0303 nga\u0300nh ngh\u00ea\u0300 "
+                        "text": "Ma\u0303 nga\u0300nh ngh\u00ea\u0300"
                     },
                     {
                         "bbox": [
@@ -3644,7 +3644,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Ban le\u0309 s\u01a1n, ma\u0300u, ve\u0301c ni trong ca\u0301c c\u01b0\u0309a ha\u0300ng chuy\u00ean "
+                        "text": "Ban le\u0309 s\u01a1n, ma\u0300u, ve\u0301c ni trong ca\u0301c c\u01b0\u0309a ha\u0300ng chuy\u00ean"
                     },
                     {
                         "bbox": [
@@ -3666,7 +3666,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "doanh "
+                        "text": "doanh"
                     },
                     {
                         "bbox": [
@@ -4084,7 +4084,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "4. V\u00f4\u0301n kinh doanh: 653.635.487.573 VN\u0110 (Sa\u0301u tr\u0103m n\u0103m m\u01b0\u01a1i ba ty\u0309 sa\u0301u tr\u0103m ba "
+                        "text": "4. V\u00f4\u0301n kinh doanh: 653.635.487.573 VN\u0110 (Sa\u0301u tr\u0103m n\u0103m m\u01b0\u01a1i ba ty\u0309 sa\u0301u tr\u0103m ba"
                     },
                     {
                         "bbox": [
@@ -4128,7 +4128,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "HU\u01a0NG"
+                        "text": "H\u01af\u01a0NG"
                     },
                     {
                         "bbox": [
@@ -4172,7 +4172,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -4242,7 +4242,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "C\u00d4NG TY TNHH SA\u0309N XU\u00c2\u0301T & TH\u01af\u01a0NG MA\u0323I VI\u00ca\u0323T "
+                        "text": "C\u00d4NG TY TNHH SA\u0309N XU\u00c2\u0301T & TH\u01af\u01a0NG MA\u0323I VI\u00ca\u0323T"
                     },
                     {
                         "bbox": [
@@ -4319,7 +4319,7 @@
                             ]
                         ],
                         "label": "label_shareholder",
-                        "text": "5. Danh sa\u0301ch tha\u0300nh vi\u00ean h\u00f4\u0323 gia \u0111i\u0300nh \u0111\u0103ng ky\u0301 tha\u0300nh l\u00e2\u0323p h\u00f4\u0323 kinh doanh "
+                        "text": "5. Danh sa\u0301ch tha\u0300nh vi\u00ean h\u00f4\u0323 gia \u0111i\u0300nh \u0111\u0103ng ky\u0301 tha\u0300nh l\u00e2\u0323p h\u00f4\u0323 kinh doanh"
                     },
                     {
                         "bbox": [
@@ -4451,7 +4451,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "kha\u0301c"
+                        "text": "kh\u1ea9u"
                     },
                     {
                         "bbox": [
@@ -4561,7 +4561,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ty\u0309 l\u00ea\u0323 go\u0301p "
+                        "text": "Ty\u0309 l\u00ea\u0323 go\u0301p"
                     },
                     {
                         "bbox": [
@@ -4759,7 +4759,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "5733676960"
+                        "text": "5722676860"
                     },
                     {
                         "bbox": [
@@ -4803,7 +4803,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "81"
+                        "text": "21"
                     },
                     {
                         "bbox": [
@@ -4825,7 +4825,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "17"
+                        "text": "12"
                     },
                     {
                         "bbox": [
@@ -4869,7 +4869,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Va\u0323n Ha\u0323nh "
+                        "text": "Va\u0323n Ha\u0323nh"
                     },
                     {
                         "bbox": [
@@ -4979,7 +4979,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u00f4\u0301 H\u00f4\u0300 "
+                        "text": "ph\u00f4\u0301 H\u00f4\u0300"
                     },
                     {
                         "bbox": [
@@ -5023,7 +5023,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NGUY\u00caN"
+                        "text": "NGUY\u1ec4N"
                     },
                     {
                         "bbox": [
@@ -5067,7 +5067,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "PHO\u0300NG"
+                        "text": "H\u1ed2NG"
                     },
                     {
                         "bbox": [
@@ -5089,7 +5089,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "VANG"
+                        "text": "V\u00c2N"
                     },
                     {
                         "bbox": [
@@ -5155,7 +5155,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "M\u1ea0C"
+                        "text": "MAI"
                     },
                     {
                         "bbox": [
@@ -5265,7 +5265,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng 1, "
+                        "text": "ph\u01b0\u01a1\u0300ng 1,"
                     },
                     {
                         "bbox": [
@@ -5287,7 +5287,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n Phu\u0301 "
+                        "text": "qu\u00e2\u0323n Phu\u0301"
                     },
                     {
                         "bbox": [
@@ -5419,7 +5419,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "90"
+                        "text": "97"
                     },
                     {
                         "bbox": [
@@ -5529,7 +5529,7 @@
                             ]
                         ],
                         "label": "owner_name",
-                        "text": "NG\u00d4 C\u00d4NG TOA\u0309N "
+                        "text": "NG\u00d4 C\u00d4NG TOA\u0309N"
                     },
                     {
                         "bbox": [
@@ -5683,7 +5683,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh B\u0103\u0301c Ninh "
+                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh B\u0103\u0301c Ninh"
                     },
                     {
                         "bbox": [
@@ -5727,7 +5727,7 @@
                             ]
                         ],
                         "label": "owner_living_place",
-                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c: 4 Ngo\u0303 165, Chu\u0300a B\u00f4\u0323c, qu\u00e2\u0323n \u0110\u00f4\u0301ng \u0110a, tha\u0300nh ph\u00f4\u0301 Ha\u0300 N\u00f4\u0323i "
+                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c: 4 Ngo\u0303 165, Chu\u0300a B\u00f4\u0323c, qu\u00e2\u0323n \u0110\u00f4\u0301ng \u0110a, tha\u0300nh ph\u00f4\u0301 Ha\u0300 N\u00f4\u0323i"
                     }
                 ],
                 "type": 6
@@ -5804,7 +5804,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "THNAH"
+                        "text": "THANH"
                     },
                     {
                         "bbox": [
@@ -5826,7 +5826,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "DU\u0303NG"
+                        "text": "H\u00d9NG"
                     },
                     {
                         "bbox": [
@@ -5848,7 +5848,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "51 Ngo\u0303"
+                        "text": "51 Ng\u00f4"
                     },
                     {
                         "bbox": [
@@ -5870,7 +5870,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u00e1i"
+                        "text": "Th\u00ec"
                     },
                     {
                         "bbox": [
@@ -5892,7 +5892,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nh\u00e2m."
+                        "text": "Nh\u1eadm,"
                     },
                     {
                         "bbox": [
@@ -6068,7 +6068,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "Ch\u01b0\u0303 ky\u0301 cu\u0309a ca\u0301 nh\u00e2n ho\u0103\u0323c \u0111a\u0323i di\u00ea\u0323n h\u00f4\u0323 gia \u0111i\u0300nh: "
+                        "text": "Ch\u01b0\u0303 ky\u0301 cu\u0309a ca\u0301 nh\u00e2n ho\u0103\u0323c \u0111a\u0323i di\u00ea\u0323n h\u00f4\u0323 gia \u0111i\u0300nh:"
                     },
                     {
                         "bbox": [
@@ -6313,7 +6313,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -6423,7 +6423,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "4. V\u00f4\u0301n kinh doanh: 6.271.955,00 \u0111\u00f4\u0300ng "
+                        "text": "4. V\u00f4\u0301n kinh doanh: 6.271.955,00 \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -6511,7 +6511,7 @@
                             ]
                         ],
                         "label": "representative_name",
-                        "text": "NGUY\u00ca\u0303N H\u00d4\u0300NG VI\u00ca\u0323T "
+                        "text": "NGUY\u00ca\u0303N H\u00d4\u0300NG VI\u00ca\u0323T"
                     },
                     {
                         "bbox": [
@@ -6753,7 +6753,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "2. \u0110i\u0323a \u0111i\u00ea\u0309m kinh doanh: 666/64/15 \u0110\u01b0\u01a1\u0300ng 3 Tha\u0301ng 2, ph\u01b0\u01a1\u0300ng 14, qu\u00e2\u0323n 10, tha\u0300nh ph\u00f4\u0301 "
+                        "text": "2. \u0110i\u0323a \u0111i\u00ea\u0309m kinh doanh: 666/64/15 \u0110\u01b0\u01a1\u0300ng 3 Tha\u0301ng 2, ph\u01b0\u01a1\u0300ng 14, qu\u00e2\u0323n 10, tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -6934,7 +6934,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "vi\u00ean "
+                        "text": "vi\u00ean"
                     },
                     {
                         "bbox": [
@@ -7000,7 +7000,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "kh\u00e1c"
+                        "text": "kh\u00e2u"
                     },
                     {
                         "bbox": [
@@ -7044,7 +7044,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Gia\u0301 tri\u0323 "
+                        "text": "Gia\u0301 tri\u0323"
                     },
                     {
                         "bbox": [
@@ -7088,7 +7088,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "(\u0111\u00f4\u0300ng)"
+                        "text": "(\u0111\u1ed3ng)"
                     },
                     {
                         "bbox": [
@@ -7110,7 +7110,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "v\u00f4\u0301n (%)"
+                        "text": "v\u1ed1n (%)"
                     },
                     {
                         "bbox": [
@@ -7220,7 +7220,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "th\u01b0\u0323c ca\u0301 nh\u00e2n "
+                        "text": "th\u01b0\u0323c ca\u0301 nh\u00e2n"
                     },
                     {
                         "bbox": [
@@ -7396,7 +7396,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u1eafng x\u00e3 "
+                        "text": "Th\u1eafng, x\u00e3"
                     },
                     {
                         "bbox": [
@@ -7418,7 +7418,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bi\u0300nh "
+                        "text": "Bi\u0300nh"
                     },
                     {
                         "bbox": [
@@ -7440,7 +7440,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u0103\u0301ng,"
+                        "text": "Th\u1eafng,"
                     },
                     {
                         "bbox": [
@@ -7484,7 +7484,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "An, ti\u0309nh "
+                        "text": "An, ti\u0309nh"
                     },
                     {
                         "bbox": [
@@ -7528,7 +7528,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "D\u01b0\u01a1ng "
+                        "text": "D\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -7638,7 +7638,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "VU\u0303"
+                        "text": "T\u00da"
                     },
                     {
                         "bbox": [
@@ -7796,7 +7796,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Phu\u0309, "
+                        "text": "Ph\u1ee7,"
                     },
                     {
                         "bbox": [
@@ -7862,7 +7862,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n 3, "
+                        "text": "qu\u00e2\u0323n 3,"
                     },
                     {
                         "bbox": [
@@ -7928,7 +7928,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -7950,7 +7950,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "901704317608"
+                        "text": "801704317608"
                     },
                     {
                         "bbox": [
@@ -8042,7 +8042,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u0103\u0300ng, "
+                        "text": "\u0110\u1eb1ng,"
                     },
                     {
                         "bbox": [
@@ -8086,7 +8086,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "24, qu\u00e2\u0323n "
+                        "text": "24, qu\u00e2\u0323n"
                     },
                     {
                         "bbox": [
@@ -8108,7 +8108,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Binh,"
+                        "text": "B\u00ecnh,"
                     },
                     {
                         "bbox": [
@@ -8218,7 +8218,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NGUY\u00ca\u0303N "
+                        "text": "NGUY\u00ca\u0303N"
                     },
                     {
                         "bbox": [
@@ -8262,7 +8262,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "C\u01af\u01a0NG "
+                        "text": "C\u01af\u1edcNG"
                     },
                     {
                         "bbox": [
@@ -8306,7 +8306,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "Ch\u01b0\u0303 ky\u0301 cu\u0309a ca\u0301 nh\u00e2n ho\u0103\u0323c \u0111a\u0323i di\u00ea\u0323n h\u00f4\u0323 gia \u0111i\u0300nh: "
+                        "text": "Ch\u01b0\u0303 ky\u0301 cu\u0309a ca\u0301 nh\u00e2n ho\u0103\u0323c \u0111a\u0323i di\u00ea\u0323n h\u00f4\u0323 gia \u0111i\u0300nh:"
                     },
                     {
                         "bbox": [
@@ -8358,7 +8358,7 @@
                             ]
                         ],
                         "label": "representative_residence_permanent",
-                        "text": "20/11 Nguy\u00ea\u0303n Tr\u01b0\u01a1\u0300ng T\u00f4, ph\u01b0\u01a1\u0300ng 12, qu\u00e2\u0323n 4, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh "
+                        "text": "20/11 Nguy\u00ea\u0303n Tr\u01b0\u01a1\u0300ng T\u00f4, ph\u01b0\u01a1\u0300ng 12, qu\u00e2\u0323n 4, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -8455,7 +8455,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG "
+                        "text": "TR\u01af\u1edeNG PH\u00d2NG"
                     },
                     {
                         "bbox": [
@@ -8538,7 +8538,7 @@
                             ]
                         ],
                         "label": "company_code",
-                        "text": "S\u00f4\u0301: 39I0047898"
+                        "text": "S\u1ed1: 39L0047898"
                     },
                     {
                         "bbox": [
@@ -8634,7 +8634,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM "
+                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM"
                     },
                     {
                         "bbox": [
@@ -8656,7 +8656,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u1ed9c l\u1eadp - T\u1ef1 do - H\u1ea1nh ph\u00fac"
                     },
                     {
                         "bbox": [
@@ -9118,7 +9118,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Tr\u1ed3ng r\u1eebng v\u00e0 ch\u0103m s\u00f3c r\u1eebng kh\u00e1c "
+                        "text": "Tr\u1ed3ng r\u1eebng v\u00e0 ch\u0103m s\u00f3c r\u1eebng kh\u00e1c"
                     },
                     {
                         "bbox": [
@@ -9184,7 +9184,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "M\u00f4i gi\u01a1\u0301i mua ba\u0301n ha\u0300ng ho\u0301a "
+                        "text": "M\u00f4i gi\u01a1\u0301i mua ba\u0301n ha\u0300ng ho\u0301a"
                     },
                     {
                         "bbox": [
@@ -9272,7 +9272,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "c\u01b0\u0309a ha\u0300ng chuy\u00ean doanh "
+                        "text": "c\u01b0\u0309a ha\u0300ng chuy\u00ean doanh"
                     },
                     {
                         "bbox": [
@@ -9316,7 +9316,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "c\u01b0\u0309a ha\u0300ng chuy\u00ean doanh "
+                        "text": "c\u01b0\u0309a ha\u0300ng chuy\u00ean doanh"
                     },
                     {
                         "bbox": [
@@ -9547,7 +9547,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Ba\u0301n le\u0309 phu\u0323 tu\u0300ng va\u0300 ca\u0301c b\u00f4\u0323 ph\u00e2\u0323n phu\u0323 tr\u01a1\u0323 cu\u0309a \u00f4 t\u00f4 con "
+                        "text": "Ba\u0301n le\u0309 phu\u0323 tu\u0300ng va\u0300 ca\u0301c b\u00f4\u0323 ph\u00e2\u0323n phu\u0323 tr\u01a1\u0323 cu\u0309a \u00f4 t\u00f4 con"
                     },
                     {
                         "bbox": [
@@ -9745,7 +9745,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Nu\u00f4i tr\u00f4\u0300ng thu\u0309y sa\u0309n "
+                        "text": "Nu\u00f4i tr\u00f4\u0300ng thu\u0309y sa\u0309n"
                     },
                     {
                         "bbox": [
@@ -9789,7 +9789,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Tr\u00f4ng c\u00e2y \u0103n qu\u1ea3"
+                        "text": "Tr\u1ed3ng c\u00e2y \u0103n qu\u1ea3"
                     },
                     {
                         "bbox": [
@@ -9811,7 +9811,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Sa\u0309n xu\u00e2\u0301t thi\u00ea\u0301t bi\u0323 \u0111i\u00ea\u0323n "
+                        "text": "Sa\u0309n xu\u00e2\u0301t thi\u00ea\u0301t bi\u0323 \u0111i\u00ea\u0323n"
                     },
                     {
                         "bbox": [
@@ -10057,7 +10057,7 @@
                             ]
                         ],
                         "label": "owner_type",
-                        "text": "4. Chu\u0309 th\u00ea\u0309 tha\u0300nh l\u00e2\u0323p h\u00f4\u0323 kinh doanh: Ca\u0301c tha\u0300nh vi\u00ean h\u00f4\u0323 gia \u0111i\u0300nh  "
+                        "text": "4. Chu\u0309 th\u00ea\u0309 tha\u0300nh l\u00e2\u0323p h\u00f4\u0323 kinh doanh: Ca\u0301c tha\u0300nh vi\u00ean h\u00f4\u0323 gia \u0111i\u0300nh"
                     },
                     {
                         "bbox": [
@@ -10145,7 +10145,7 @@
                             ]
                         ],
                         "label": "owner_sex",
-                        "text": "Gi\u01a1\u0301i ti\u0301nh: Nam "
+                        "text": "Gi\u01a1\u0301i ti\u0301nh: Nam"
                     },
                     {
                         "bbox": [
@@ -10211,7 +10211,7 @@
                             ]
                         ],
                         "label": "owner_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Nh\u00e2\u0323t Ba\u0309n "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Nh\u00e2\u0323t Ba\u0309n"
                     },
                     {
                         "bbox": [
@@ -10669,7 +10669,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "3. Nga\u0300nh, ngh\u00ea\u0300 kinh doanh: "
+                        "text": "3. Nga\u0300nh, ngh\u00ea\u0300 kinh doanh:"
                     },
                     {
                         "bbox": [
@@ -10955,7 +10955,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Tr\u00f4\u0300ng rau, \u0111\u00e2\u0323u ca\u0301c loa\u0323i va\u0300 tr\u00f4\u0300ng hoa "
+                        "text": "Tr\u00f4\u0300ng rau, \u0111\u00e2\u0323u ca\u0301c loa\u0323i va\u0300 tr\u00f4\u0300ng hoa"
                     },
                     {
                         "bbox": [
@@ -11527,7 +11527,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -11549,7 +11549,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: "
+                        "text": "Email:"
                     }
                 ],
                 "type": 6
@@ -11582,7 +11582,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "\u0111i\u00ea\u0300u khi\u00ea\u0309n "
+                        "text": "\u0111i\u00ea\u0300u khi\u00ea\u0309n"
                     },
                     {
                         "bbox": [
@@ -11616,7 +11616,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Hoa\u0323t \u0111\u00f4\u0323ng sa\u0309n xu\u00e2\u0301t ca\u0301c sa\u0309n ph\u00e2\u0309m v\u00e2\u0323t ch\u00e2\u0301t t\u01b0 li\u00ea\u0323u du\u0300ng "
+                        "text": "Hoa\u0323t \u0111\u00f4\u0323ng sa\u0309n xu\u00e2\u0301t ca\u0301c sa\u0309n ph\u00e2\u0309m v\u00e2\u0323t ch\u00e2\u0301t t\u01b0 li\u00ea\u0323u du\u0300ng"
                     },
                     {
                         "bbox": [
@@ -11690,7 +11690,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Tr\u00f4\u0300ng rau ca\u0301c loa\u0323i "
+                        "text": "Tr\u00f4\u0300ng rau ca\u0301c loa\u0323i"
                     },
                     {
                         "bbox": [
@@ -11850,7 +11850,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "\u0111\u00f4\u0323ng ho\u0103\u0323c ta\u0323i ch\u01a1\u0323 "
+                        "text": "\u0111\u00f4\u0323ng ho\u0103\u0323c ta\u0323i ch\u01a1\u0323"
                     },
                     {
                         "bbox": [
@@ -12238,7 +12238,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Ba\u0301n le\u0309 ha\u0300ng v\u0103n ho\u0301a gia\u0309i tri\u0301 l\u01b0u \u0111\u00f4\u0323ng ho\u0103\u0323c ta\u0323i ch\u01a1\u0323 "
+                        "text": "Ba\u0301n le\u0309 ha\u0300ng v\u0103n ho\u0301a gia\u0309i tri\u0301 l\u01b0u \u0111\u00f4\u0323ng ho\u0103\u0323c ta\u0323i ch\u01a1\u0323"
                     },
                     {
                         "bbox": [
@@ -12374,7 +12374,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Sa\u0309n xu\u00e2\u0301t plastic nguy\u00ean sinh "
+                        "text": "Sa\u0309n xu\u00e2\u0301t plastic nguy\u00ean sinh"
                     },
                     {
                         "bbox": [
@@ -12396,7 +12396,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "V\u00e2\u0323n ta\u0309i ha\u0300ng ho\u0301a b\u0103\u0300ng ph\u01b0\u01a1ng ti\u00ea\u0323n \u0111\u01b0\u01a1\u0300ng b\u00f4\u0323 kha\u0301c "
+                        "text": "V\u00e2\u0323n ta\u0309i ha\u0300ng ho\u0301a b\u0103\u0300ng ph\u01b0\u01a1ng ti\u00ea\u0323n \u0111\u01b0\u01a1\u0300ng b\u00f4\u0323 kha\u0301c"
                     },
                     {
                         "bbox": [
@@ -12418,7 +12418,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Nha\u0300 tro\u0323, pho\u0300ng tro\u0323 va\u0300 ca\u0301c c\u01a1 s\u01a1\u0309 l\u01b0u tru\u0301 ng\u0103\u0301n nga\u0300y "
+                        "text": "Nha\u0300 tro\u0323, pho\u0300ng tro\u0323 va\u0300 ca\u0301c c\u01a1 s\u01a1\u0309 l\u01b0u tru\u0301 ng\u0103\u0301n nga\u0300y"
                     },
                     {
                         "bbox": [
@@ -12484,7 +12484,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Hoa\u0323t \u0111\u00f4\u0323ng pha\u0301p lu\u00e2\u0323t "
+                        "text": "Hoa\u0323t \u0111\u00f4\u0323ng pha\u0301p lu\u00e2\u0323t"
                     },
                     {
                         "bbox": [
@@ -12550,7 +12550,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Cho thu\u00ea ma\u0301y mo\u0301c, thi\u00ea\u0301t bi\u0323 v\u0103n pho\u0300ng (k\u00ea\u0309 ca\u0309 ma\u0301y vi "
+                        "text": "Cho thu\u00ea ma\u0301y mo\u0301c, thi\u00ea\u0301t bi\u0323 v\u0103n pho\u0300ng (k\u00ea\u0309 ca\u0309 ma\u0301y vi"
                     },
                     {
                         "bbox": [
@@ -12726,7 +12726,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "12"
+                        "text": "15"
                     },
                     {
                         "bbox": [
@@ -12748,7 +12748,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "36"
+                        "text": "16"
                     },
                     {
                         "bbox": [
@@ -12792,7 +12792,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "43"
+                        "text": "13"
                     },
                     {
                         "bbox": [
@@ -12814,7 +12814,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "42"
+                        "text": "12"
                     },
                     {
                         "bbox": [
@@ -12836,7 +12836,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "18"
+                        "text": "11"
                     },
                     {
                         "bbox": [
@@ -13067,7 +13067,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Tr\u00f4\u0300ng c\u00e2y \u0103n qua\u0309 kha\u0301c "
+                        "text": "Tr\u00f4\u0300ng c\u00e2y \u0103n qua\u0309 kha\u0301c"
                     },
                     {
                         "bbox": [
@@ -13089,7 +13089,7 @@
                             ]
                         ],
                         "label": "business_type",
-                        "text": "Sa\u0309n xu\u00e2\u0301t thu\u00f4\u0301c hu\u0301i kha\u0301c "
+                        "text": "Sa\u0309n xu\u00e2\u0301t thu\u00f4\u0301c hu\u0301i kha\u0301c"
                     },
                     {
                         "bbox": [
@@ -13301,7 +13301,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "vi\u00ean "
+                        "text": "vi\u00ean"
                     },
                     {
                         "bbox": [
@@ -13345,7 +13345,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110i\u0323a chi\u0309 "
+                        "text": "\u0110i\u0323a chi\u0309"
                     },
                     {
                         "bbox": [
@@ -13389,7 +13389,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110i\u0323a chi\u0309 "
+                        "text": "\u0110i\u0323a chi\u0309"
                     },
                     {
                         "bbox": [
@@ -13631,7 +13631,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "B\u00ea\u0301n L\u01b0\u0301c, "
+                        "text": "B\u00ea\u0301n L\u01b0\u0301c,"
                     },
                     {
                         "bbox": [
@@ -13675,7 +13675,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "An "
+                        "text": "An"
                     },
                     {
                         "bbox": [
@@ -13719,7 +13719,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "V\u0169ng"
+                        "text": "H\u01b0ng"
                     },
                     {
                         "bbox": [
@@ -13763,7 +13763,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng "
+                        "text": "ph\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -13851,7 +13851,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -13939,7 +13939,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Pha\u0323m "
+                        "text": "Pha\u0323m"
                     },
                     {
                         "bbox": [
@@ -13983,7 +13983,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u01b0\u01a1\u0300ng "
+                        "text": "Th\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -14027,7 +14027,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng 8,"
+                        "text": "ph\u01b0\u1eddng 6,"
                     },
                     {
                         "bbox": [
@@ -14071,7 +14071,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nh\u00e2\u0323t Ba\u0309n "
+                        "text": "Nh\u00e2\u0323t Ba\u0309n"
                     },
                     {
                         "bbox": [
@@ -14093,7 +14093,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Trung "
+                        "text": "Trung"
                     },
                     {
                         "bbox": [
@@ -14537,7 +14537,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh Ngh\u00ea\u0323 An "
+                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh Ngh\u00ea\u0323 An"
                     },
                     {
                         "bbox": [
@@ -14812,7 +14812,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "171 Pha\u0323m"
+                        "text": "171 Ph\u1ea1m"
                     },
                     {
                         "bbox": [
@@ -14856,7 +14856,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ngo\u0323c "
+                        "text": "Ngo\u0323c"
                     },
                     {
                         "bbox": [
@@ -14900,7 +14900,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng "
+                        "text": "ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -14944,7 +14944,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u00e0nh th\u1ecb"
+                        "text": "Th\u00e0nh, th\u1ecb"
                     },
                     {
                         "bbox": [
@@ -15010,7 +15010,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ti\u0309nh Bi\u0300nh "
+                        "text": "ti\u0309nh Bi\u0300nh"
                     },
                     {
                         "bbox": [
@@ -15032,7 +15032,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "D\u01b0\u01a1ng "
+                        "text": "D\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -15076,7 +15076,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bi\u0300nh "
+                        "text": "Bi\u0300nh"
                     },
                     {
                         "bbox": [
@@ -15186,7 +15186,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "51 Ng\u00f4"
+                        "text": "11 Ng\u00f5"
                     },
                     {
                         "bbox": [
@@ -15252,7 +15252,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Long,"
+                        "text": "H\u1ed3ng,"
                     },
                     {
                         "bbox": [
@@ -15318,7 +15318,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 "
+                        "text": "tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -15516,7 +15516,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TR\u00c2N "
+                        "text": "TR\u00c2N"
                     },
                     {
                         "bbox": [
@@ -15670,7 +15670,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng "
+                        "text": "ph\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -15692,7 +15692,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "10, qu\u00e2\u0323n "
+                        "text": "10, qu\u1eadn"
                     },
                     {
                         "bbox": [
@@ -15714,7 +15714,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u00e2n Bi\u0300nh, "
+                        "text": "T\u00e2n Bi\u0300nh,"
                     },
                     {
                         "bbox": [
@@ -15824,7 +15824,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Quang "
+                        "text": "Quang"
                     },
                     {
                         "bbox": [
@@ -16171,7 +16171,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 351/49B L\u00ea V\u0103n Sy\u0303, ph\u01b0\u01a1\u0300ng 13, qu\u00e2\u0323n 3, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 351/49B L\u00ea V\u0103n Sy\u0303, ph\u01b0\u01a1\u0300ng 13, qu\u00e2\u0323n 3, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301"
                     },
                     {
                         "bbox": [
@@ -16303,7 +16303,7 @@
                             ]
                         ],
                         "label": "label_owner",
-                        "text": "4. Chu\u0309 doanh nghi\u00ea\u0323p "
+                        "text": "4. Chu\u0309 doanh nghi\u00ea\u0323p"
                     },
                     {
                         "bbox": [
@@ -16435,7 +16435,7 @@
                             ]
                         ],
                         "label": "owner_idcard_type",
-                        "text": "Loa\u0323i gi\u00e2\u0301y t\u01a1\u0300 pha\u0301p ly\u0301 cu\u0309a ca\u0301 nh\u00e2n: H\u00f4\u0323 chi\u00ea\u0301u "
+                        "text": "Loa\u0323i gi\u00e2\u0301y t\u01a1\u0300 pha\u0301p ly\u0301 cu\u0309a ca\u0301 nh\u00e2n: H\u00f4\u0323 chi\u00ea\u0301u"
                     },
                     {
                         "bbox": [
@@ -16977,7 +16977,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean doanh nghi\u00ea\u0323p vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY TNHH DINH D\u01af\u01a0\u0303NG VI\u00ca\u0303N "
+                        "text": "T\u00ean doanh nghi\u00ea\u0323p vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY TNHH DINH D\u01af\u01a0\u0303NG VI\u00ca\u0303N"
                     },
                     {
                         "bbox": [
@@ -17197,7 +17197,7 @@
                             ]
                         ],
                         "label": "label_owner",
-                        "text": "4. Chu\u0309 doanh nghi\u00ea\u0323p "
+                        "text": "4. Chu\u0309 doanh nghi\u00ea\u0323p"
                     },
                     {
                         "bbox": [
@@ -17395,7 +17395,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P DOANH NGHI\u00ca\u0323P T\u01af"
+                        "text": "GI\u1ea4Y CH\u1ee8NG NH\u1eacN \u0110\u0102NG K\u00dd DOANH NGHI\u1ec6P DOANH NGHI\u1ec6P T\u01af"
                     },
                     {
                         "bbox": [
@@ -17527,7 +17527,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -17685,7 +17685,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "\u0111\u00f4ng"
+                        "text": "\u0111\u1ed3ng"
                     }
                 ],
                 "type": 0
@@ -17955,7 +17955,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "TH\u01af\u01a0NG MA\u0323I DI\u0323CH VU\u0323 THI\u00ca\u0301T K\u00ca\u0301 QUA\u0309NG CA\u0301O ANH & EM "
+                        "text": "TH\u01af\u01a0NG MA\u0323I DI\u0323CH VU\u0323 THI\u00ca\u0301T K\u00ca\u0301 QUA\u0309NG CA\u0301O ANH & EM"
                     },
                     {
                         "bbox": [
@@ -18021,7 +18021,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 250 Hoa\u0300ng Hoa Tha\u0301m, ph\u01b0\u01a1\u0300ng 12, qu\u00e2\u0323n T\u00e2n Bi\u0300nh, tha\u0300nh ph\u00f4\u0301 "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 250 Hoa\u0300ng Hoa Tha\u0301m, ph\u01b0\u01a1\u0300ng 12, qu\u00e2\u0323n T\u00e2n Bi\u0300nh, tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -18131,7 +18131,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: thanhlooico@hcm.fpt.vn"
+                        "text": "Email: thanhloico@hcm.fpt.vn"
                     },
                     {
                         "bbox": [
@@ -18637,7 +18637,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "Hai tri\u00ea\u0323u chi\u0301n tr\u0103m ba\u0309y m\u01b0\u01a1i nghi\u0300n n\u0103m tr\u0103m ta\u0301m m\u01b0\u01a1i \u0111\u00f4\u0300ng "
+                        "text": "Hai tri\u00ea\u0323u chi\u0301n tr\u0103m ba\u0309y m\u01b0\u01a1i nghi\u0300n n\u0103m tr\u0103m ta\u0301m m\u01b0\u01a1i \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -19073,7 +19073,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -19117,7 +19117,7 @@
                             ]
                         ],
                         "label": "owner_name",
-                        "text": "T\u00ean t\u00f4\u0309 ch\u01b0\u0301c: C\u00d4NG TY TNHH HU\u0300NG PH\u01af\u01a0NG "
+                        "text": "T\u00ean t\u00f4\u0309 ch\u01b0\u0301c: C\u00d4NG TY TNHH HU\u0300NG PH\u01af\u01a0NG"
                     },
                     {
                         "bbox": [
@@ -19249,7 +19249,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M "
+                        "text": "GI\u1ea4Y CH\u1ee8NG NH\u1eacN \u0110\u0102NG K\u00dd DOANH NGHI\u1ec6P C\u00d4NG TY TR\u00c1CH NHI\u1ec6M"
                     },
                     {
                         "bbox": [
@@ -19359,7 +19359,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH VI\u0303NH PHU\u0301C "
+                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH VI\u0303NH PHU\u0301C"
                     },
                     {
                         "bbox": [
@@ -19634,7 +19634,7 @@
                             ]
                         ],
                         "label": "representative_ethnicity",
-                        "text": "D\u00e2n t\u00f4\u0323c: Ch\u0103m "
+                        "text": "D\u00e2n t\u00f4\u0323c: Ch\u0103m"
                     },
                     {
                         "bbox": [
@@ -20047,7 +20047,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u1ec7n tho\u1ea1i"
+                        "text": "\u0110i\u1ec7n tho\u1ea1i:"
                     },
                     {
                         "bbox": [
@@ -20091,7 +20091,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: "
+                        "text": "Email:"
                     },
                     {
                         "bbox": [
@@ -20487,7 +20487,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -20531,7 +20531,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "ngoa\u0300i, n\u00ea\u0301u co\u0301): 81.778.667 \u0111\u00f4\u0300ng "
+                        "text": "ngoa\u0300i, n\u00ea\u0301u co\u0301): 81.778.667 \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -20872,7 +20872,7 @@
                             ]
                         ],
                         "label": "representative_idcard_place",
-                        "text": "\u0110LQG v\u00ea\u0300 d\u00e2n c\u01b0 "
+                        "text": "\u0110LQG v\u00ea\u0300 d\u00e2n c\u01b0"
                     },
                     {
                         "bbox": [
@@ -20938,7 +20938,7 @@
                             ]
                         ],
                         "label": "representative_living_place",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -21571,7 +21571,7 @@
                             ]
                         ],
                         "label": "owner_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Vi\u00ea\u0323t Nam "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Vi\u00ea\u0323t Nam"
                     },
                     {
                         "bbox": [
@@ -21659,7 +21659,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N D\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M "
+                        "text": "GI\u1ea4Y CH\u1ee8NG NH\u1eacN D\u0102NG K\u00dd DOANH NGHI\u1ec6P C\u00d4NG TY TR\u00c1CH NHI\u1ec6M"
                     },
                     {
                         "bbox": [
@@ -21681,7 +21681,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "H\u01af\u0303U HA\u0323N M\u00d4\u0323T THA\u0300NH VI\u00caN "
+                        "text": "H\u01af\u0303U HA\u0323N M\u00d4\u0323T THA\u0300NH VI\u00caN"
                     },
                     {
                         "bbox": [
@@ -22374,7 +22374,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "N\u01a1i c\u00e2\u0301p: Cu\u0323c Ca\u0309nh sa\u0301t \u0110KQL c\u01b0 tru\u0301 va\u0300 "
+                        "text": "N\u01a1i c\u00e2\u0301p: Cu\u0323c Ca\u0309nh sa\u0301t \u0110KQL c\u01b0 tru\u0301 va\u0300"
                     },
                     {
                         "bbox": [
@@ -22567,7 +22567,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -22589,7 +22589,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t:"
                     },
                     {
                         "bbox": [
@@ -22655,7 +22655,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh:"
                     },
                     {
                         "bbox": [
@@ -22743,7 +22743,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: "
+                        "text": "Email:"
                     },
                     {
                         "bbox": [
@@ -22831,7 +22831,7 @@
                             ]
                         ],
                         "label": "owner_sex",
-                        "text": "Gi\u01a1\u0301i ti\u0301nh: Nam "
+                        "text": "Gi\u01a1\u0301i ti\u0301nh: Nam"
                     },
                     {
                         "bbox": [
@@ -23007,7 +23007,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M"
                     },
                     {
                         "bbox": [
@@ -23117,7 +23117,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -23480,7 +23480,7 @@
                             ]
                         ],
                         "label": "representative_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Vi\u00ea\u0323t Nam "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Vi\u00ea\u0323t Nam"
                     },
                     {
                         "bbox": [
@@ -23612,7 +23612,7 @@
                             ]
                         ],
                         "label": "representative_residence_permanent",
-                        "text": "Nh\u01a1n, ti\u0309nh Bi\u0300nh \u0110i\u0323nh "
+                        "text": "Nh\u01a1n, ti\u0309nh Bi\u0300nh \u0110i\u0323nh"
                     },
                     {
                         "bbox": [
@@ -23700,7 +23700,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "N\u01a1i c\u00e2\u0301p: Cu\u0323c Ca\u0309nh sa\u0301t \u0110KQL c\u01b0 tru\u0301 va\u0300 "
+                        "text": "N\u01a1i c\u00e2\u0301p: Cu\u0323c Ca\u0309nh sa\u0301t \u0110KQL c\u01b0 tru\u0301 va\u0300"
                     },
                     {
                         "bbox": [
@@ -23722,7 +23722,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "\u0110LQG v\u00ea\u0300 d\u00e2n c\u01b0 "
+                        "text": "\u0110LQG v\u00ea\u0300 d\u00e2n c\u01b0"
                     },
                     {
                         "bbox": [
@@ -23826,7 +23826,7 @@
                             ]
                         ],
                         "label": "owner_living_place",
-                        "text": "\u0110a\u0300 N\u0103\u0303ng "
+                        "text": "\u0110a\u0300 N\u0103\u0303ng"
                     },
                     {
                         "bbox": [
@@ -23909,7 +23909,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -24283,7 +24283,7 @@
                             ]
                         ],
                         "label": "owner_ethnicity",
-                        "text": "D\u00e2n t\u00f4\u0323c: Nu\u0300ng "
+                        "text": "D\u00e2n t\u00f4\u0323c: Nu\u0300ng"
                     },
                     {
                         "bbox": [
@@ -24437,7 +24437,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "H\u1eeeU H\u1ea0N M\u1ed8T TH\u00c0NH VI\u00caN "
+                        "text": "H\u1eeeU H\u1ea0N M\u1ed8T TH\u00c0NH VI\u00caN"
                     },
                     {
                         "bbox": [
@@ -24998,7 +24998,7 @@
                             ]
                         ],
                         "label": "owner_idcard_place",
-                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh Ca\u0300 Mau "
+                        "text": "N\u01a1i c\u00e2\u0301p: CA Ti\u0309nh Ca\u0300 Mau"
                     },
                     {
                         "bbox": [
@@ -25225,7 +25225,7 @@
                             ]
                         ],
                         "label": "company_short_name",
-                        "text": "T\u00ean chi nha\u0301nh vi\u00ea\u0301t t\u0103\u0301t: "
+                        "text": "T\u00ean chi nha\u0301nh vi\u00ea\u0301t t\u0103\u0301t:"
                     },
                     {
                         "bbox": [
@@ -25269,7 +25269,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -25313,7 +25313,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: hiephoaxd@dng.vnn.vn "
+                        "text": "Email: hiephoaxd@dng.vnn.vn"
                     },
                     {
                         "bbox": [
@@ -25445,7 +25445,7 @@
                             ]
                         ],
                         "label": "owner_ethnicity",
-                        "text": "D\u00e2n t\u00f4\u0323c: Tha\u0301i "
+                        "text": "D\u00e2n t\u00f4\u0323c: Tha\u0301i"
                     },
                     {
                         "bbox": [
@@ -25731,7 +25731,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean chi nha\u0301nh (ghi b\u0103\u0300ng ch\u01b0\u0303 in hoa): "
+                        "text": "1. T\u00ean chi nha\u0301nh (ghi b\u0103\u0300ng ch\u01b0\u0303 in hoa):"
                     },
                     {
                         "bbox": [
@@ -25897,7 +25897,7 @@
                             ]
                         ],
                         "label": "authority_company_address",
-                        "text": "302C Ly\u0301 Th\u01b0\u01a1\u0300ng Ki\u00ea\u0323t, ph\u01b0\u01a1\u0300ng 6, qu\u00e2\u0323n T\u00e2n Bi\u0300nh, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 "
+                        "text": "302C Ly\u0301 Th\u01b0\u01a1\u0300ng Ki\u00ea\u0323t, ph\u01b0\u01a1\u0300ng 6, qu\u00e2\u0323n T\u00e2n Bi\u0300nh, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300"
                     },
                     {
                         "bbox": [
@@ -26018,7 +26018,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG "
+                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG"
                     },
                     {
                         "bbox": [
@@ -26189,7 +26189,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309:"
+                        "text": "2. \u0110\u1ecba ch\u1ec9:"
                     },
                     {
                         "bbox": [
@@ -26233,7 +26233,7 @@
                             ]
                         ],
                         "label": "company_fax",
-                        "text": "Fax: "
+                        "text": "Fax:"
                     },
                     {
                         "bbox": [
@@ -26409,7 +26409,7 @@
                             ]
                         ],
                         "label": "owner_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: \u00c2\u0301n \u0110\u00f4\u0323 "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: \u00c2\u0301n \u0110\u00f4\u0323"
                     },
                     {
                         "bbox": [
@@ -26607,7 +26607,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 HOA\u0323T \u0110\u00d4\u0323NG V\u0102N PHO\u0300NG \u0110A\u0323I DI\u00ca\u0323N "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 HOA\u0323T \u0110\u00d4\u0323NG V\u0102N PHO\u0300NG \u0110A\u0323I DI\u00ca\u0323N"
                     },
                     {
                         "bbox": [
@@ -26717,7 +26717,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM "
+                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM"
                     },
                     {
                         "bbox": [
@@ -26761,7 +26761,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u1ede K\u1ebe HO\u1ea0CH V\u00c0 \u0110\u1ea6U T\u01af TH\u00c0NH PH\u1ed0 H\u1ea2I "
+                        "text": "S\u1ede K\u1ebe HO\u1ea0CH V\u00c0 \u0110\u1ea6U T\u01af TH\u00c0NH PH\u1ed0 H\u1ea2I"
                     },
                     {
                         "bbox": [
@@ -26805,7 +26805,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     }
                 ],
                 "type": 2
@@ -26898,7 +26898,7 @@
                             ]
                         ],
                         "label": "authority_company_name",
-                        "text": "C\u00f4ng ty TNHH C\u00f4ng Nghi\u00ea\u0323p Th\u01b0\u0323c Ph\u00e2\u0309m-Cn Pataya Vi\u00ea\u0323t Nam "
+                        "text": "C\u00f4ng ty TNHH C\u00f4ng Nghi\u00ea\u0323p Th\u01b0\u0323c Ph\u00e2\u0309m-Cn Pataya Vi\u00ea\u0323t Nam"
                     },
                     {
                         "bbox": [
@@ -26920,7 +26920,7 @@
                             ]
                         ],
                         "label": "authority_company_code",
-                        "text": "Ma\u0303 s\u00f4\u0301 doanh nghi\u00ea\u0323p: "
+                        "text": "Ma\u0303 s\u00f4\u0301 doanh nghi\u00ea\u0323p:"
                     },
                     {
                         "bbox": [
@@ -27235,7 +27235,7 @@
                             ]
                         ],
                         "label": "company_fax",
-                        "text": "Fax: 47530922976"
+                        "text": "Fax: 4753092976"
                     },
                     {
                         "bbox": [
@@ -27411,7 +27411,7 @@
                             ]
                         ],
                         "label": "owner_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Ha\u0300n Qu\u00f4\u0301c "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Ha\u0300n Qu\u00f4\u0301c"
                     },
                     {
                         "bbox": [
@@ -27565,7 +27565,7 @@
                             ]
                         ],
                         "label": "owner_living_place",
-                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c: "
+                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c:"
                     },
                     {
                         "bbox": [
@@ -28081,7 +28081,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "LIMITTED"
+                        "text": "LIMITED"
                     },
                     {
                         "bbox": [
@@ -28103,7 +28103,7 @@
                             ]
                         ],
                         "label": "company_short_name",
-                        "text": "T\u00ean chi nha\u0301nh vi\u00ea\u0301t t\u0103\u0301t: "
+                        "text": "T\u00ean chi nha\u0301nh vi\u00ea\u0301t t\u0103\u0301t:"
                     },
                     {
                         "bbox": [
@@ -28147,7 +28147,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -28169,7 +28169,7 @@
                             ]
                         ],
                         "label": "company_fax",
-                        "text": "Fax"
+                        "text": "Fax:"
                     },
                     {
                         "bbox": [
@@ -28345,7 +28345,7 @@
                             ]
                         ],
                         "label": "owner_sex",
-                        "text": "Gi\u01a1\u0301i ti\u0301nh: N\u01b0\u0303 "
+                        "text": "Gi\u01a1\u0301i ti\u0301nh: N\u01b0\u0303"
                     },
                     {
                         "bbox": [
@@ -28529,7 +28529,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 HOA\u0323T \u0110\u00d4\u0323NG CHI NHA\u0301NH "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 HOA\u0323T \u0110\u00d4\u0323NG CHI NHA\u0301NH"
                     },
                     {
                         "bbox": [
@@ -28683,7 +28683,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -28793,7 +28793,7 @@
                             ]
                         ],
                         "label": "authority_company_code",
-                        "text": "085041"
+                        "text": "08504I"
                     },
                     {
                         "bbox": [
@@ -29019,7 +29019,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309:"
+                        "text": "2. \u0110\u1ecba ch\u1ec9:"
                     },
                     {
                         "bbox": [
@@ -29041,7 +29041,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -29107,7 +29107,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: hiepoaxd@dng.vnn.vn"
+                        "text": "Email: hiephoaxd@dng.vnn.vn"
                     },
                     {
                         "bbox": [
@@ -29129,7 +29129,7 @@
                             ]
                         ],
                         "label": "label_owner",
-                        "text": "3. Th\u00f4ng tin v\u00ea\u0300 ng\u01b0\u01a1\u0300i \u0111\u01b0\u0301ng \u0111\u00e2\u0300u "
+                        "text": "3. Th\u00f4ng tin v\u00ea\u0300 ng\u01b0\u01a1\u0300i \u0111\u01b0\u0301ng \u0111\u00e2\u0300u"
                     },
                     {
                         "bbox": [
@@ -29151,7 +29151,7 @@
                             ]
                         ],
                         "label": "owner_name",
-                        "text": "Ho\u0323 va\u0300 t\u00ean: HA\u0300 V\u0102N QUANG "
+                        "text": "Ho\u0323 va\u0300 t\u00ean: HA\u0300 V\u0102N QUANG"
                     },
                     {
                         "bbox": [
@@ -29349,7 +29349,7 @@
                             ]
                         ],
                         "label": "owner_residence_permanent",
-                        "text": "N\u01a1i \u0111\u0103ng ky\u0301 HKTT: 187 Thu\u0309 Khoa Hu\u00e2n, tha\u0300nh ph\u00f4\u0301 Phan Thi\u00ea\u0301t, ti\u0309nh Bi\u0300nh Thu\u00e2\u0323n "
+                        "text": "N\u01a1i \u0111\u0103ng ky\u0301 HKTT: 187 Thu\u0309 Khoa Hu\u00e2n, tha\u0300nh ph\u00f4\u0301 Phan Thi\u00ea\u0301t, ti\u0309nh Bi\u0300nh Thu\u00e2\u0323n"
                     },
                     {
                         "bbox": [
@@ -29701,7 +29701,7 @@
                             ]
                         ],
                         "label": "authority_company_address",
-                        "text": "\u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: "
+                        "text": "\u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh:"
                     },
                     {
                         "bbox": [
@@ -29839,7 +29839,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH"
                     },
                     {
                         "bbox": [
@@ -29953,7 +29953,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM "
+                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM"
                     },
                     {
                         "bbox": [
@@ -29997,7 +29997,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -30151,7 +30151,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "h\u01a1\u0323p danh "
+                        "text": "h\u01a1\u0323p danh"
                     },
                     {
                         "bbox": [
@@ -30239,7 +30239,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "g\u00f3p (VN\u0110)"
+                        "text": "g\u00f3p (VN\u0110"
                     },
                     {
                         "bbox": [
@@ -30283,7 +30283,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "D\u01b0\u01a1ng"
+                        "text": "t\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -30393,7 +30393,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u00da"
+                        "text": "T\u1ef7"
                     },
                     {
                         "bbox": [
@@ -30877,7 +30877,7 @@
                             ]
                         ],
                         "label": "company_phone",
-                        "text": "\u0110i\u00ea\u0323n thoa\u0323i: "
+                        "text": "\u0110i\u00ea\u0323n thoa\u0323i:"
                     },
                     {
                         "bbox": [
@@ -31086,7 +31086,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nghe\u0301, qu\u00e2\u0323n 1, "
+                        "text": "Nghe\u0301, qu\u00e2\u0323n 1,"
                     },
                     {
                         "bbox": [
@@ -31174,7 +31174,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ng\u1ecdc Kh\u00e1nh"
+                        "text": "Ng\u1ecdc Kh\u00e1nh,"
                     },
                     {
                         "bbox": [
@@ -31218,7 +31218,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 Ha\u0300 "
+                        "text": "tha\u0300nh ph\u00f4\u0301 Ha\u0300"
                     },
                     {
                         "bbox": [
@@ -31416,7 +31416,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "55"
+                        "text": "35"
                     },
                     {
                         "bbox": [
@@ -31570,7 +31570,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "La\u0300o "
+                        "text": "La\u0300o"
                     },
                     {
                         "bbox": [
@@ -31636,7 +31636,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "KHA\u0301NH "
+                        "text": "KHA\u0301NH"
                     },
                     {
                         "bbox": [
@@ -31680,7 +31680,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "LY\u0301 THANH"
+                        "text": "L\u00ca THANH"
                     },
                     {
                         "bbox": [
@@ -31702,7 +31702,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "MINH "
+                        "text": "MINH"
                     },
                     {
                         "bbox": [
@@ -31768,7 +31768,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng Thanh "
+                        "text": "ph\u01b0\u1eddng Thanh"
                     },
                     {
                         "bbox": [
@@ -31812,7 +31812,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tri\u0300, qu\u00e2\u0323n Hoa\u0300ng "
+                        "text": "Tri\u0300, qu\u00e2\u0323n Hoa\u0300ng"
                     },
                     {
                         "bbox": [
@@ -31878,7 +31878,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110a\u0323o, ph\u01b0\u01a1\u0300ng "
+                        "text": "\u0110a\u0323o, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -31966,7 +31966,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Minh"
+                        "text": "\u0110\u1ecbnh"
                     },
                     {
                         "bbox": [
@@ -31988,7 +31988,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Trinh, qu\u00e2\u0323n Hoa\u0300n "
+                        "text": "Trinh, qu\u00e2\u0323n Hoa\u0300n"
                     },
                     {
                         "bbox": [
@@ -32076,7 +32076,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "403B N\u01a1 Trang "
+                        "text": "403B N\u01a1 Trang"
                     },
                     {
                         "bbox": [
@@ -32098,7 +32098,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Long, ph\u01b0\u01a1\u0300ng "
+                        "text": "Long, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -32296,7 +32296,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "8862"
+                        "text": "86"
                     },
                     {
                         "bbox": [
@@ -32340,7 +32340,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "48"
+                        "text": "42"
                     },
                     {
                         "bbox": [
@@ -32472,7 +32472,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "70"
+                        "text": "71"
                     },
                     {
                         "bbox": [
@@ -32560,7 +32560,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Thanh Xu\u00e2n"
+                        "text": "Thanh Xu\u00e2n,"
                     },
                     {
                         "bbox": [
@@ -32626,7 +32626,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "4 Ph\u00f4\u0301 Chi\u0301nh "
+                        "text": "4 Ph\u00f4\u0301 Chi\u0301nh"
                     },
                     {
                         "bbox": [
@@ -32714,7 +32714,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Lan"
+                        "text": "L\u00e0o"
                     },
                     {
                         "bbox": [
@@ -32736,7 +32736,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TR\u00c2\u0300N PHU\u0301 "
+                        "text": "TR\u00c2\u0300N PHU\u0301"
                     },
                     {
                         "bbox": [
@@ -32758,7 +32758,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "H\u1eeeU"
+                        "text": "H\u1eacU"
                     },
                     {
                         "bbox": [
@@ -32846,7 +32846,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u1eaeNG"
+                        "text": "\u0110\u1eb6NG"
                     },
                     {
                         "bbox": [
@@ -33022,7 +33022,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TH\u0102NG"
+                        "text": "TH\u1eaeNG"
                     }
                 ],
                 "type": 7
@@ -33204,7 +33204,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH S\u01a0N LA "
+                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH S\u01a0N LA"
                     },
                     {
                         "bbox": [
@@ -33292,7 +33292,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "3. V\u00f4\u0301n \u0111i\u00ea\u0300u l\u00ea\u0323 (b\u0103\u0300ng s\u00f4\u0301; b\u0103\u0300ng ch\u01b0\u0303; VN\u0110 va\u0300 gia\u0301 tri\u0323 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng theo \u0111\u01a1n vi\u0323 ti\u00ea\u0300n n\u01b0\u01a1\u0301c "
+                        "text": "3. V\u00f4\u0301n \u0111i\u00ea\u0300u l\u00ea\u0323 (b\u0103\u0300ng s\u00f4\u0301; b\u0103\u0300ng ch\u01b0\u0303; VN\u0110 va\u0300 gia\u0301 tri\u0323 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng theo \u0111\u01a1n vi\u0323 ti\u00ea\u0300n n\u01b0\u01a1\u0301c"
                     },
                     {
                         "bbox": [
@@ -33358,7 +33358,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "\u0111\u01b0\u01a1ng"
+                        "text": "\u0111\u1ed3ng"
                     },
                     {
                         "bbox": [
@@ -33446,7 +33446,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch"
                     },
                     {
                         "bbox": [
@@ -33512,7 +33512,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ph\u00e2\u0300n v\u00f4\u0301n go\u0301p "
+                        "text": "Ph\u00e2\u0300n v\u00f4\u0301n go\u0301p"
                     },
                     {
                         "bbox": [
@@ -33578,7 +33578,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tri\u0323 t\u01b0\u01a1ng "
+                        "text": "tri\u0323 t\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -33644,7 +33644,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "l\u1eb9"
+                        "text": "l\u1ec7"
                     },
                     {
                         "bbox": [
@@ -33886,7 +33886,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng 12,"
+                        "text": "ph\u01b0\u1eddng 13,"
                     },
                     {
                         "bbox": [
@@ -33974,7 +33974,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "H\u01af\u01a0NG"
+                        "text": "H\u00d9NG"
                     },
                     {
                         "bbox": [
@@ -34022,7 +34022,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -34088,7 +34088,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng n\u01b0\u01a1\u0301c ngoa\u0300i (n\u00ea\u0301u co\u0301): "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng n\u01b0\u01a1\u0301c ngoa\u0300i (n\u00ea\u0301u co\u0301):"
                     },
                     {
                         "bbox": [
@@ -34264,7 +34264,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "C\u00d4NG TY TNHH \u0110\u00c2\u0300U T\u01af & SA\u0309N XU\u00c2\u0301T "
+                        "text": "C\u00d4NG TY TNHH \u0110\u00c2\u0300U T\u01af & SA\u0309N XU\u00c2\u0301T"
                     }
                 ],
                 "type": 7
@@ -34869,7 +34869,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "17 \u0110\u01b0\u01a1\u0300ng 8, "
+                        "text": "17 \u0110\u01b0\u01a1\u0300ng 8,"
                     },
                     {
                         "bbox": [
@@ -34891,7 +34891,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng 7, qu\u00e2\u0323n "
+                        "text": "ph\u01b0\u01a1\u0300ng 7, qu\u00e2\u0323n"
                     },
                     {
                         "bbox": [
@@ -34957,7 +34957,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -34979,7 +34979,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "C\u00f4\u0309 Bi, huy\u00ea\u0323n "
+                        "text": "C\u1ed5 Bi, huy\u1ec7n"
                     },
                     {
                         "bbox": [
@@ -35001,7 +35001,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Gia L\u00e2m, tha\u0300nh "
+                        "text": "Gia L\u00e2m, tha\u0300nh"
                     },
                     {
                         "bbox": [
@@ -35089,7 +35089,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng ph\u00fa"
+                        "text": "ph\u01b0\u1eddng Ph\u00fa"
                     },
                     {
                         "bbox": [
@@ -35111,7 +35111,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ho\u0300a, thi\u0323 xa\u0303 Thu\u0309 "
+                        "text": "Ho\u0300a, thi\u0323 xa\u0303 Thu\u0309"
                     },
                     {
                         "bbox": [
@@ -35155,7 +35155,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "1/169 Minh "
+                        "text": "1/169 Minh"
                     },
                     {
                         "bbox": [
@@ -35265,7 +35265,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "N\u00f4\u0323i "
+                        "text": "N\u00f4\u0323i"
                     },
                     {
                         "bbox": [
@@ -35485,7 +35485,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u00f4\u0300ng Nai"
+                        "text": "\u0110\u1ed3ng Nai"
                     },
                     {
                         "bbox": [
@@ -35507,7 +35507,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "250 Go\u0300 D\u00e2\u0300u, "
+                        "text": "250 Go\u0300 D\u00e2\u0300u,"
                     },
                     {
                         "bbox": [
@@ -35639,7 +35639,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "C\u01b0 Xa\u0301 V\u0103n "
+                        "text": "C\u01b0 Xa\u0301 V\u0103n"
                     },
                     {
                         "bbox": [
@@ -35661,7 +35661,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tha\u0301nh B\u0103\u0301c, "
+                        "text": "Th\u00e1nh B\u1eafc,"
                     },
                     {
                         "bbox": [
@@ -35749,7 +35749,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "La\u0300o "
+                        "text": "La\u0300o"
                     },
                     {
                         "bbox": [
@@ -35881,7 +35881,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "singapore"
+                        "text": "Singapore"
                     },
                     {
                         "bbox": [
@@ -36013,7 +36013,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TH\u00c2NG"
+                        "text": "HANG"
                     },
                     {
                         "bbox": [
@@ -36101,7 +36101,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TR\u1ea6N KH\u00c1C"
+                        "text": "TR\u1ea6N KH\u1eaeC"
                     },
                     {
                         "bbox": [
@@ -36145,7 +36145,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TRI\u0323NH THI\u0323 "
+                        "text": "TRI\u0323NH THI\u0323"
                     },
                     {
                         "bbox": [
@@ -36193,7 +36193,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "PHAN MINH "
+                        "text": "PHAN MINH"
                     },
                     {
                         "bbox": [
@@ -36347,7 +36347,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "v\u00f4\u0301n"
+                        "text": "8"
                     },
                     {
                         "bbox": [
@@ -36435,7 +36435,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "P"
+                        "text": "4"
                     },
                     {
                         "bbox": [
@@ -36643,7 +36643,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH"
                     },
                     {
                         "bbox": [
@@ -36731,7 +36731,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af THA\u0300NH PH\u00d4\u0301 C\u00c2\u0300N "
+                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af THA\u0300NH PH\u00d4\u0301 C\u00c2\u0300N"
                     },
                     {
                         "bbox": [
@@ -36753,7 +36753,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "THO"
+                        "text": "TH\u01a0"
                     },
                     {
                         "bbox": [
@@ -36863,7 +36863,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "ba\u0309y tr\u0103m sa\u0301u m\u01b0\u01a1i ta\u0301m \u0111\u00f4\u0300ng "
+                        "text": "ba\u0309y tr\u0103m sa\u0301u m\u01b0\u01a1i ta\u0301m \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -37039,7 +37039,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch"
                     },
                     {
                         "bbox": [
@@ -37105,7 +37105,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c "
+                        "text": "\u0110i\u0323a chi\u0309 li\u00ean la\u0323c"
                     },
                     {
                         "bbox": [
@@ -37215,7 +37215,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "(VN\u0110) v\u00e0 gi\u00e1"
+                        "text": "(VN\u0110 v\u00e0 gi\u00e1"
                     },
                     {
                         "bbox": [
@@ -37281,7 +37281,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0111\u01a1n vi\u0323 ti\u00ea\u0300n "
+                        "text": "\u0111\u01a1n vi\u0323 ti\u00ea\u0300n"
                     },
                     {
                         "bbox": [
@@ -37523,7 +37523,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "S\u00f4\u0301 Gi\u00e2\u0301y t\u01a1\u0300 "
+                        "text": "S\u00f4\u0301 Gi\u00e2\u0301y t\u01a1\u0300"
                     },
                     {
                         "bbox": [
@@ -37567,7 +37567,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY TNHH SA\u0309N XU\u00c2\u0301T TH\u01af\u01a0NG MA\u0323I X\u00c2Y "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY TNHH SA\u0309N XU\u00c2\u0301T TH\u01af\u01a0NG MA\u0323I X\u00c2Y"
                     },
                     {
                         "bbox": [
@@ -37787,7 +37787,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "B\u0103\u0300ng ch\u01b0\u0303: "
+                        "text": "B\u0103\u0300ng ch\u01b0\u0303:"
                     },
                     {
                         "bbox": [
@@ -37809,7 +37809,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "B\u00f4\u0301n ty\u0309 ba\u0309y tr\u0103m chi\u0301n m\u01b0\u01a1i l\u0103m tri\u00ea\u0323u m\u00f4\u0323t tr\u0103m hai m\u01b0\u01a1i hai nghi\u0300n "
+                        "text": "B\u00f4\u0301n ty\u0309 ba\u0309y tr\u0103m chi\u0301n m\u01b0\u01a1i l\u0103m tri\u00ea\u0323u m\u00f4\u0323t tr\u0103m hai m\u01b0\u01a1i hai nghi\u0300n"
                     }
                 ],
                 "type": 7
@@ -37930,7 +37930,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "56"
+                        "text": "5"
                     },
                     {
                         "bbox": [
@@ -38062,7 +38062,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bi\u00ean Ho\u0300a, ti\u0309nh "
+                        "text": "Bi\u00ean Ho\u0300a, ti\u0309nh"
                     },
                     {
                         "bbox": [
@@ -38150,7 +38150,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng My\u0303 "
+                        "text": "ph\u01b0\u01a1\u0300ng My\u0303"
                     },
                     {
                         "bbox": [
@@ -38238,7 +38238,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Th\u00f4n 2, thi\u0323 tr\u00e2\u0301n "
+                        "text": "Th\u00f4n 2, thi\u0323 tr\u00e2\u0301n"
                     },
                     {
                         "bbox": [
@@ -38282,7 +38282,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hi\u00ea\u0323p \u0110\u01b0\u0301c, ti\u0309nh "
+                        "text": "Hi\u00ea\u0323p \u0110\u01b0\u0301c, ti\u0309nh"
                     },
                     {
                         "bbox": [
@@ -38414,7 +38414,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "8"
+                        "text": "3"
                     },
                     {
                         "bbox": [
@@ -38458,7 +38458,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "V\u0102N HI\u00caN"
+                        "text": "V\u0102N KI\u1ec6N"
                     },
                     {
                         "bbox": [
@@ -38480,7 +38480,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nh\u00e2\u0323t Ba\u0309n "
+                        "text": "Nh\u00e2\u0323t Ba\u0309n"
                     },
                     {
                         "bbox": [
@@ -38546,7 +38546,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TU\u00c2\u0301N "
+                        "text": "TU\u00c2\u0301N"
                     },
                     {
                         "bbox": [
@@ -38634,7 +38634,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n 11, tha\u0300nh "
+                        "text": "qu\u00e2\u0323n 11, tha\u0300nh"
                     },
                     {
                         "bbox": [
@@ -38700,7 +38700,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "19A Hoa\u0300ng V\u0103n "
+                        "text": "19A Hoa\u0300ng V\u0103n"
                     },
                     {
                         "bbox": [
@@ -38744,7 +38744,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n Phu\u0301 "
+                        "text": "qu\u00e2\u0323n Phu\u0301"
                     },
                     {
                         "bbox": [
@@ -38898,7 +38898,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u00c2\u0301n \u0110\u00f4\u0323 "
+                        "text": "\u00c2\u0301n \u0110\u00f4\u0323"
                     },
                     {
                         "bbox": [
@@ -38986,7 +38986,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "57"
+                        "text": "5"
                     },
                     {
                         "bbox": [
@@ -39030,7 +39030,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "A\u0301NH"
+                        "text": "ANH"
                     },
                     {
                         "bbox": [
@@ -39052,7 +39052,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "La\u0300o "
+                        "text": "La\u0300o"
                     },
                     {
                         "bbox": [
@@ -39140,7 +39140,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "N\u00f4\u0323i "
+                        "text": "N\u00f4\u0323i"
                     },
                     {
                         "bbox": [
@@ -39206,7 +39206,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "huy\u00ea\u0323n Thanh "
+                        "text": "huy\u00ea\u0323n Thanh"
                     },
                     {
                         "bbox": [
@@ -39272,7 +39272,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "H\u00e2n, ph\u01b0\u1eddng"
+                        "text": "V\u00e2n, ph\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -39316,7 +39316,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nguy\u00ea\u0303n C\u01b0"
+                        "text": "Nguy\u1ec5n C\u1eebu"
                     },
                     {
                         "bbox": [
@@ -39496,7 +39496,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "O"
+                        "text": "08"
                     },
                     {
                         "bbox": [
@@ -39562,7 +39562,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "425"
+                        "text": "45"
                     },
                     {
                         "bbox": [
@@ -39628,7 +39628,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Trung,"
+                        "text": "Trung"
                     },
                     {
                         "bbox": [
@@ -39694,7 +39694,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "PH\u1ea0M THI"
+                        "text": "PH\u1ea0M TH\u1eca"
                     },
                     {
                         "bbox": [
@@ -39760,7 +39760,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "KH\u00c1NH"
+                        "text": "H\u00c0NH"
                     },
                     {
                         "bbox": [
@@ -40008,7 +40008,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM "
+                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM"
                     },
                     {
                         "bbox": [
@@ -40030,7 +40030,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u1ed9c l\u1eadp - T\u1ef1 do - H\u1ea1nh ph\u00fac"
                     },
                     {
                         "bbox": [
@@ -40118,7 +40118,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "ngoa\u0300i, n\u00ea\u0301u co\u0301): 45.400.304,00 \u0111\u00f4\u0300ng "
+                        "text": "ngoa\u0300i, n\u00ea\u0301u co\u0301): 45.400.304,00 \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -40228,7 +40228,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "h\u01a1\u0323p danh "
+                        "text": "h\u01a1\u0323p danh"
                     },
                     {
                         "bbox": [
@@ -40690,7 +40690,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u1eddng 14,"
+                        "text": "ph\u01b0\u1eddng 12,"
                     },
                     {
                         "bbox": [
@@ -40778,7 +40778,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hoa Ki"
+                        "text": "Hoa K\u00ec"
                     },
                     {
                         "bbox": [
@@ -40800,7 +40800,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NGUY\u00ca\u0303N "
+                        "text": "NGUY\u00ca\u0303N"
                     },
                     {
                         "bbox": [
@@ -40844,7 +40844,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -40866,7 +40866,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N TH\u01af\u01a0NG MA\u0323I & KY\u0303 "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N TH\u01af\u01a0NG MA\u0323I & KY\u0303"
                     },
                     {
                         "bbox": [
@@ -40954,7 +40954,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh:"
                     },
                     {
                         "bbox": [
@@ -41251,7 +41251,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "D"
+                        "text": "6"
                     },
                     {
                         "bbox": [
@@ -41317,7 +41317,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "904680"
+                        "text": "089706"
                     },
                     {
                         "bbox": [
@@ -41493,7 +41493,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nh\u00e2\u0323t Ba\u0309n "
+                        "text": "Nh\u00e2\u0323t Ba\u0309n"
                     },
                     {
                         "bbox": [
@@ -41515,7 +41515,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "THUY\u00caN "
+                        "text": "THUY\u00caN"
                     },
                     {
                         "bbox": [
@@ -41603,7 +41603,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": ": B\u00daT"
+                        "text": "B\u00d9I"
                     },
                     {
                         "bbox": [
@@ -41809,7 +41809,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Vi\u00ea\u0323t Nam "
+                        "text": "Vi\u00ea\u0323t Nam"
                     },
                     {
                         "bbox": [
@@ -41831,7 +41831,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ha\u0300n Qu\u00f4\u0301c "
+                        "text": "Ha\u0300n Qu\u00f4\u0301c"
                     },
                     {
                         "bbox": [
@@ -41963,7 +41963,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Vi\u00ea\u0323t Nam "
+                        "text": "Vi\u00ea\u0323t Nam"
                     },
                     {
                         "bbox": [
@@ -41985,7 +41985,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "QUY\u0300NH MAI "
+                        "text": "QUY\u0300NH MAI"
                     },
                     {
                         "bbox": [
@@ -42051,7 +42051,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 "
+                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300"
                     },
                     {
                         "bbox": [
@@ -42095,7 +42095,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng \u0110a"
+                        "text": "ph\u01b0\u1eddng \u0110a"
                     },
                     {
                         "bbox": [
@@ -42117,7 +42117,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u00ecnh Chi\u1ebfu,"
+                        "text": "\u0110\u00ecnh Chi\u1ec3u,"
                     },
                     {
                         "bbox": [
@@ -42139,7 +42139,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "31A Nguy\u00ea\u0303n "
+                        "text": "31A Nguy\u00ea\u0303n"
                     },
                     {
                         "bbox": [
@@ -42249,7 +42249,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u01b0\u01a1\u0300ng T\u00e2y "
+                        "text": "ph\u01b0\u1eddng T\u00e2y"
                     },
                     {
                         "bbox": [
@@ -42271,7 +42271,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u1eafc D\u0129"
+                        "text": "\u0110\u1eafc Di,"
                     },
                     {
                         "bbox": [
@@ -42337,7 +42337,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ho\u0300a, ti\u0309nh "
+                        "text": "Ho\u0300a, ti\u0309nh"
                     },
                     {
                         "bbox": [
@@ -42359,7 +42359,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 Bi\u00ean "
+                        "text": "tha\u0300nh ph\u00f4\u0301 Bi\u00ean"
                     },
                     {
                         "bbox": [
@@ -42381,7 +42381,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bi\u0300nh Ho\u0300a,"
+                        "text": "B\u1eedu H\u00f2a,"
                     },
                     {
                         "bbox": [
@@ -42403,7 +42403,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ta\u0301m, ph\u01b0\u01a1\u0300ng "
+                        "text": "Ta\u0301m, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -42425,7 +42425,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "D\u00e2n C\u01b0 H\u00f4\u0300ng "
+                        "text": "D\u00e2n C\u01b0 H\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -42469,7 +42469,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -42535,7 +42535,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Trai, ph\u01b0\u01a1\u0300ng"
+                        "text": "Tr\u00e3i, ph\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -42605,7 +42605,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ti\u0309nh Qua\u0309ng "
+                        "text": "ti\u0309nh Qua\u0309ng"
                     },
                     {
                         "bbox": [
@@ -42627,7 +42627,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u00f4\u0301 Ha\u0323 Long,"
+                        "text": "ph\u1ed1 H\u1ea1 Long,"
                     },
                     {
                         "bbox": [
@@ -42649,7 +42649,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Cha\u0301y, tha\u0300nh "
+                        "text": "Ch\u00e1y, th\u00e0nh"
                     },
                     {
                         "bbox": [
@@ -42693,7 +42693,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Tho"
+                        "text": "Th\u01a1"
                     },
                     {
                         "bbox": [
@@ -42737,7 +42737,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ninh Ki\u00ea\u0300u "
+                        "text": "Ninh Ki\u1ec1u."
                     },
                     {
                         "bbox": [
@@ -42781,7 +42781,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Khai, ph\u01b0\u01a1\u0300ng "
+                        "text": "Khai, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -42847,7 +42847,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -42924,7 +42924,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "(Ky\u0301, ghi ho\u0323 t\u00ean va\u0300 \u0111o\u0301ng d\u00e2\u0301u) "
+                        "text": "(Ky\u0301, ghi ho\u0323 t\u00ean va\u0300 \u0111o\u0301ng d\u00e2\u0301u)"
                     }
                 ],
                 "type": 7
@@ -42967,7 +42967,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY H\u01a0\u0323P DANH"
                     },
                     {
                         "bbox": [
@@ -43055,7 +43055,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM "
+                        "text": "C\u00d4\u0323NG HO\u0300A XA\u0303 H\u00d4\u0323I CHU\u0309 NGHI\u0303A VI\u00ca\u0323T NAM"
                     },
                     {
                         "bbox": [
@@ -43077,7 +43077,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u1ed9c l\u1eadp - T\u1ef1 do - H\u1ea1nh ph\u00fac"
                     },
                     {
                         "bbox": [
@@ -43103,7 +43103,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af\u0300 TI\u0309NH LA\u0300O CAI "
+                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af\u0300 TI\u0309NH LA\u0300O CAI"
                     },
                     {
                         "bbox": [
@@ -43125,7 +43125,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -43147,7 +43147,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "3. V\u00f4\u0301n \u0111i\u00ea\u0300u l\u00ea\u0323: 384.011.589,00 \u0111\u00f4\u0300ng "
+                        "text": "3. V\u1ed1n \u0111i\u1ec1u l\u1ec7: 384.011.589,00 \u0111\u1ed3ng"
                     },
                     {
                         "bbox": [
@@ -43191,7 +43191,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "chi\u0301n \u0111\u00f4\u0300ng "
+                        "text": "chi\u0301n \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -43257,7 +43257,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u00ean tha\u0300nh vi\u00ean "
+                        "text": "T\u00ean tha\u0300nh vi\u00ean"
                     },
                     {
                         "bbox": [
@@ -43345,7 +43345,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ph\u00e2\u0300n v\u00f4\u0301n go\u0301p "
+                        "text": "Ph\u00e2\u0300n v\u00f4\u0301n go\u0301p"
                     },
                     {
                         "bbox": [
@@ -43499,7 +43499,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TE"
+                        "text": "T\u1ef7"
                     },
                     {
                         "bbox": [
@@ -43521,7 +43521,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "16"
+                        "text": "l\u1ec7"
                     },
                     {
                         "bbox": [
@@ -43565,7 +43565,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "S\u00f4\u0301 Gi\u00e2\u0301y t\u01a1\u0300 "
+                        "text": "S\u00f4\u0301 Gi\u00e2\u0301y t\u01a1\u0300"
                     },
                     {
                         "bbox": [
@@ -43631,7 +43631,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "91706115742"
+                        "text": "9170615742"
                     },
                     {
                         "bbox": [
@@ -43653,7 +43653,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "795"
+                        "text": "75"
                     },
                     {
                         "bbox": [
@@ -43917,7 +43917,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u1ea2M, CH\u00c2U \u00c1"
+                        "text": "T\u0102M, CH\u00c2U \u00c1"
                     },
                     {
                         "bbox": [
@@ -44236,7 +44236,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NG\u1eccC LI\u00caN "
+                        "text": "NG\u1eccC LI\u00caN"
                     },
                     {
                         "bbox": [
@@ -44324,7 +44324,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "TOAN "
+                        "text": "TOAN"
                     },
                     {
                         "bbox": [
@@ -44350,7 +44350,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "THANH"
+                        "text": "TH\u0102NG"
                     },
                     {
                         "bbox": [
@@ -44372,7 +44372,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hoa Ki"
+                        "text": "Hoa K\u00ec"
                     },
                     {
                         "bbox": [
@@ -44658,7 +44658,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "THUY"
+                        "text": "THU\u1ef6"
                     },
                     {
                         "bbox": [
@@ -44724,7 +44724,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "VO\u0303 V\u0102N "
+                        "text": "VO\u0303 V\u0102N"
                     },
                     {
                         "bbox": [
@@ -44812,7 +44812,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "521/38 Ca\u0301ch "
+                        "text": "521/38 Ca\u0301ch"
                     },
                     {
                         "bbox": [
@@ -44834,7 +44834,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ma\u0323ng Tha\u0301ng "
+                        "text": "Ma\u0323ng Tha\u0301ng"
                     },
                     {
                         "bbox": [
@@ -44856,7 +44856,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Ta\u0301m, ph\u01b0\u01a1\u0300ng "
+                        "text": "Ta\u0301m, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -44900,7 +44900,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 "
+                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300"
                     },
                     {
                         "bbox": [
@@ -44922,7 +44922,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -44944,7 +44944,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "121/1 T\u00f4\u0309 8, \u00c2\u0301p "
+                        "text": "121/1 T\u00f4\u0309 8, \u00c2\u0301p"
                     },
                     {
                         "bbox": [
@@ -44966,7 +44966,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Nh\u00e2\u0301t Ho\u0300a, xa\u0303 "
+                        "text": "Nh\u00e2\u0301t Ho\u0300a, xa\u0303"
                     },
                     {
                         "bbox": [
@@ -45076,7 +45076,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "196 Khu Ph\u00f4\u0301 7, "
+                        "text": "196 Khu Ph\u00f4\u0301 7,"
                     },
                     {
                         "bbox": [
@@ -45098,7 +45098,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hi\u00ea\u0323p Binh,"
+                        "text": "Hi\u1ec7p Binh,"
                     },
                     {
                         "bbox": [
@@ -45142,7 +45142,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "B\u00ecnh Th\u1ea1nh,"
+                        "text": "B\u00ecnh Ch\u00e1nh,"
                     },
                     {
                         "bbox": [
@@ -45164,7 +45164,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n Thu\u0309 \u0110\u01b0\u0301c,"
+                        "text": "qu\u1eadn Th\u1ee7 \u0110\u1ee9c,"
                     },
                     {
                         "bbox": [
@@ -45208,7 +45208,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -45340,7 +45340,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -45406,7 +45406,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "111, qu\u00e2\u0323n "
+                        "text": "111, qu\u00e2\u0323n"
                     },
                     {
                         "bbox": [
@@ -45428,7 +45428,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Thanh Xu\u00e2n"
+                        "text": "Thanh Xu\u00e2n,"
                     },
                     {
                         "bbox": [
@@ -45450,7 +45450,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "tha\u0300nh ph\u00f4\u0301 Ha\u0300 "
+                        "text": "tha\u0300nh ph\u00f4\u0301 Ha\u0300"
                     },
                     {
                         "bbox": [
@@ -45516,7 +45516,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "V\u0103n Th\u00fa"
+                        "text": "V\u0103n Th\u00fa,"
                     },
                     {
                         "bbox": [
@@ -45604,7 +45604,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -45626,7 +45626,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "690 X, An "
+                        "text": "690 X, An"
                     },
                     {
                         "bbox": [
@@ -45956,7 +45956,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "438949374"
+                        "text": "4389349374"
                     },
                     {
                         "bbox": [
@@ -46044,7 +46044,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Loa\u0323i"
+                        "text": "78"
                     },
                     {
                         "bbox": [
@@ -46319,7 +46319,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Bich, ph\u01b0\u01a1ng"
+                        "text": "Bich, ph\u01b0\u1eddng"
                     },
                     {
                         "bbox": [
@@ -46556,7 +46556,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t:"
                     },
                     {
                         "bbox": [
@@ -46666,7 +46666,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 129 \u0110inh B\u00f4\u0323 Li\u0303nh, ph\u01b0\u01a1\u0300ng 15, qu\u00e2\u0323n Bi\u0300nh Tha\u0323nh, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: 129 \u0110inh B\u00f4\u0323 Li\u0303nh, ph\u01b0\u01a1\u0300ng 15, qu\u00e2\u0323n Bi\u0300nh Tha\u0323nh, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300"
                     },
                     {
                         "bbox": [
@@ -46688,7 +46688,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -46890,7 +46890,7 @@
                             ]
                         ],
                         "label": "register_date",
-                        "text": "\u0110\u0103ng ky\u0301 thay \u0111\u00f4\u0309i l\u00e2\u0300n th\u01b0\u0301 8, nga\u0300y 31 tha\u0301ng 03 n\u0103m 2036 "
+                        "text": "\u0110\u0103ng ky\u0301 thay \u0111\u00f4\u0309i l\u00e2\u0300n th\u01b0\u0301 8, nga\u0300y 31 tha\u0301ng 03 n\u0103m 2036"
                     },
                     {
                         "bbox": [
@@ -47070,7 +47070,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "Ba m\u01b0\u01a1i ta\u0301m tri\u00ea\u0323u ba\u0309y tr\u0103m hai m\u01b0\u01a1i l\u0103m nghi\u0300n sa\u0301u tr\u0103m ba\u0309y m\u01b0\u01a1i "
+                        "text": "Ba m\u01b0\u01a1i ta\u0301m tri\u00ea\u0323u ba\u0309y tr\u0103m hai m\u01b0\u01a1i l\u0103m nghi\u0300n sa\u0301u tr\u0103m ba\u0309y m\u01b0\u01a1i"
                     },
                     {
                         "bbox": [
@@ -47092,7 +47092,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "m\u00f4\u0301t \u0111\u00f4\u0300ng "
+                        "text": "m\u00f4\u0301t \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -47202,7 +47202,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "th\u01b0\u01a1\u0300ng tru\u0301 \u0111\u00f4\u0301i v\u01a1\u0301i ca\u0301 "
+                        "text": "th\u01b0\u01a1\u0300ng tru\u0301 \u0111\u00f4\u0301i v\u01a1\u0301i ca\u0301"
                     },
                     {
                         "bbox": [
@@ -47246,7 +47246,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c "
+                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c"
                     },
                     {
                         "bbox": [
@@ -47378,7 +47378,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "n\u01b0\u01a1\u0301c ngoa\u0300i, "
+                        "text": "n\u01b0\u01a1\u0301c ngoa\u0300i,"
                     },
                     {
                         "bbox": [
@@ -47488,7 +47488,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "S\u00f4\u0301 CMND"
+                        "text": "S\u1ed1 CMND"
                     },
                     {
                         "bbox": [
@@ -47558,7 +47558,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ca\u0301 nh\u00e2n "
+                        "text": "ca\u0301 nh\u00e2n"
                     },
                     {
                         "bbox": [
@@ -47624,7 +47624,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "V\u01a1\u0301i ca\u0301"
+                        "text": "v\u1edbi c\u00e1"
                     },
                     {
                         "bbox": [
@@ -47668,7 +47668,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ch\u1ee9c"
+                        "text": "ch\u00fa"
                     }
                 ],
                 "type": 5
@@ -47767,7 +47767,7 @@
                             ]
                         ],
                         "label": "representative_birthday",
-                        "text": "Ch\u01b0\u0301c danh: T\u00f4\u0309ng gia\u0301m \u0111\u00f4\u0301c "
+                        "text": "Ch\u1ee9c danh: T\u1ed5ng gi\u00e1m \u0111\u1ed1c"
                     },
                     {
                         "bbox": [
@@ -47855,7 +47855,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "nghi\u00ea\u0323p: S\u00f4\u0301"
+                        "text": "nghi\u1ec7p; S\u1ed1"
                     },
                     {
                         "bbox": [
@@ -48097,7 +48097,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "O"
+                        "text": "0"
                     },
                     {
                         "bbox": [
@@ -48163,7 +48163,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "04"
+                        "text": "94"
                     },
                     {
                         "bbox": [
@@ -48251,7 +48251,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Hai Ba\u0300 Tr\u01b0ng, tha\u0300nh "
+                        "text": "Hai Ba\u0300 Tr\u01b0ng, tha\u0300nh"
                     },
                     {
                         "bbox": [
@@ -48339,7 +48339,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Phu\u0301, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 "
+                        "text": "Phu\u0301, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301"
                     },
                     {
                         "bbox": [
@@ -48537,7 +48537,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "qu\u00e2\u0323n Bi\u0300nh T\u00e2n, tha\u0300nh "
+                        "text": "qu\u00e2\u0323n Bi\u0300nh T\u00e2n, tha\u0300nh"
                     },
                     {
                         "bbox": [
@@ -48559,7 +48559,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh "
+                        "text": "ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -48581,7 +48581,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "PHAN V\u0102N "
+                        "text": "PHAN V\u0102N"
                     },
                     {
                         "bbox": [
@@ -48647,7 +48647,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "NHA\u0323N"
+                        "text": "NG\u00c2N"
                     },
                     {
                         "bbox": [
@@ -48713,7 +48713,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "MINH"
+                        "text": "VINH"
                     },
                     {
                         "bbox": [
@@ -48933,7 +48933,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "PHONG"
+                        "text": "H\u1ed2NG"
                     },
                     {
                         "bbox": [
@@ -49021,7 +49021,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Chi\u0301 Minh "
+                        "text": "Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -49109,7 +49109,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "\u0110\u00f4\u0301ng \u0110a, tha\u0300nh ph\u00f4\u0301 "
+                        "text": "\u0110\u00f4\u0301ng \u0110a, tha\u0300nh ph\u00f4\u0301"
                     },
                     {
                         "bbox": [
@@ -49285,7 +49285,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "HO\u0300A"
+                        "text": "HOA"
                     },
                     {
                         "bbox": [
@@ -49824,7 +49824,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG "
+                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG"
                     },
                     {
                         "bbox": [
@@ -49977,7 +49977,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng n\u01b0\u01a1\u0301c ngoa\u0300i: "
+                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng n\u01b0\u01a1\u0301c ngoa\u0300i:"
                     },
                     {
                         "bbox": [
@@ -50157,7 +50157,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY TRA\u0301CH NHI\u00ca\u0323M"
                     },
                     {
                         "bbox": [
@@ -50223,7 +50223,7 @@
                             ]
                         ],
                         "label": "register_date",
-                        "text": "\u0110\u0103ng k\u00fd l\u1ea7n \u0111\u1ea7u, ng\u00e0y "
+                        "text": "\u0110\u0103ng k\u00fd l\u1ea7n \u0111\u1ea7u, ng\u00e0y 30 th\u00e1ng 11 n\u0103m 1913"
                     },
                     {
                         "bbox": [
@@ -50289,7 +50289,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -50355,7 +50355,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "3. V\u00f4\u0301n \u0111i\u00ea\u0300u l\u00ea\u0323: 54.253.321.592 VN\u0110"
+                        "text": "3. V\u1ed1n \u0111i\u1ec1u l\u1ec7: 54.253.321.592 VN\u0110"
                     },
                     {
                         "bbox": [
@@ -50579,7 +50579,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c "
+                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c"
                     },
                     {
                         "bbox": [
@@ -50645,7 +50645,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "va\u0300 gia\u0301 tri\u0323 t\u01b0\u01a1ng "
+                        "text": "va\u0300 gia\u0301 tri\u0323 t\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -50777,7 +50777,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u1ef7"
+                        "text": "l\u1ec7"
                     },
                     {
                         "bbox": [
@@ -50931,7 +50931,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "kha\u0301c) \u0111\u00f4\u0301i "
+                        "text": "kha\u0301c) \u0111\u00f4\u0301i"
                     },
                     {
                         "bbox": [
@@ -50975,7 +50975,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "nh\u00e2n:"
+                        "text": "nh\u00e2n;"
                     },
                     {
                         "bbox": [
@@ -51019,7 +51019,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "chu\u0301 "
+                        "text": "chu\u0301"
                     }
                 ],
                 "type": 5
@@ -51360,7 +51360,7 @@
                             ]
                         ],
                         "label": "representative_residence_permanent",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -51470,7 +51470,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "QUY"
+                        "text": "QU\u00dd"
                     },
                     {
                         "bbox": [
@@ -51514,7 +51514,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "GIA T\u01af\u01a0\u0300NG "
+                        "text": "GIA T\u01af\u01a0\u0300NG"
                     },
                     {
                         "bbox": [
@@ -51602,7 +51602,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "N\u00f4\u0323i "
+                        "text": "N\u00f4\u0323i"
                     },
                     {
                         "bbox": [
@@ -51690,7 +51690,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ph\u00f4\u0301 \u0110a\u0300 N\u0103\u0303ng "
+                        "text": "ph\u00f4\u0301 \u0110a\u0300 N\u0103\u0303ng"
                     },
                     {
                         "bbox": [
@@ -51778,7 +51778,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "S\u01a0N"
+                        "text": "6"
                     },
                     {
                         "bbox": [
@@ -51844,7 +51844,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "ch\u01b0\u0301c "
+                        "text": "ch\u01b0\u0301c"
                     },
                     {
                         "bbox": [
@@ -51910,7 +51910,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Quy\u00ea\u0301t \u0111i\u0323nh "
+                        "text": "Quy\u00ea\u0301t \u0111i\u0323nh"
                     },
                     {
                         "bbox": [
@@ -52059,7 +52059,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -52103,7 +52103,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "DNTN HOA\u0300N H\u01af\u01a0NG "
+                        "text": "DNTN HOA\u0300N H\u01af\u01a0NG"
                     },
                     {
                         "bbox": [
@@ -52169,7 +52169,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "TRADING COMPANY LIMITED"
+                        "text": "TRADING COMPANYLIMITED"
                     },
                     {
                         "bbox": [
@@ -52191,7 +52191,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh:"
                     },
                     {
                         "bbox": [
@@ -52537,7 +52537,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "3. V\u00f4\u0301n \u0111i\u00ea\u0300u l\u00ea\u0323: 388.300.198 \u0111\u00f4\u0300ng"
+                        "text": "3. V\u1ed1n \u0111i\u1ec1u l\u1ec7: 388.300.198 \u0111\u1ed3ng"
                     },
                     {
                         "bbox": [
@@ -52603,7 +52603,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "C\u00f4ng"
+                        "text": "\u0111\u1ed3ng"
                     },
                     {
                         "bbox": [
@@ -52757,7 +52757,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c "
+                        "text": "chi\u0301nh \u0111\u00f4\u0301i v\u01a1\u0301i t\u00f4\u0309 ch\u01b0\u0301c"
                     },
                     {
                         "bbox": [
@@ -52933,7 +52933,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "T\u1ef6"
+                        "text": "T\u1ef7"
                     },
                     {
                         "bbox": [
@@ -52955,7 +52955,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "l\u00f4"
+                        "text": "l\u1ec7"
                     },
                     {
                         "bbox": [
@@ -53179,7 +53179,7 @@
                             ]
                         ],
                         "label": "shareholder",
-                        "text": "Gh"
+                        "text": "Ghi"
                     },
                     {
                         "bbox": [
@@ -53366,7 +53366,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "ch\u01b0\u0301c "
+                        "text": "ch\u01b0\u0301c"
                     },
                     {
                         "bbox": [
@@ -53502,7 +53502,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "14"
+                        "text": "54"
                     },
                     {
                         "bbox": [
@@ -53568,7 +53568,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "19-774"
+                        "text": "19.774"
                     },
                     {
                         "bbox": [
@@ -53678,7 +53678,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "313"
+                        "text": "33"
                     },
                     {
                         "bbox": [
@@ -53744,7 +53744,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "61"
+                        "text": "01"
                     },
                     {
                         "bbox": [
@@ -53876,7 +53876,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "O"
+                        "text": "08"
                     },
                     {
                         "bbox": [
@@ -54316,7 +54316,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0NG"
+                        "text": "T\u01af\u1edeNG"
                     },
                     {
                         "bbox": [
@@ -54558,7 +54558,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "351/31 N\u01a1 Trang "
+                        "text": "351/31 N\u01a1 Trang"
                     },
                     {
                         "bbox": [
@@ -54602,7 +54602,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "qu\u00e2\u0323n Bi\u0300nh Tha\u0323nh, "
+                        "text": "qu\u00e2\u0323n Bi\u0300nh Tha\u0323nh,"
                     },
                     {
                         "bbox": [
@@ -54624,7 +54624,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 "
+                        "text": "tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301"
                     },
                     {
                         "bbox": [
@@ -54668,7 +54668,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "45 An D\u01b0\u01a1ng V\u01b0\u01a1ng, "
+                        "text": "45 An D\u01b0\u01a1ng V\u01b0\u01a1ng,"
                     },
                     {
                         "bbox": [
@@ -54778,7 +54778,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "Ngo\u0303 11, ph\u01b0\u01a1\u0300ng "
+                        "text": "Ngo\u0303 11, ph\u01b0\u01a1\u0300ng"
                     },
                     {
                         "bbox": [
@@ -54822,7 +54822,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "Thanh Xu\u00e2n, tha\u0300nh "
+                        "text": "Thanh Xu\u00e2n, tha\u0300nh"
                     },
                     {
                         "bbox": [
@@ -54866,7 +54866,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "x\u00e3 H\u00e0m Th\u1eafng, qu\u1eadn "
+                        "text": "x\u00e3 H\u00e0m Th\u1eafng, qu\u1eadn"
                     },
                     {
                         "bbox": [
@@ -54888,7 +54888,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "Ha\u0300m Thu\u00e2\u0323n B\u0103\u0301c, ti\u0309nh "
+                        "text": "Ha\u0300m Thu\u00e2\u0323n B\u0103\u0301c, ti\u0309nh"
                     },
                     {
                         "bbox": [
@@ -54932,7 +54932,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "VO\u0303 V\u0102N "
+                        "text": "VO\u0303 V\u0102N"
                     },
                     {
                         "bbox": [
@@ -54954,7 +54954,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TH\u1eaeNG"
+                        "text": "TH\u00c0NH"
                     },
                     {
                         "bbox": [
@@ -54998,7 +54998,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "HOA\u0300NG "
+                        "text": "HOA\u0300NG"
                     },
                     {
                         "bbox": [
@@ -55449,7 +55449,7 @@
                             ]
                         ],
                         "label": "representative_residence_permanent",
-                        "text": "N\u01a1i \u0111\u0103ng ky\u0301 HKTT: "
+                        "text": "N\u01a1i \u0111\u0103ng ky\u0301 HKTT:"
                     },
                     {
                         "bbox": [
@@ -55515,7 +55515,7 @@
                             ]
                         ],
                         "label": "representative_living_place",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -55537,7 +55537,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG "
+                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG"
                     },
                     {
                         "bbox": [
@@ -55598,7 +55598,7 @@
                             ]
                         ],
                         "label": "label_representative",
-                        "text": "5. Ng\u01b0\u01a1\u0300i \u0111a\u0323i di\u00ea\u0323n theo pha\u0301p lu\u00e2\u0323t "
+                        "text": "5. Ng\u01b0\u01a1\u0300i \u0111a\u0323i di\u00ea\u0323n theo pha\u0301p lu\u00e2\u0323t"
                     },
                     {
                         "bbox": [
@@ -56016,7 +56016,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N"
                     },
                     {
                         "bbox": [
@@ -56148,7 +56148,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH TRA\u0300 VINH "
+                        "text": "S\u01a0\u0309 K\u00ca\u0301 HOA\u0323CH VA\u0300 \u0110\u00c2\u0300U T\u01af TI\u0309NH TRA\u0300 VINH"
                     },
                     {
                         "bbox": [
@@ -56170,7 +56170,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -56236,7 +56236,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "5.209.777,00 \u0111\u00f4\u0300ng"
+                        "text": "5.209.777,00 \u0111\u1ed3ng"
                     },
                     {
                         "bbox": [
@@ -56258,7 +56258,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "N\u0103m tri\u00ea\u0323u hai tr\u0103m linh chi\u0301n nghi\u0300n ba\u0309y tr\u0103m ba\u0309y m\u01b0\u01a1i ba\u0309y \u0111\u00f4\u0300ng "
+                        "text": "N\u0103m tri\u00ea\u0323u hai tr\u0103m linh chi\u0301n nghi\u0300n ba\u0309y tr\u0103m ba\u0309y m\u01b0\u01a1i ba\u0309y \u0111\u00f4\u0300ng"
                     },
                     {
                         "bbox": [
@@ -56280,7 +56280,7 @@
                             ]
                         ],
                         "label": "business_par_value_share",
-                        "text": "M\u00ea\u0323nh gia\u0301 c\u00f4\u0309 ph\u00e2\u0300n: "
+                        "text": "M\u00ea\u0323nh gia\u0301 c\u00f4\u0309 ph\u00e2\u0300n:"
                     },
                     {
                         "bbox": [
@@ -56774,7 +56774,7 @@
                             ]
                         ],
                         "label": "representative_name",
-                        "text": "Ho\u0323 va\u0300 t\u00ean: TR\u00c2\u0300N NGO\u0323C HU\u0300NG "
+                        "text": "Ho\u0323 va\u0300 t\u00ean: TR\u00c2\u0300N NGO\u0323C HU\u0300NG"
                     },
                     {
                         "bbox": [
@@ -57064,7 +57064,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "198 \u0110i\u00ea\u0323n Bi\u00ean Phu\u0309, ph\u01b0\u01a1\u0300ng 7, qu\u00e2\u0323n 3, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh "
+                        "text": "198 \u0110i\u00ea\u0323n Bi\u00ean Phu\u0309, ph\u01b0\u01a1\u0300ng 7, qu\u00e2\u0323n 3, tha\u0300nh ph\u00f4\u0301 H\u00f4\u0300 Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -57328,7 +57328,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -57603,7 +57603,7 @@
                             ]
                         ],
                         "label": "representative_residence_permanent",
-                        "text": "H\u00f4\u0300 Chi\u0301 Minh "
+                        "text": "H\u00f4\u0300 Chi\u0301 Minh"
                     },
                     {
                         "bbox": [
@@ -57625,7 +57625,7 @@
                             ]
                         ],
                         "label": "representative_living_place",
-                        "text": "Minh "
+                        "text": "Minh"
                     },
                     {
                         "bbox": [
@@ -57994,7 +57994,7 @@
                             ]
                         ],
                         "label": "representative_nation",
-                        "text": "Qu\u00f4\u0301c ti\u0323ch: Ha\u0300n Qu\u00f4\u0301c "
+                        "text": "Qu\u00f4\u0301c ti\u0323ch: Ha\u0300n Qu\u00f4\u0301c"
                     },
                     {
                         "bbox": [
@@ -58038,7 +58038,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "T\u00ean c\u00f4ng ty vi\u00ea\u0301t b\u0103\u0300ng ti\u00ea\u0301ng Vi\u00ea\u0323t: C\u00d4NG TY TNHH \u00d4\u0301NG NH\u01af\u0323A HA\u0300N VI\u00ca\u0323T - \u0110\u01af\u0301C "
+                        "text": "T\u00ean c\u00f4ng ty vi\u1ebft b\u1eb1ng ti\u1ebfng Vi\u1ec7t: C\u00d4NG TY TNHH \u1ed0NG NH\u1ef0A H\u00c0N VI\u1ec6T - \u0110\u1ee8C"
                     },
                     {
                         "bbox": [
@@ -58082,7 +58082,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "NOI REPRESENTATIVE OFFICE"
+                        "text": "NOI REPRSENTATIVE OFFICE"
                     },
                     {
                         "bbox": [
@@ -58412,7 +58412,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -58500,7 +58500,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "B\u0103\u0300ng ch\u01b0\u0303: "
+                        "text": "B\u0103\u0300ng ch\u01b0\u0303:"
                     },
                     {
                         "bbox": [
@@ -58885,7 +58885,7 @@
                             ]
                         ],
                         "label": "label_business_place",
-                        "text": "7. Th\u00f4ng tin v\u00ea\u0300 \u0111i\u0323a \u0111i\u00ea\u0309m kinh doanh "
+                        "text": "7. Th\u00f4ng tin v\u00ea\u0300 \u0111i\u0323a \u0111i\u00ea\u0309m kinh doanh"
                     },
                     {
                         "bbox": [
@@ -59083,7 +59083,7 @@
                             ]
                         ],
                         "label": "business_place_code",
-                        "text": "4KM0FK6T"
+                        "text": "4KM0FM6T"
                     },
                     {
                         "bbox": [
@@ -59210,7 +59210,7 @@
                             ]
                         ],
                         "label": "representative_position",
-                        "text": "Ch\u01b0\u0301c danh: "
+                        "text": "Ch\u01b0\u0301c danh:"
                     },
                     {
                         "bbox": [
@@ -59276,7 +59276,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "D\u01af\u0323NG T\u00d4\u0309NG H\u01a0\u0323P "
+                        "text": "D\u01af\u0323NG T\u00d4\u0309NG H\u01a0\u0323P"
                     },
                     {
                         "bbox": [
@@ -59364,7 +59364,7 @@
                             ]
                         ],
                         "label": "company_address",
-                        "text": "25/9 Khu Ph\u00f4\u0301 2, thi\u0323 tr\u00e2\u0301n D\u00e2\u0300u Ti\u00ea\u0301ng, huy\u00ea\u0323n D\u00e2\u0300u Ti\u00ea\u0301ng, ti\u0309nh Bi\u0300nh D\u01b0\u01a1ng "
+                        "text": "25/9 Khu Ph\u00f4\u0301 2, thi\u0323 tr\u00e2\u0301n D\u00e2\u0300u Ti\u00ea\u0301ng, huy\u00ea\u0323n D\u00e2\u0300u Ti\u00ea\u0301ng, ti\u0309nh Bi\u0300nh D\u01b0\u01a1ng"
                     },
                     {
                         "bbox": [
@@ -59628,7 +59628,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
@@ -59650,7 +59650,7 @@
                             ]
                         ],
                         "label": "company_vietnamese_name",
-                        "text": "CTY PHU\u0301 THO\u0323 X\u00c2Y "
+                        "text": "CTY PHU\u0301 THO\u0323 X\u00c2Y"
                     },
                     {
                         "bbox": [
@@ -59716,7 +59716,7 @@
                             ]
                         ],
                         "label": "business_capital",
-                        "text": "Ch\u00edn m\u01b0\u01a1i b\u1ea3y t\u1ef7 hai tr\u0103m linh t\u00e1m tri\u1ec7u t\u00e1m tr\u0103m s\u00e1u m\u01b0\u01a1i b\u1ea3y ngh\u00ecn n\u0103m "
+                        "text": "Ch\u00edn m\u01b0\u01a1i b\u1ea3y t\u1ef7 hai tr\u0103m linh t\u00e1m tri\u1ec7u t\u00e1m tr\u0103m s\u00e1u m\u01b0\u01a1i b\u1ea3y ngh\u00ecn n\u0103m"
                     },
                     {
                         "bbox": [
@@ -60387,7 +60387,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG "
+                        "text": "TR\u01af\u01a0\u0309NG PHO\u0300NG"
                     },
                     {
                         "bbox": [
@@ -60646,7 +60646,7 @@
                             ]
                         ],
                         "label": "representative_position",
-                        "text": "Ch\u01b0\u0301c danh: Chu\u0309 ti\u0323ch "
+                        "text": "Ch\u1ee9c danh: Ch\u1ee7 t\u1ecbch"
                     },
                     {
                         "bbox": [
@@ -60734,7 +60734,7 @@
                             ]
                         ],
                         "label": "label_company_name",
-                        "text": "1. T\u00ean c\u00f4ng ty "
+                        "text": "1. T\u00ean c\u00f4ng ty"
                     },
                     {
                         "bbox": [
@@ -60822,7 +60822,7 @@
                             ]
                         ],
                         "label": "company_english_name",
-                        "text": "EXPORTSERVICE COLTD"
+                        "text": "EXPORTSERVICE CO LTD"
                     },
                     {
                         "bbox": [
@@ -60866,7 +60866,7 @@
                             ]
                         ],
                         "label": "label_company_address",
-                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh: "
+                        "text": "2. \u0110i\u0323a chi\u0309 tru\u0323 s\u01a1\u0309 chi\u0301nh:"
                     },
                     {
                         "bbox": [
@@ -62106,7 +62106,7 @@
                             ]
                         ],
                         "label": "company_website/email",
-                        "text": "Email: phuocngocnga@hcm.fpt.vn "
+                        "text": "Email: phuocngocnga@hcm.fpt.vn"
                     },
                     {
                         "bbox": [
@@ -62150,7 +62150,7 @@
                             ]
                         ],
                         "label": "contract_type",
-                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N "
+                        "text": "GI\u00c2\u0301Y CH\u01af\u0301NG NH\u00c2\u0323N \u0110\u0102NG KY\u0301 DOANH NGHI\u00ca\u0323P C\u00d4NG TY C\u00d4\u0309 PH\u00c2\u0300N"
                     },
                     {
                         "bbox": [
@@ -62260,7 +62260,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c "
+                        "text": "\u0110\u00f4\u0323c l\u00e2\u0323p - T\u01b0\u0323 do - Ha\u0323nh phu\u0301c"
                     },
                     {
                         "bbox": [
@@ -62304,7 +62304,7 @@
                             ]
                         ],
                         "label": "other",
-                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH "
+                        "text": "PHO\u0300NG \u0110\u0102NG KY\u0301 KINH DOANH"
                     },
                     {
                         "bbox": [
