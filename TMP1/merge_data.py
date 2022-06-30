@@ -28,15 +28,18 @@ def augment_data(file):
 
 def convert24point(bbox):
     x1, y1, x2, y2 = bbox
-    return [[x1, y1], [x2, y1], [x2, y2], [x1, y2]]
+    return [[x1, y1], [x2, y1],
+            [x2, y2], [x1, y2]]
 
 
-data_path = r'C:\Users\thinhtq\Downloads\DATA_GENOCR_DKKD\DATA_GENOCR_DKKD'
+data_path = r'D:\breg_dataset\data_augment'
 for folder in os.listdir(data_path):
     data = []
     for file in os.listdir(os.path.join(data_path, folder)):
         if "json" in file:
             file_name = file.split(".")[0]
+            if not os.path.isdir(os.path.join(data_path, folder, file_name)):
+                continue
             w, h = 0, 0
             for item in os.listdir(os.path.join(data_path, folder, file_name)):
                 image = cv2.imread(os.path.join(data_path, folder, file_name, item))
@@ -47,7 +50,6 @@ for folder in os.listdir(data_path):
                 item_data = json.loads(f.read())
             for item in item_data:
                 item['bbox'] = convert24point(item['bbox'])
-
             data.append({
                 "file_name": file,
                 "shape": (h, w),
