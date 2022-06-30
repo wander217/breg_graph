@@ -1,6 +1,5 @@
 import json
 import os
-import random
 import imgaug.augmenters as iaa
 from imgaug.augmentables import Keypoint, KeypointsOnImage
 

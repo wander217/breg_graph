@@ -139,18 +139,19 @@ if __name__ == "__main__":
                               args.label_path.strip(),
                               args.resume.strip())
     with open(args.input.strip(), 'r', encoding='utf-8') as f:
-        data = json.loads(f.readline())
+        data = json.loads(f.read())
+    print(data)
     start = time.time()
     id = random.randint(0, len(data) - 1)
     output = predictor.predict(data[id])
-    print(data[id]['file_name'])
+    print(data[id]['dir'])
     print("Run_time:", time.time() - start)
     wrong: int = 0
     for pred, gt in zip(output['target'], data[id]['target']):
         print("-" * 50)
-        print("Pred:", pred["text"], pred['label'], pred['label_score'])
-        print("GT:", gt["text"], gt['label'])
-        if pred['label'] != gt['label']:
+        print("Pred:", pred["text"], pred['label'].upper(), pred['label_score'])
+        print("GT:", gt["text"], gt['label'].upper())
+        if pred['label'].upper() != gt['label'].upper():
             wrong += 1
         print("-" * 50)
     print("Wrong", wrong)
