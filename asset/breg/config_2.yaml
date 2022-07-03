@@ -9,7 +9,7 @@ label:
 
 loss_model:
   model:
-    node_channel: 5
+    node_channel: 4
     edge_channel: 3
     hidden_channel: 512
     dropout: 0
@@ -25,7 +25,7 @@ optimizer:
     lr: 0.001
 
 train:
-  batch_size: 8
+  batch_size: 4
   num_workers: 2
   drop_last: True
   shuffle: True
@@ -34,7 +34,7 @@ train:
     path: 'train.json'
 
 valid:
-  batch_size: 8
+  batch_size: 4
   num_workers: 2
   drop_last: True
   shuffle: False
@@ -43,7 +43,7 @@ valid:
     path: 'valid.json'
 
 test:
-  batch_size: 8
+  batch_size: 4
   num_workers: 2
   drop_last: True
   shuffle: False

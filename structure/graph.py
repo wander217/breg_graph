@@ -8,7 +8,9 @@ from torch.nn.utils.rnn import PackedSequence, pack_padded_sequence
 
 
 class GraphNorm(nn.Module):
-    def __init__(self, feature_num: int, eps: float = 1e-5):
+    def __init__(self,
+                 feature_num: int,
+                 eps: float = 1e-5):
         super().__init__()
         self._eps: float = eps
         self._gamma: nn.Parameter = nn.Parameter(torch.ones(feature_num))
@@ -34,7 +36,8 @@ class GraphNorm(nn.Module):
         # split graph sequence to a list containing graph
         graph_batch: Tensor = torch.split(x, size)
         # norm each graph inside list
-        normed_graph_batch: List = [self._norm(graph) for graph in graph_batch]
+        normed_graph_batch: List = [self._norm(graph)
+                                    for graph in graph_batch]
         # flatten graph list
         y: Tensor = torch.cat(normed_graph_batch, dim=0)
         y = self._gamma * y + self._beta
@@ -60,7 +63,7 @@ def message(edge) -> Dict:
     # Aggregate feature through all adjacent nodes
     e_ij = edge.src['Dv'] + edge.data['Ce'] + edge.dst['Ev']
     score = torch.sigmoid(e_ij)
-    edge.data['e'] = e_ij
+    # edge.data['e'] = e_ij
     return {'Bv_j': Bv_j, 'score': score}
 
 
@@ -73,7 +76,10 @@ def reduce(nodes) -> Dict:
 
 
 class GatedGCN(nn.Module):
-    def __init__(self, in_channel: int, out_channel: int, dropout: float):
+    def __init__(self,
+                 in_channel: int,
+                 out_channel: int,
+                 dropout: float):
         super().__init__()
         self._fc: nn.ModuleList = nn.ModuleList([
             nn.Linear(in_channel, out_channel, bias=True)
@@ -88,11 +94,17 @@ class GatedGCN(nn.Module):
         self._residual: bool = (in_channel == out_channel)
         self._dropout: float = dropout
 
-    def _do_norm(self, feature_i1: Tensor, feature_i: Tensor, num: List, t: int):
+    def _do_norm(self,
+                 feature_i1: Tensor,
+                 feature_i: Tensor,
+                 num: List,
+                 t: int):
         feature_i1: Tensor = F.relu(self._norm[t](feature_i1, num))
         if self._residual:
             feature_i1 = feature_i1 + feature_i
-        feature_i1 = F.dropout(feature_i1, self._dropout, training=self.training)
+        feature_i1 = F.dropout(feature_i1,
+                               self._dropout,
+                               training=self.training)
         return feature_i1
 
     def forward(self,
@@ -171,22 +183,20 @@ class BRegGraph(nn.Module):
                  layer_num: int):
         super().__init__()
         self._text_embedding: nn.Module = nn.Embedding(vocab, hidden_channel)
-        self._node_embedding: nn.Module = nn.Linear(node_channel, hidden_channel)
+        self._keyword_embedding: nn.Module = nn.Embedding(vocab, hidden_channel)
+        # self._node_embedding: nn.Module = nn.Linear(node_channel, hidden_channel)
         self._edge_embedding: nn.Module = nn.Linear(edge_channel, hidden_channel)
         self._layers: nn.ModuleList = nn.ModuleList([
-            GatedGCN(hidden_channel, hidden_channel, dropout)
+            GatedGCN(hidden_channel,
+                     hidden_channel,
+                     dropout)
             for _ in range(layer_num)
         ])
         self._dense: nn.ModuleList = nn.ModuleList([
-            Dense(hidden_channel + i * hidden_channel, hidden_channel)
+            Dense(hidden_channel + i * hidden_channel,
+                  hidden_channel)
             for i in range(1, layer_num + 1)
         ])
-        # self._decoder: nn.Module = nn.TransformerEncoder(
-        #     nn.TransformerEncoderLayer(**encoder),
-        #     num_layers=encoder_num)
-        # self._fc = nn.Sequential(
-        #     nn.Linear(hidden_channel * 2, hidden_channel),
-        #     nn.ReLU(inplace=True))
         self._lstm: nn.Module = nn.LSTM(input_size=hidden_channel,
                                         hidden_size=hidden_channel,
                                         num_layers=2,
@@ -194,9 +204,14 @@ class BRegGraph(nn.Module):
                                         bidirectional=True)
         self._mlp: nn.Module = Readout(hidden_channel, class_num, 2)
 
-    def _lstm_text_embedding(self, texts: Tensor, lengths: Tensor):
+    def _lstm_text_embedding(self,
+                             texts: Tensor,
+                             lengths: Tensor):
         text_embedding: Tensor = self._text_embedding(texts)  # (B, max_length, hidden_channel)
-        packed_sequence: PackedSequence = pack_padded_sequence(text_embedding, lengths.cpu(), True, False)
+        packed_sequence: PackedSequence = pack_padded_sequence(text_embedding,
+                                                               lengths.cpu(),
+                                                               True,
+                                                               False)
         output, (h_last, c_last) = self._lstm(packed_sequence)
         return F.normalize(h_last.mean(0))
 
@@ -215,12 +230,11 @@ class BRegGraph(nn.Module):
                 edge_factors: Tensor,
                 node_sizes: List,
                 edge_sizes: List) -> Tensor:
-        node_embedding: Tensor = self._node_embedding(nodes)
+        # node_embedding: Tensor = self._node_embedding(nodes)
         edge_embedding: Tensor = self._edge_embedding(edges)
-        text_embedding = self._lstm_text_embedding(texts, lengths)
 
-        nodes: Tensor = node_embedding + text_embedding
-        # nodes = self._fc(nodes)
+        text_embedding = self._lstm_text_embedding(texts, lengths)
+        nodes: Tensor = text_embedding
         edges: Tensor = edge_embedding
         all_node: List = [nodes]
         for i, conv in enumerate(self._layers):

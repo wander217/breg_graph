@@ -51,7 +51,7 @@ class BREGPredictor:
             label: int = self.label.encode(target[LABEL_KEY])
             labels.append(label)
             (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-            bbox = np.array([x, y, w, h, a])
+            bbox = np.array([x, y, w, h])
             bboxes.append(bbox)
         return (np.array(bboxes),
                 np.array(labels),
@@ -65,19 +65,21 @@ class BREGPredictor:
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_i = bboxes[i]
+            x_i, y_i, w_i, h_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j, r_j = bboxes[j]
+                x_j, y_j, w_j, h_j = bboxes[j]
 
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                # if np.abs(y_dist) > 3 * h_j:
-                #     continue
-                dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
+                if np.abs(y_dist) > 3 * h_j:
+                    continue
+                dists.append([int(np.sign(x_dist)),
+                              int(np.sign(y_dist)),
+                              lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
         g = dgl.DGLGraph()
@@ -137,18 +139,19 @@ if __name__ == "__main__":
                               args.label_path.strip(),
                               args.resume.strip())
     with open(args.input.strip(), 'r', encoding='utf-8') as f:
-        data = json.loads(f.readline())
+        data = json.loads(f.read())
+    print(data)
     start = time.time()
     id = random.randint(0, len(data) - 1)
     output = predictor.predict(data[id])
-    print(data[id]['file_name'])
+    print(data[id]['dir'])
     print("Run_time:", time.time() - start)
     wrong: int = 0
     for pred, gt in zip(output['target'], data[id]['target']):
         print("-" * 50)
-        print("Pred:", pred["text"], pred['label'], pred['label_score'])
-        print("GT:", gt["text"], gt['label'])
-        if pred['label'] != gt['label']:
+        print("Pred:", pred["text"], pred['label'].upper(), pred['label_score'])
+        print("GT:", gt["text"], gt['label'].upper())
+        if pred['label'].upper() != gt['label'].upper():
             wrong += 1
         print("-" * 50)
     print("Wrong", wrong)

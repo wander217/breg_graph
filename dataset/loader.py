@@ -31,23 +31,6 @@ def convert24point(bbox):
                      [x2, y2], [x1, y2]]).flatten()
 
 
-def check_type(text):
-    type_dict = {
-        "Doanh nghiệp tư nhân": 1,
-        "hữu hạn một thành viên": 2,
-        "Văn phòng đại diện": 3,
-        "Chi nhánh": 4,
-        "hữu hạn hai thành viên trở lên": 5,
-        "Hộ kinh doanh": 6,
-        "Công ty hợp danh": 7,
-        "Công ty cổ phần": 8
-    }
-    for key, value in type_dict.items():
-        if key.upper() in text:
-            return value / len(type_dict)
-    return 0
-
-
 def process(sample: Dict,
             label_dict: GraphLabel,
             alphabet_dict: GraphAlphabet):
@@ -71,7 +54,7 @@ def process(sample: Dict,
     TEXT_KEY = "text"
     LABEL_KEY = "label"
     BBOX_KEY = "bbox"
-    SHAPE_KEY = "shape"
+    # SHAPE_KEY = "shape"
 
     lengths = []
     texts = []
@@ -81,7 +64,6 @@ def process(sample: Dict,
     for target in sample[TARGET_KEY]:
         text = target[TEXT_KEY]
         original_text.append(text)
-    contract_type = check_type(" ".join(original_text))
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
@@ -91,23 +73,12 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        bbox = np.array([x, y, w, h, a])
-
-        # # bbox = convert24point(bbox)
-        # x = bbox[0::2]
-        # x_max, x_min = np.max(x), np.min(x)
-        # y = bbox[1::2]
-        # y_max, y_min = np.max(y), np.min(y)
-        # bbox = np.array([(x_min + x_max) / 2,
-        #                  (y_min + y_max) / 2,
-        #                  (x_max - x_min),
-        #                  (y_max - y_min)], dtype=np.float32)
+        bbox = np.array([x, y, w, h])
         bboxes.append(bbox)
     return (np.array(bboxes),
             np.array(labels),
             np.array(texts),
-            np.array(lengths),
-            contract_type)
+            np.array(lengths))
 
 
 class GraphDataset(Dataset):
@@ -121,25 +92,26 @@ class GraphDataset(Dataset):
         self._load(path)
 
     def convert_data(self, sample):
-        bboxes, labels, texts, lengths, contract_type = process(sample, self._ldict, self._adict)
+        bboxes, labels, texts, lengths = process(sample, self._ldict, self._adict)
         node_size = labels.shape[0]
         src: List = []
         dst: List = []
         dists: List = []
         for i in range(node_size):
-            x_i, y_i, w_i, h_i, r_i = bboxes[i]
+            x_i, y_i, w_i, h_i = bboxes[i]
             for j in range(node_size):
                 if i == j:
                     continue
 
-                x_j, y_j, w_j, h_j, r_j = bboxes[j]
-                # h_j = bboxes[j][9]
+                x_j, y_j, w_j, h_j = bboxes[j]
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                # if np.abs(y_dist) > 3 * h_j:
-                #     continue
-                dists.append([x_dist, y_dist, lengths[j] / lengths[i]])
+                if y_dist > 3 * h_j:
+                    continue
+                dists.append([int(np.sign(x_dist)),
+                              int(np.sign(y_dist)),
+                              lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
         g = dgl.DGLGraph()
@@ -151,15 +123,16 @@ class GraphDataset(Dataset):
 
     def _load(self, target_path: str):
         with open(target_path, 'r', encoding='utf-8') as f:
-            samples: List = json.loads(remove_space(f.readline()))
+            samples: List = json.loads(f.read())
         self._samples.extend(samples)
 
     def __getitem__(self, index: int):
-        try:
-            result = self.convert_data(self._samples[index])
-            return result
-        except Exception as e:
-            return self.__getitem__(random.randint(0, self.__len__() - 1))
+        # try:
+        result = self.convert_data(self._samples[index])
+        return result
+        # except Exception as e:
+        #     print(e)
+        #     return self.__getitem__(random.randint(0, self.__len__() - 1))
 
     def __len__(self):
         return len(self._samples)
