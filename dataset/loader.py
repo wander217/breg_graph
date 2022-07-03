@@ -9,6 +9,8 @@ from typing import List, Dict, Tuple
 from torch.utils.data import Dataset, DataLoader
 from dataset.alphabet import GraphAlphabet, GraphLabel
 from utils import remove_space
+import imgaug.augmenters as iaa
+from imgaug.augmentables import Keypoint, KeypointsOnImage
 import cv2 as cv
 
 
@@ -60,10 +62,12 @@ def process(sample: Dict,
     texts = []
     bboxes = []
     labels = []
-    original_text = []
+    angles = []
     for target in sample[TARGET_KEY]:
-        text = target[TEXT_KEY]
-        original_text.append(text)
+        _, _, a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
+        angles.append(a)
+    angle = sum(angles) / len(angles)
+    aug = iaa.Sequential(iaa.Affine(rotate=-angle))
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
@@ -72,7 +76,14 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
+        keypoint = KeypointsOnImage([
+            Keypoint(x=point[0], y=point[1])
+            for point in target['bbox']],
+            shape=tuple(sample['shape']))
+        aug = aug.to_deterministic()
+        new_keypoint = aug.augment_keypoints(keypoint).keypoints
+        bbox = [(int(point.x), int(point.y)) for point in new_keypoint]
+        (x, y), (w, h), a = cv.minAreaRect(bbox).astype(np.int32)
         bbox = np.array([x, y, w, h])
         bboxes.append(bbox)
     return (np.array(bboxes),
