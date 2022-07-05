@@ -64,11 +64,6 @@ def process(sample: Dict,
     labels = []
     angles = []
     for target in sample[TARGET_KEY]:
-        _, _, a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        angles.append(a)
-    angle = sum(angles) / len(angles)
-    aug = iaa.Sequential(iaa.Affine(rotate=-angle))
-    for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
             continue
@@ -76,14 +71,7 @@ def process(sample: Dict,
         lengths.append(text.shape[0])
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
-        keypoint = KeypointsOnImage([
-            Keypoint(x=point[0], y=point[1])
-            for point in target['bbox']],
-            shape=tuple(sample['shape']))
-        aug = aug.to_deterministic()
-        new_keypoint = aug.augment_keypoints(keypoint).keypoints
-        bbox = [(int(point.x), int(point.y)) for point in new_keypoint]
-        (x, y), (w, h), a = cv.minAreaRect(bbox).astype(np.int32)
+        (x, y), (w, h), a = cv.minAreaRect(target[BBOX_KEY]).astype(np.int32)
         bbox = np.array([x, y, w, h])
         bboxes.append(bbox)
     return (np.array(bboxes),
