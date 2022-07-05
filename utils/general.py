@@ -80,7 +80,7 @@ class Logger:
         self._logger = logging.getLogger("message")
         self._logger.setLevel(self._level)
 
-        file_handler = logging.FileHandler(os.path.join(workspace, "ouput.log"))
+        file_handler = logging.FileHandler(os.path.join(self._workspace, "ouput.log"))
         file_handler.setFormatter(formatter)
         file_handler.setLevel(self._level)
         self._logger.addHandler(file_handler)
@@ -90,7 +90,7 @@ class Logger:
         stream_handler.setLevel(self._level)
         self._logger.addHandler(stream_handler)
         self._time: float = time.time()
-        self._save_path: str = os.path.join(workspace, "metric.txt")
+        self._save_path: str = os.path.join(self._workspace, "metric.txt")
 
     def report_time(self, name: str):
         current: float = time.time()
