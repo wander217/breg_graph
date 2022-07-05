@@ -34,7 +34,7 @@ for t in ["train", "valid", "test"]:
         data = json.loads(f.read())
 
     aug_data = copy.deepcopy(data)
-    for i in range(32):
+    for i in range(15):
         new_data = copy.deepcopy(data)
         for item in new_data:
             for j in range(len(item['file'])):

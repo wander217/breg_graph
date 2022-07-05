@@ -96,18 +96,18 @@ class Trainer:
             self._optimizer.step()
             train_loss.update(loss.item() * labels.size(0), labels.size(0))
             self._step += 1
-            if self._step % 150 == 0:
-                self._logger.report_delimiter()
-                self._logger.report_time("Step {}:".format(self._step))
-                self._logger.report_delimiter()
-                valid_rs = self.valid_step()
-                test_rs = self.test_step()
-                self.save({
-                    "loss": train_loss.calc()
-                }, valid_rs, test_rs, self._step)
-                train_loss.clear()
-                self._model.train()
-        # return {"loss": train_loss.calc()}
+            # if self._step % 150 == 0:
+            #     self._logger.report_delimiter()
+            #     self._logger.report_time("Step {}:".format(self._step))
+            #     self._logger.report_delimiter()
+            #     valid_rs = self.valid_step()
+            #     test_rs = self.test_step()
+            #     self.save({
+            #         "loss": train_loss.calc()
+            #     }, valid_rs, test_rs, self._step)
+            #     train_loss.clear()
+            #     self._model.train()
+        return {"loss": train_loss.calc()}
 
     def valid_step(self):
         self._model.eval()
