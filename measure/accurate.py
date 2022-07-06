@@ -10,7 +10,7 @@ class Accurate:
 
     def __call__(self, pred: Tensor, target: Tensor, label_num: int):
         target_matrix: np.ndarray = target.cpu().detach().numpy()
-        pred = torch.softmax(pred, dim=1)
+        pred = torch.log_softmax(pred, dim=1)
         pred_matrix: np.ndarray = np.argmax(pred.cpu().detach().numpy(), axis=1)
         cm: np.ndarray = confusion_matrix(target_matrix, pred_matrix).astype(np.float32)
         recall: np.ndarray = np.zeros(label_num, dtype=np.float32)

@@ -115,7 +115,7 @@ class BREGPredictor:
     def predict(self, ocr_result: Dict):
         input_data = self._preprocess(ocr_result)
         score: Tensor = self.model.predict(*input_data)
-        values, pred = score.cpu().softmax(1).max(1)
+        values, pred = torch.log_softmax(score.cpu(), dim=1).max(1)
         result = [(self.label.decode(pred[i].item()), values[i].item())
                   for i in range(len(pred))]
         pred_ocr = copy.deepcopy(ocr_result)
