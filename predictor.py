@@ -83,8 +83,8 @@ class BREGPredictor:
                               lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
-        # print("edge num", len(src))
-        # print("node num", node_size)
+        print("edge num", len(src))
+        print("node num", node_size)
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
@@ -144,17 +144,28 @@ if __name__ == "__main__":
     with open(args.input.strip(), 'r', encoding='utf-8') as f:
         data = json.loads(f.read())
     start = time.time()
-    id = random.randint(0, len(data) - 1)
+    # id = random.randint(0, len(data) - 1)
+    id = 100
     output = predictor.predict(data[id])
-    print(data[id].keys())
     print("Run_time:", time.time() - start)
     wrong: int = 0
-    for pred, gt in zip(output['target'], data[id]['target']):
-        print("-" * 50)
-        print("Pred:", pred["text"], pred['label'].upper(), pred['label_score'])
-        print("GT:", gt["text"], gt['label'].upper())
-        if pred['label'].upper() != gt['label'].upper():
-            wrong += 1
-        print("-" * 50)
-    print("Wrong", wrong)
-    print("Total", len(data[id]['target']))
+    with open(r"D:\python_project\breg_graph\result\abc_{}.json".format(id), 'w', encoding='utf-8') as f:
+        f.write(data[id]['file_name'])
+        f.write('\n')
+        for pred, gt in zip(output['target'], data[id]['target']):
+            print("-" * 50)
+            f.write("-" * 50)
+            f.write("\n")
+            print("Pred:", pred["text"], pred['label'].upper(), pred['label_score'])
+            f.write("Pred: {} {} {}".format(pred["text"], pred['label'].upper(), pred['label_score']))
+            f.write("\n")
+            print("GT:", gt["text"], gt['label'].upper())
+            f.write("GT: {}".format(gt["text"]))
+            f.write("\n")
+            if pred['label'].upper() != gt['label'].upper():
+                wrong += 1
+            print("-" * 50)
+            f.write("-" * 50)
+            f.write("\n")
+        print("Wrong", wrong)
+        print("Total", len(data[id]['target']))
