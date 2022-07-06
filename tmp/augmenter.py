@@ -28,13 +28,13 @@ def augment_data(file):
 
 for t in ["train", "valid", "test"]:
     train_data = r'D:\python_project\breg_graph\tmp\dataset\{}.json'.format(t)
-    save_data = r'D:\python_project\breg_graph\tmp\aug_data\{}.json'.format(t)
+    save_data = r'D:\python_project\breg_graph\tmp\aug_data_1\{}.json'.format(t)
 
     with open(train_data, 'r', encoding='utf-8') as f:
         data = json.loads(f.read())
 
     aug_data = copy.deepcopy(data)
-    for i in range(15):
+    for i in range(0):
         new_data = copy.deepcopy(data)
         for item in new_data:
             for j in range(len(item['file'])):
