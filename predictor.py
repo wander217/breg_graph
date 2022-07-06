@@ -85,6 +85,8 @@ class BREGPredictor:
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
+        print(len(src))
+        raise Exception("aabc")
         g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
         g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
 
@@ -140,11 +142,10 @@ if __name__ == "__main__":
                               args.resume.strip())
     with open(args.input.strip(), 'r', encoding='utf-8') as f:
         data = json.loads(f.read())
-    print(data)
     start = time.time()
     id = random.randint(0, len(data) - 1)
     output = predictor.predict(data[id])
-    print(data[id]['dir'])
+    print(data[id].keys())
     print("Run_time:", time.time() - start)
     wrong: int = 0
     for pred, gt in zip(output['target'], data[id]['target']):
