@@ -116,6 +116,8 @@ class GraphDataset(Dataset):
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
+        print(len(src))
+        raise Exception("aabc")
         g.ndata['feat'] = torch.FloatTensor(norm(bboxes))
         g.edata['feat'] = torch.FloatTensor(norm(np.array(dists)))
         return g, labels, texts, lengths
