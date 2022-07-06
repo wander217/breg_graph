@@ -76,7 +76,7 @@ class BREGPredictor:
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if abs(y_dist) > h_j:
+                if abs(y_dist) > 3 * h_i:
                     continue
                 dists.append([int(np.sign(x_dist)),
                               int(np.sign(y_dist)),
@@ -145,7 +145,7 @@ if __name__ == "__main__":
         data = json.loads(f.read())
     start = time.time()
     # id = random.randint(0, len(data) - 1)
-    id = 100
+    id = 30
     output = predictor.predict(data[id])
     print("Run_time:", time.time() - start)
     wrong: int = 0
