@@ -1,5 +1,6 @@
 import copy
 import json
+import math
 import random
 import torch
 import numpy as np
@@ -75,13 +76,15 @@ class BREGPredictor:
                 x_dist = x_j - x_i
                 y_dist = y_j - y_i
 
-                if np.abs(y_dist) > 3 * h_j:
+                if abs(y_dist) > h_j:
                     continue
                 dists.append([int(np.sign(x_dist)),
                               int(np.sign(y_dist)),
                               lengths[j] / lengths[i]])
                 src.append(i)
                 dst.append(j)
+        # print("edge num", len(src))
+        # print("node num", node_size)
         g = dgl.DGLGraph()
         g.add_nodes(node_size)
         g.add_edges(src, dst)
@@ -121,7 +124,7 @@ class BREGPredictor:
         pred_ocr = copy.deepcopy(ocr_result)
         for ocr, label in zip(pred_ocr["target"], result):
             ocr["label"] = label[0]
-            ocr["label_score"] = label[1]
+            ocr["label_score"] = math.exp(label[1])
         return pred_ocr
 
 
