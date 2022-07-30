@@ -6,7 +6,7 @@ data = []
 for file in os.listdir(data_root):
     with open(os.path.join(data_root, file), 'r', encoding='utf-8') as f:
         tmp = json.loads(f.read())
-        if len(tmp) > 0:
+        if len(tmp) == 0:
             continue
         data.append({
             "file_name": file,
