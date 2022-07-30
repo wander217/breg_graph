@@ -143,7 +143,7 @@ class Trainer:
         with torch.no_grad():
             for batch, (graphs, labels, texts, lengths,
                         node_factors, edge_factors,
-                        node_sizes, edge_sizes) in enumerate(self._valid):
+                        node_sizes, edge_sizes) in enumerate(self._test):
                 score = self._model(graphs,
                                     labels,
                                     texts,
