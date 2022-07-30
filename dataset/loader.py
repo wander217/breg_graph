@@ -55,14 +55,13 @@ def process(sample: Dict,
     TARGET_KEY = "target"
     TEXT_KEY = "text"
     LABEL_KEY = "label"
-    BBOX_KEY = "bbox"
+    BBOX_KEY = "box"
     # SHAPE_KEY = "shape"
 
     lengths = []
     texts = []
     bboxes = []
     labels = []
-    angles = []
     for target in sample[TARGET_KEY]:
         text = alphabet_dict.encode(target[TEXT_KEY])
         if text.shape[0] == 0:
