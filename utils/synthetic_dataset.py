@@ -5,9 +5,12 @@ data_root = r'C:\Users\Trinh_Thinh\Downloads\data_graph_3007\test_data_json_grap
 data = []
 for file in os.listdir(data_root):
     with open(os.path.join(data_root, file), 'r', encoding='utf-8') as f:
+        tmp = json.loads(f.read())
+        if len(tmp) > 0:
+            continue
         data.append({
             "file_name": file,
-            "target": json.loads(f.read())
+            "target": tmp
         })
 
 data_len = len(data)
