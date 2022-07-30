@@ -71,7 +71,7 @@ def process(sample: Dict,
         label: int = label_dict.encode(target[LABEL_KEY])
         labels.append(label)
         (x, y), (w, h), a = cv.minAreaRect(np.array(target[BBOX_KEY]).astype(np.int32))
-        if w > h:
+        if w >= h:
             bbox = np.array([x, y, w, h])
         else:
             bbox = np.array([y, x, h, w])
