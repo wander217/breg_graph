@@ -205,7 +205,7 @@ class Trainer:
         })
         self._checkpoint.save_last(epoch, self._model, self._optimizer)
         if test_rs['avg_f1'] > self._best:
-            self._best = valid_rs['avg_f1']
+            self._best = test_rs['avg_f1']
             self._checkpoint.save_model(self._model, epoch)
         self._logger.report_metric("best", {
             "avg_f1": self._best
